@@ -82,7 +82,7 @@ alias upg='sudo apt upgrade'
 alias des='cd ~/Desktop '
 alias dow='cd /home/$USER/Downloads'
 alias home='cd /home/$USER/'
-alias exhdd='cd /media/$USER/qwertyyyyyyyyyyyyyyyyyyy'
+alias exhdd='cd /media/$USER/hooli'
 alias applic='cd /usr/share/applications'
 alias keyboard='cd /usr/share/X11/xkb/symbols'
 #alias autostart='cd /home/momo/.config/autostart/'
@@ -111,10 +111,20 @@ alias pipup='pip install --upgrade pip '
 alias gita='git add . '
 alias gitc='git commit -m $1 '
 alias gitpush='git push -u origin master '
+alias cop='cd /home/momo/Desktop/githubs_projects/linux.conf/ ; ./copy-all.sh'
+
 function gitgo {
 	git add . ; 
 	git commit -m '$1'; 
 	git push -u origin master;
+}
+
+function copgit {
+	cd /home/momo/Desktop/githubs_projects/linux.conf/ ;
+	./copy-all.sh;
+	git add . ; 
+	git commit -m "push new conf"; 
+	git push -u origin master; 
 }
 
 ###########################################
@@ -138,7 +148,8 @@ alias djnewproj='django-admin startproject'
 # create virt env
 function crenv {
 
-  python3 -m venv $1; cd $1;
+  python3 -m venv $1;
+  cd $1;
   
   # create isvenv.py with checking content
   touch isvenv.py;
