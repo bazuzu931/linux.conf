@@ -1,0 +1,1 @@
+myself Linux Mint configuration
