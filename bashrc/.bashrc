@@ -111,7 +111,7 @@ alias pipup='pip install --upgrade pip '
 alias gita='git add . '
 alias gitc='git commit -m $1 '
 alias gitpush='git push -u origin master '
-alias cop='cd /home/momo/Desktop/githubs_projects/linux.conf/ ; ./copy-all.sh'
+alias cop='cd /home/momo/Desktop/github_projects/linux.conf/ ; ./copy-all.sh'
 
 
 function gitgo {
@@ -121,13 +121,12 @@ function gitgo {
 }
 
 function copgit {
-	cd /home/momo/Desktop/githubs_projects/linux.conf/ ;
+	cd /home/momo/Desktop/github_projects/linux.conf/ ;
 	./copy-all.sh;
 	git add . ; 
 	git commit -m "push new conf"; 
 	git push -u origin master; 
 }
-#aaaaaaaaaaaa
 
 ###########################################
 # Virtial env
