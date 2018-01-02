@@ -1,0 +1,1 @@
+src => https://stackoverflow.com/questions/1871549/python-determine-if-running-inside-virtualenv
