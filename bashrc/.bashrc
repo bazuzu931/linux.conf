@@ -111,7 +111,11 @@ alias pipup='pip install --upgrade pip '
 alias gita='git add . '
 alias gitc='git commit -m $1 '
 alias gitpush='git push -u origin master '
-alias gitgo='git add . ; git commit -m $1; git push -u origin master'
+function gitgo {
+	git add . ; 
+	git commit -m '$1'; 
+	git push -u origin master;
+}
 
 ###########################################
 # Virtial env
