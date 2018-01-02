@@ -113,6 +113,7 @@ alias gitc='git commit -m $1 '
 alias gitpush='git push -u origin master '
 alias cop='cd /home/momo/Desktop/githubs_projects/linux.conf/ ; ./copy-all.sh'
 
+
 function gitgo {
 	git add . ; 
 	git commit -m '$1'; 
@@ -126,6 +127,7 @@ function copgit {
 	git commit -m "push new conf"; 
 	git push -u origin master; 
 }
+#aaaaaaaaaaaa
 
 ###########################################
 # Virtial env
