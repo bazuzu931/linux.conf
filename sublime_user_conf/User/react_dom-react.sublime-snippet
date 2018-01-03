@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+ReactDOM.render(
+	$1
+	${3:document}.${3:getElementById("$4")}
+);
+]]></content>
+
+	<tabTrigger>rce</tabTrigger>
+	<scope>source.js</scope>
+
+</snippet>

@@ -111,8 +111,7 @@ alias pipup='pip install --upgrade pip '
 alias gita='git add . '
 alias gitc='git commit -m $1 '
 alias gitpush='git push -u origin master '
-alias cop='cd /home/momo/Desktop/github_projects/linux.conf/ ; ./copy-all.sh'
-
+alias cop='sh /home/momo/Desktop/github_projects/linux.conf/copy-all.sh'
 
 function gitgo {
 	git add . ; 
@@ -134,6 +133,16 @@ function copgit {
 alias deac='deactivate '
 alias isv="python isvenv.py"
 
+# create virtualenv, cd to env folder, and activate it
+function crenv {
+	source /home/momo/Desktop/github_projects/linux.conf/scripts/crenv.sh
+}
+
+# create virtualenv, cd to env folder, and activate it
+function djenv {
+	source /home/momo/Desktop/github_projects/linux.conf/scripts/djenv.sh
+}
+
 ###########################################
 # Django
 ###########################################
@@ -146,78 +155,42 @@ alias djnewproj='django-admin startproject'
 
 ############################################################
 
-# create virt env
-function crenv {
-
-  python3 -m venv $1;
-  cd $1;
-  
-  # create isvenv.py with checking content
-  touch isvenv.py;
-  echo "
-import sys
-def is_venv():
-	return (hasattr(sys, 'real_prefix') or
-			(hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix))
-
-if is_venv():
-	print('inside virtualenv or venv')
-else:
-	print('outside virtualenv or venv')
-  " >> isvenv.py;
-
-
- 	# add isvenv alias in ~/.bashrc
- 	# isvenv='alias isv="python isvenv.py"'
- 	# if ! [ grep -q '$isvenv' ~/.bashrc ] ; then
-		# printf '\n\n\n$isvenv' >> ~/.bashrc;
- 	# fi
-
-  source ~/.bashrc
-
-  #activate venv
-  if [ -d 'bin' ] ; then
-	source ./bin/activate
-  else
-	source $1/bin/activate
-  fi
-}
 
 ###########################################################
 
 #create virt env with djang0==1.9
 
-function djenv {
-	crenv $1;
+# function djenv {
+# 	crenv $1;
 
-	pip install --upgrade pip;
-	pip3 install django==1.9;
-	pip3 install fabric3;
-	sudo apt-get -y install fabric
-	django-admin startproject $2; cd $2;
-	pip freeze > requirements.txt;
+# 	pip install --upgrade pip;
+# 	pip3 install django==1.9;
+# 	pip3 install fabric3;
+# 	sudo apt-get -y install fabric
+# 	django-admin startproject $2; cd $2;
+# 	pip freeze > requirements.txt;
 
-	mkdir media static static/css static/js static/image;
-	touch static/css/style.css  static/js/main.js .gitignore fabfile.py example_fabfile.py $2/local_settings.py;
-	printf "*.pyc\nfabfile.py\n$2/media\n$2/local_settings.py" >> .gitignore;
-	printf "\nSTATIC_ROOT = os.path.join(BASE_DIR, '$2', 'static')\n\nMEDIA_URL = '/media/'\n\nMEDIA_ROOT = os.path.join(BASE_DIR, '$2', 'media')" >> $2/settings.py
+# 	mkdir media static static/css static/js static/image;
+# 	touch static/css/style.css  static/js/main.js .gitignore fabfile.py example_fabfile.py $2/local_settings.py;
+# 	printf "*.pyc\nfabfile.py\n$2/media\n$2/local_settings.py" >> .gitignore;
+# 	printf "\nSTATIC_ROOT = os.path.join(BASE_DIR, '$2', 'static')\n\nMEDIA_URL = '/media/'\n\nMEDIA_ROOT = os.path.join(BASE_DIR, '$2', 'media')" >> $2/settings.py
 	
-	printf "\n\nSTATICFILES_DIRS = [
-	os.path.join(BASE_DIR, 'static'),
-	'/$2/static/',
-]" >> $2/settings.py
+# 	printf "\n\nSTATICFILES_DIRS = [
+# 	os.path.join(BASE_DIR, 'static'),
+# 	'/$2/static/',
+# ]" >> $2/settings.py
 	
-	printf "
-import os
-from fabric.api import run, env, cd, roles, lcd, local, sudo
-def gp():
-	lcd('/home/momo/Desktop/dmg_env/dmg/')
-	local('sudo git add .')
-	local('sudo git commit -a')
-	local('sudo git push origin master')" > fabfile.py
+# 	printf "
+# import os
+# from fabric.api import run, env, cd, roles, lcd, local, sudo
+# def gp():
+# 	lcd('/home/momo/Desktop/dmg_env/dmg/')
+# 	local('sudo git add .')
+# 	local('sudo git commit -a')
+# 	local('sudo git push origin master')" > fabfile.py
 
 
-}
+# }
 
 ###########################################################
 
