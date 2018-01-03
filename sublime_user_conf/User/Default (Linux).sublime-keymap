@@ -1,17 +1,15 @@
-[
+[	// close other tabs
 	{ "keys": ["alt+c"],
 	"command": "close_others" },
 	{ "keys": ["alt+w"],
 	"command": "close_other_windows" },
-	{ "keys": ["alt+v"], "command": "build" },
 
-	
 	{ "keys": ["ctrl+pagedown"], "command": "prev_view" },
 	{ "keys": ["ctrl+pageup"], "command": "next_view" },
 	{ "keys": ["ctrl+z"], "command": "undo" },
 	{ "keys": ["ctrl+shift+z"], "command": "redo" },
 
-
+	{ "keys": ["alt+v"], "command": "build" },
 	{ "keys": ["alt+space"], 
 	"command": "run_existing_window_command", 
 	"args": { "id": "repl_python_run", 
@@ -30,11 +28,7 @@
 	// Close all other tabs
 	// https://github.com/mjhea0/sublime-setup-for-python/blob/master/dotfiles/close_tabs.py
 
-
-
-	// Babel jsx keymap
-
-
+	{ "keys": ["ctrl+i"], "command": "new_snippet"}
 
 ]
 
