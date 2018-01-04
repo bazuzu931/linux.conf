@@ -1,3 +1,2 @@
-## My Linux Mint configurationsss		
- 
+## My Linux Mint configurations
 
