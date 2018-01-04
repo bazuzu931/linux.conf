@@ -1,2 +1,1 @@
 ## My Linux Mint configurations
-
