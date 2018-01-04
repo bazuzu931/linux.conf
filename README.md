@@ -1,3 +1,3 @@
-## myself Linux Mint configurations
+## My Linux Mint configurations
  
 
