@@ -1,2 +1,2 @@
-myself Linux Mint configuration
+## myself Linux Mint configuration
 
