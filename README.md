@@ -1,2 +1,3 @@
-## myself Linux Mint configuration
+## myself Linux Mint configurations
+ 
 
