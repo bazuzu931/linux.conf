@@ -84,8 +84,6 @@ alias dow='cd /home/$USER/Downloads'
 alias home='cd /home/$USER/'
 alias exhdd='cd /media/$USER/hooli'
 alias applic='cd /usr/share/applications'
-alias keyboard='cd /usr/share/X11/xkb/symbols'
-#alias autostart='cd /home/momo/.config/autostart/'
 
 
 alias sv='sudo vi' 
@@ -93,7 +91,6 @@ alias sn='sudo nano'
 alias tg='sudo tar -xvzf ' 
 alias tb='sudo tar -jxvf ' 
 alias n='nautilus' 
-alias xm='xmodmap .xmodmaprc'
 alias ju='jupyter notebook' 
 alias cln='clear'
 alias oi='xdg-open '
@@ -110,13 +107,20 @@ alias pipup='pip install --upgrade pip '
 ###########################################
 alias gita='git add . '
 alias gitc='git commit -m $1 '
+alias gitac='git add . ; git commit -m $1 '
 alias gitpush='git push -u origin master '
-alias cop='sh /home/momo/Desktop/github_projects/linux.conf/copy-all.sh'
+alias gitgp='git push -u origin gh-pages '
 
 function gitgo {
 	git add . ; 
-	git commit -m '$1'; 
+	git commit -m $1; 
 	git push -u origin master;
+}
+
+function gitgogp {
+	git add . ; 
+	git commit -m $1; 
+	git push -u origin gh-pages;
 }
 
 function copgit {
@@ -155,45 +159,6 @@ alias djnewproj='django-admin startproject'
 
 ############################################################
 
-
-###########################################################
-
-#create virt env with djang0==1.9
-
-# function djenv {
-# 	crenv $1;
-
-# 	pip install --upgrade pip;
-# 	pip3 install django==1.9;
-# 	pip3 install fabric3;
-# 	sudo apt-get -y install fabric
-# 	django-admin startproject $2; cd $2;
-# 	pip freeze > requirements.txt;
-
-# 	mkdir media static static/css static/js static/image;
-# 	touch static/css/style.css  static/js/main.js .gitignore fabfile.py example_fabfile.py $2/local_settings.py;
-# 	printf "*.pyc\nfabfile.py\n$2/media\n$2/local_settings.py" >> .gitignore;
-# 	printf "\nSTATIC_ROOT = os.path.join(BASE_DIR, '$2', 'static')\n\nMEDIA_URL = '/media/'\n\nMEDIA_ROOT = os.path.join(BASE_DIR, '$2', 'media')" >> $2/settings.py
-	
-# 	printf "\n\nSTATICFILES_DIRS = [
-# 	os.path.join(BASE_DIR, 'static'),
-# 	'/$2/static/',
-# ]" >> $2/settings.py
-	
-# 	printf "
-# import os
-# from fabric.api import run, env, cd, roles, lcd, local, sudo
-# def gp():
-# 	lcd('/home/momo/Desktop/dmg_env/dmg/')
-# 	local('sudo git add .')
-# 	local('sudo git commit -a')
-# 	local('sudo git push origin master')" > fabfile.py
-
-
-# }
-
-###########################################################
-
 # virtual env activate
 function envact {
   if [ -d 'bin' ] ; then
@@ -210,8 +175,9 @@ function cao {
   touch $@; nano $@; 
 }
 
+############################################################
 
-add2path() {
+function add2path {
   if ! echo $PATH | egrep "(^|:)$1(:|\$)" > /dev/null ; then
 	if [[ $2 = "front" ]]; then
 	  PATH="$1:$PATH"
@@ -222,7 +188,7 @@ add2path() {
   fi
 }
 
-
+############################################################
 
 
 ########################################

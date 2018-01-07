@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+componentWillMount(){
+	${1:console.log('WillMount')}
+}$2
+]]></content>
+
+	<tabTrigger>willm</tabTrigger>
+	<scope>source.js</scope>
+
+</snippet>

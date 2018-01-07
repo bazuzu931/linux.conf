@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+componentWillUpdate(){
+	${1:console.log('WillUpdate')}
+}$2
+]]></content>
+
+	<tabTrigger>willup</tabTrigger>
+	<scope>source.js</scope>
+
+</snippet>
