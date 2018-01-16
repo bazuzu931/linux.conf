@@ -1,24 +1,11 @@
 {
-	"font_size": 12,
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Nova.tmTheme",
+	"font_size": 10,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
-
-	// Boxy Yesterday
-    // "color_scheme": "Packages/Boxy Theme/schemes/Boxy Yesterday.tmTheme",
-    // "theme": "Boxy Yesterday.sublime-theme",
-    
-    // Boxy Ocean
-    // "color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
-    // "theme": "Boxy Ocean.sublime-theme",
-
-	// Brogrammer Theme
-	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
-	"theme": "Brogrammer.sublime-theme"
-
-
-
+	"theme": "Boxy Nova.sublime-theme"
 }

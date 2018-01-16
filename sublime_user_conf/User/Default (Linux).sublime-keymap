@@ -42,12 +42,30 @@
 	"command": "copy_path_to_clipboard" },
 
 	// create new snippet	
-	{ "keys": ["ctrl+i"], "command": "new_snippet"},
+	// { "keys": ["ctrl+i"], "command": "new_snippet"},
+	{ 
+		"keys": ["f8"], 
+		"command": "better_snippet_manager_create",
+    },
+
+    // Edit snippet
+    { 
+		"keys": ["f8+f8"], 
+		"command": "better_snippet_manager_edit"
+    },
 
 	// Multiple carets
 	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
 
+
+
+
+	// Wrapping content with tag
+	// Emmet => CTRL + SHIFT + G
+
+	// Open Terminal
+	// Terminal Package => CTRL + SHIFT + T
 
 ]
 
