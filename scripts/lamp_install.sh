@@ -7,7 +7,6 @@ sudo killall -KILL mysql mysqld_safe mysqld;
 sudo apt-get remove --purge *mysql\* -y ;
 sudo apt-get purge php.* -y ;
 sudo apt-get remove apache2* -y ;
-sudo apt-get remove /etc/apache2/apache2.conf -y ;
 sudo apt-get purge phpmyadmin -y ;
 
 # without removing configs
