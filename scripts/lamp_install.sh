@@ -1,14 +1,18 @@
 #!/bin/bash
 
-sudo service mysql stop
-sudo killall -KILL mysql mysqld_safe mysqld
-sudo apt-get --yes purge mysql-server mysql-client
-sudo apt-get --yes autoremove --purge
-sudo apt-get autoclean
-sudo deluser --remove-home mysql
-sudo delgroup mysql
-sudo rm -rf /etc/apparmor.d/abstractions/mysql /etc/apparmor.d/cache/usr.sbin.mysqld /etc/mysql /var/lib/mysql /var/log/mysql* /var/log/upstart/mysql.log* /var/run/mysqld
-sudo updatedb
+sudo service mysql stop;
+sudo killall -KILL mysql mysqld_safe mysqld;
+sudo apt-get --yes purge mysql-server mysql-client;
+sudo apt-get --yes autoremove --purge;
+sudo apt-get autoclean;
+sudo deluser --remove-home mysql;
+sudo delgroup mysql;
+sudo rm -rf /etc/apparmor.d/abstractions/mysql /etc/apparmor.d/cache/usr.sbin.mysqld /etc/mysql /var/lib/mysql /var/log/mysql* /var/log/upstart/mysql.log* /var/run/mysqld;
+sudo updatedb;
+sudo rm ~/.mysql_history;
+awk -F : '{ print($6 "/.mysql_history"); }' /etc/passwd | xargs -r -d '\n' -- sudo rm -f -- ;
+sudo find / -name .mysql_history -delete ;
+
 
 # remove configs and all relative files
 sudo apt-get remove --purge   mysql-server mysql-client mysql-common -y;
