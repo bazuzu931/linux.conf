@@ -132,6 +132,15 @@ function copgit {
 }
 
 ###########################################
+# LAMP
+###########################################
+
+alias apstart='sudo /etc/init.d/apache2 start'
+alias apstop='sudo /etc/init.d/apache2 stop'
+alias apres='sudo /etc/init.d/apache2 restart'
+alias apconf='sudo subl /etc/apache2/apache2.conf'
+
+###########################################
 # Virtial env
 ###########################################
 alias deac='deactivate '

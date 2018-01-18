@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+componentDidMount(){
+	${1:console.log('DidMount')}
+}$2
+]]></content>
+
+	<tabTrigger>didm</tabTrigger>
+	<scope>source.js</scope>
+
+</snippet>

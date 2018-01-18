@@ -46,13 +46,13 @@
 	{ 
 		"keys": ["f8"], 
 		"command": "better_snippet_manager_create",
-    },
+	},
 
-    // Edit snippet
-    { 
-		"keys": ["f8+f8"], 
+	// Edit snippet
+	{ 
+		"keys": ["f7"], 
 		"command": "better_snippet_manager_edit"
-    },
+	},
 
 	// Multiple carets
 	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },

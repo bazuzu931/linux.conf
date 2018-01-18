@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+constructor(props){
+	super(props);
+	${1:this.state = {
+		$2
+	}}
+}
+$3
+]]></content>
+
+	<tabTrigger>rcons</tabTrigger>
+	<scope>source.js</scope>
+
+</snippet>
