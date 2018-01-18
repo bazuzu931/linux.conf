@@ -4,8 +4,8 @@ sudo service mysql stop;
 
 # remove configs and all relative files
 sudo apt-get remove --purge   mysql-server mysql-client mysql-common;
-rm -rf /etc/mysql;
-find / -iname ‘mysql*’ -exec rm -rf {} \;
+sudo rm -rf /etc/mysql;
+# sudo find / -iname ‘mysql*’ -exec rm -rf {} \;
 
 # without removing configs
 sudo apt-get remove   mysql-server mysql-client mysql-common;
