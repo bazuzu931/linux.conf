@@ -1,0 +1,5 @@
+[01/19/2018 11:12:08AM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
+[01/19/2018 11:12:08AM] INFO - Failed to open /home/momo/.config/sublime-text-3/Packages/User/Xdebug.breakpoints.
+[01/19/2018 11:12:08AM] INFO - Failed to parse /home/momo/.config/sublime-text-3/Packages/User/Xdebug.breakpoints.
+[01/19/2018 11:12:08AM] INFO - Failed to open /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[01/19/2018 11:12:08AM] INFO - Failed to parse /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.

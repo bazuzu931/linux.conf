@@ -27,5 +27,6 @@ sudo chmod -R /var/www/html ;
 sudo apt-get install mysql-server mysql-client -y;
 sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0  -y;
 sudo apt-get install phpmyadmin -y;
-sudo printf "\nInclude /etc/phpmyadmin/apache.conf" | sudo tee -a  /etc/apache2/apache2.conf ;
+printf "\nInclude /etc/phpmyadmin/apache.conf" | sudo tee -a  /etc/apache2/apache2.conf ;
+sudo apt-get install -y php-xdebug;
 sudo /etc/init.d/apache2 restart;

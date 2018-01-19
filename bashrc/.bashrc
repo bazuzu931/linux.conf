@@ -74,7 +74,7 @@ alias ri='sudo apt remove '
 alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '
 alias remove='sudo apt remove '
-alias rmd='rm -rf '
+alias rmd='sudo rm -rf '
 alias upd='sudo apt update'
 alias upg='sudo apt upgrade'
  
@@ -97,6 +97,8 @@ alias oi='xdg-open '
 alias kl='xset led'
 alias klof='xset led off'
 alias sb='source ~/.bashrc'
+alias xcop='xclip -sel clip < $1'
+
 
 alias pipi='pip3 install '
 alias p3='python3 '
@@ -134,11 +136,14 @@ function copgit {
 ###########################################
 # LAMP
 ###########################################
-
 alias apstart='sudo /etc/init.d/apache2 start'
 alias apstop='sudo /etc/init.d/apache2 stop'
 alias apres='sudo /etc/init.d/apache2 restart'
+
 alias apconf='sudo subl /etc/apache2/apache2.conf'
+alias aproot='cd /var/www/html'
+alias chdata='sudo chown -R www-data:www-data $1'
+
 
 ###########################################
 # Virtial env
