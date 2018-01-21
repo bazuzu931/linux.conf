@@ -70,10 +70,9 @@ source "$BASH_IT"/bash_it.sh
 alias aled='sudo subl /home/$USER/.bashrc'
 
 alias ai='sudo apt install '
-alias ri='sudo apt remove '
+alias ri='sudo apt remove -y '
 alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '
-alias remove='sudo apt remove '
 alias rmd='sudo rm -rf '
 alias upd='sudo apt update'
 alias upg='sudo apt upgrade'
@@ -88,8 +87,8 @@ alias applic='cd /usr/share/applications'
 
 alias sv='sudo vi' 
 alias sn='sudo nano' 
-alias tg='sudo tar -xvzf ' 
-alias tb='sudo tar -jxvf ' 
+alias gz='sudo tar -xvzf ' 
+alias bz='sudo tar -jxvf ' 
 alias n='nautilus' 
 alias ju='jupyter notebook' 
 alias cln='clear'
@@ -98,6 +97,9 @@ alias kl='xset led'
 alias klof='xset led off'
 alias sb='source ~/.bashrc'
 alias xcop='xclip -sel clip < $1'
+alias yd='youtube-dl $1'
+alias dfind='dpkg -l | grep $1'
+alias mb='sudo mount --bind $1 $2'
 
 
 alias pipi='pip3 install '
@@ -139,10 +141,18 @@ function copgit {
 alias apstart='sudo /etc/init.d/apache2 start'
 alias apstop='sudo /etc/init.d/apache2 stop'
 alias apres='sudo /etc/init.d/apache2 restart'
+alias aprel='sudo service apache2 reload; sudo /etc/init.d/apache2 restart'
 
 alias apconf='sudo subl /etc/apache2/apache2.conf'
 alias aproot='cd /var/www/html'
 alias chdata='sudo chown -R www-data:www-data $1'
+
+###########################################
+# PHP
+###########################################
+alias comdump='composer dump-autoload'
+alias comuni t ='composer require --dev phpunit/phpunit'
+
 
 
 ###########################################
@@ -161,6 +171,15 @@ function djenv {
 	source /home/momo/Desktop/github_projects/linux.conf/scripts/djenv.sh
 }
 
+# virtual env activate
+function envact {
+  if [ -d 'bin' ] ; then
+	source ./bin/activate
+  else
+	source $1/bin/activate
+  fi
+}
+
 ###########################################
 # Django
 ###########################################
@@ -171,16 +190,6 @@ alias djnewuser='python3 manage.py createsuperuser'
 alias djnewapp='python3 manage.py startapp'
 alias djnewproj='django-admin startproject'
 
-############################################################
-
-# virtual env activate
-function envact {
-  if [ -d 'bin' ] ; then
-	source ./bin/activate
-  else
-	source $1/bin/activate
-  fi
-}
 
 ###########################################
 # React.js
