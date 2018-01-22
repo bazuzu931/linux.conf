@@ -1,7 +1,9 @@
 #!/bin/bash
 
-crenv $1;
+# create and activate python environment
+envpy $1;
 
+#install env packages
 pip install --upgrade pip;
 pip3 install django==${3:-1.9};
 pip3 install fabric3;

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
-export BASH_IT="/home/momo/bash-it-master"
+# export BASH_IT="/home/momo/bash-it-master"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -99,7 +99,6 @@ alias sb='source ~/.bashrc'
 alias xcop='xclip -sel clip < $1'
 alias yd='youtube-dl $1'
 alias dfind='dpkg -l | grep $1'
-alias mb='sudo mount --bind $1 $2'
 
 
 alias pipi='pip3 install '
@@ -128,7 +127,7 @@ function gitgogp {
 }
 
 function copgit {
-	cd /home/momo/Desktop/github_projects/linux.conf/ ;
+	cd /home/$USER/Desktop/github_projects/linux.conf/ ;
 	./copy-all.sh;
 	git add . ; 
 	git commit -m "push new conf"; 
@@ -151,7 +150,7 @@ alias chdata='sudo chown -R www-data:www-data $1'
 # PHP
 ###########################################
 alias comdump='composer dump-autoload'
-alias comuni t ='composer require --dev phpunit/phpunit'
+alias comunit='composer require --dev phpunit/phpunit'
 
 
 
@@ -159,17 +158,13 @@ alias comuni t ='composer require --dev phpunit/phpunit'
 # Virtial env
 ###########################################
 alias deac='deactivate '
-alias isv="python isvenv.py"
+alias isenv="python isvenv.py"
 
 # create virtualenv, cd to env folder, and activate it
-function crenv {
-	source /home/momo/Desktop/github_projects/linux.conf/scripts/crenv.sh
+function envpy {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envPython.sh
 }
 
-# create virtualenv, cd to env folder, and activate it
-function djenv {
-	source /home/momo/Desktop/github_projects/linux.conf/scripts/djenv.sh
-}
 
 # virtual env activate
 function envact {
@@ -190,6 +185,13 @@ alias djnewuser='python3 manage.py createsuperuser'
 alias djnewapp='python3 manage.py startapp'
 alias djnewproj='django-admin startproject'
 
+# create virtualenv with Django, cd to env folder, and activate it
+# first arg == env-name
+# second arg == project_name
+# third arg == django_version(by default 1.9)
+function envdj {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envDjango.sh
+}
 
 ###########################################
 # React.js
@@ -198,13 +200,24 @@ alias djnewproj='django-admin startproject'
 alias creac="npx create-react-app $1"
 alias rs="serve -s build"
 
+# create virtualenv with React, cd to env folder, and activate it
+# first arg == project_name
+# second arg == react_version(by default 1.9)
+function envreact {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envReact.sh
+}
 
 
 ###########################################
-# 
+# NPM
 ###########################################
 
-
+# create project with specified npm version
+# first arg == project_name
+# second arg == npm_version(by default 1.9)
+function envnode {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envNode.sh
+}
 
 ############################################################
 
@@ -372,3 +385,7 @@ if [ -x /usr/bin/mint-fortune ]; then
 	 /usr/bin/mint-fortune
 fi
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
