@@ -27,6 +27,7 @@ else:
 # printf '\n\n\n$isvenv' >> ~/.bashrc;
 # fi
 
+# reload bashrc conf in current console
 source ~/.bashrc
 
 # activate venv

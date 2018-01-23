@@ -14,10 +14,7 @@
 python3 -m venv $1;
 cd $1;
   
-# create isvenv.py with checking content
-touch isvenv.py;
-
-# add isvenv.py content
+# create isvenv.py for checking env activation
 echo "
 import sys
 def is_venv():
@@ -37,6 +34,7 @@ else:
 # printf '\n\n\n$isvenv' >> ~/.bashrc;
 # fi
 
+# reload bashrc conf in current console
 source ~/.bashrc
 
 # activate venv
