@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<div className="${1:container}">
+	${2:rdi}${3:}
+</div>
+]]></content>
+    <tabTrigger>rdiv</tabTrigger>
+    <scope>source.js, meta.group.braces.round.js, meta.jsx.js, meta.tag.jsx, punctuation.definition.tag.begin.jsx</scope>
+    <description>react div with className</description>
+</snippet>
