@@ -1,3 +1,4 @@
-[01/25/2018 10:29:42AM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
-[01/25/2018 10:29:42AM] INFO - Failed to open /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.
-[01/25/2018 10:29:42AM] INFO - Failed to parse /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[01/28/2018 11:43:28AM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
+[01/28/2018 11:43:28AM] INFO - Failed to open /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[01/28/2018 11:43:28AM] INFO - Failed to parse /home/momo/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[01/28/2018 12:14:14PM] INFO - Starting server

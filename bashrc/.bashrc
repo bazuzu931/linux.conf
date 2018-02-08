@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
-# export BASH_IT="/home/momo/bash-it-master"
+export BASH_IT="/home/momo/bash-it-master"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -74,6 +74,9 @@ alias ri='sudo apt remove -y '
 alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '
 alias rmd='sudo rm -rf '
+
+# delete beside (not work)
+# alias rmbes='ls | grep -v $1 | xargs rm -rfv'
 alias upd='sudo apt update'
 alias upg='sudo apt upgrade'
  
@@ -104,6 +107,7 @@ alias dfind='dpkg -l | grep $1'
 alias pipi='pip3 install '
 alias p3='python3 '
 alias pipup='pip install --upgrade pip '
+alias sassw='sass --watch $1:$2'
 
 ###########################################
 # Git
@@ -219,6 +223,27 @@ function envnode {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envNode.sh
 }
 
+
+###########################################
+# Laravel
+###########################################
+alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
+
+
+
+
+
+
+
+
+
+
+############################################################
+############################################################
+############################################################
+############################################################
+############################################################
+############################################################
 ############################################################
 
 # create and open {newFile}
