@@ -20,10 +20,25 @@
 	{ "keys": ["alt+v"], "command": "build" },
 
 	// run Repl in other window
+	{ "keys":["ctrl+shift+a"],
+		"command": "repl_open",
+		"caption": "Python 3.5.2 - Open File",
+		"id": "repl_python",
+		"mnemonic": "p",
+		"args": {
+			"type": "subprocess",
+			"encoding": "utf8",
+			"cmd": ["/usr/bin/python3", "-i", "$file"],
+			"cwd": "$file_path",
+			"syntax": "Packages/Python/Python.tmLanguage",
+			"external_id": "python",
+			"extend_env": {"PYTHONIOENCODING": "utf-8"}
+		}
+	},
 	{ "keys": ["alt+space"], 
-	"command": "run_existing_window_command", 
-	"args": { "id": "repl_python_run", 
-	"file": "config/Python/Main.sublime-menu" }
+		"command": "run_existing_window_command", 
+		"args": { "id": "repl_python_run", 
+		"file": "config/Python/Main.sublime-menu" }
 	},
 
 	// run macro file

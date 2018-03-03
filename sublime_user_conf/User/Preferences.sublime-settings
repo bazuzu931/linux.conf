@@ -1,11 +1,12 @@
 {
 	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Nova.tmTheme",
-	"font_size": 12,
+	"font_size": 9,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
-	"theme": "Boxy Nova.sublime-theme"
+	"theme": "Boxy Nova.sublime-theme",
+	"update_check": false
 }
