@@ -110,7 +110,12 @@ alias pipup='pip install --upgrade pip '
 alias sassw='sass --watch $1:$2'
 alias jes='jekyll serve'
 alias lg='ls | grep $1'
-alias cont='grep -rHino $1 .'
+alias cont='grep -rHino $1 '
+
+
+
+alias ser='ssh -p 50111 bazuzu@46.229.213.251 '
+alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
 
 ###########################################
 # Git
@@ -233,6 +238,7 @@ function envnode {
 alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
 alias pas="php artisan serve &"
 alias pa="php artisan  "
+alias pat="php artisan tinker "
 
 
 
@@ -420,5 +426,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH";
-EOF;
 export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:/home/momo/.nvm/versions/node/v4.4.2/bin:/home/momo/bin:/home/momo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games;
