@@ -111,6 +111,10 @@ alias sassw='sass --watch $1:$2'
 alias jes='jekyll serve'
 alias lg='ls | grep $1'
 alias cont='grep -rHino $1 '
+alias kk='kill %1 '
+alias k1='kill %1 '
+alias k2='kill %2 '
+alias k3='kill %3 '
 
 
 
@@ -239,6 +243,13 @@ alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
 alias pas="php artisan serve &"
 alias pa="php artisan  "
 alias pat="php artisan tinker "
+alias pam="php artisan migrate "
+alias pac="php artisan make:controller $1"
+alias pad="php artisan make:model $1"
+
+function newlar {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
+}
 
 
 
