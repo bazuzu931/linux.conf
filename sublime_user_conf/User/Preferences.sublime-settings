@@ -8,5 +8,8 @@
 	],
 	"save_on_focus_lost": true,
 	"theme": "Material-Theme-Darker.sublime-theme",
-	"update_check": false
+	"update_check": false,
+	"default_root": "current"
+
+
 }

@@ -1,7 +1,12 @@
+# if composer cannot find .composer cache folder
+# sudo chown -R $USER:$USER $HOME/.composer
 
 # init
 composer create-project --prefer-dist laravel/laravel $1;
 cd $1;
+
+# 
+# php artisan app:name $1;
 
 #
 cp .env.example .env;

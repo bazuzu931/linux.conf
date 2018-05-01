@@ -240,12 +240,15 @@ function envnode {
 # Laravel
 ###########################################
 alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
+
 alias pas="php artisan serve &"
 alias pa="php artisan  "
 alias pat="php artisan tinker "
 alias pam="php artisan migrate "
-alias pac="php artisan make:controller $1"
-alias pad="php artisan make:model $1"
+
+alias mm="php artisan make:migration "
+alias mc="php artisan make:controller "
+alias mmod="php artisan make:model "
 
 function newlar {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
