@@ -6,6 +6,6 @@ componentDidMount(){
 ]]></content>
 
 	<tabTrigger>didm</tabTrigger>
-	<scope>source.js</scope>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>

@@ -3,5 +3,5 @@
 console.log($1)$2
 ]]></content>
 	<tabTrigger>col</tabTrigger>
-	<scope>source.js</scope>
+	<scope>source.jsx, source.js</scope>
 </snippet>

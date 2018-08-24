@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
@@ -71,7 +72,6 @@ alias aled='sudo subl /home/$USER/.bashrc'
 
 alias ai='sudo apt install '
 alias ri='sudo apt remove -y '
-alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '
 alias rmd='sudo rm -rf '
 
@@ -87,11 +87,15 @@ alias home='cd /home/$USER/'
 alias exhdd='cd /media/$USER/hooli'
 alias applic='cd /usr/share/applications'
 
+alias 777="sudo chmod -R 777 $1"
 
-alias sv='sudo vi' 
-alias sn='sudo nano' 
-alias gz='sudo tar -xvzf ' 
-alias bz='sudo tar -jxvf ' 
+alias sv='vi' 
+alias sn='nano' 
+
+alias gz='tar -xvzf ' 
+alias bz='tar -jxvf '
+alias xzz='tar -xJf '
+
 alias n='nautilus' 
 alias ju='jupyter notebook' 
 alias cln='clear'
@@ -100,8 +104,13 @@ alias ledon='xset led'
 alias ledoff='xset led off'
 alias sb='source ~/.bashrc'
 alias xcop='xclip -sel clip < $1'
-alias yd='youtube-dl $1'
+alias aut='gnome-session-properties'
 alias dfind='dpkg -l | grep $1'
+alias sss='shutdown now'
+
+alias cc="conky &"
+alias led="xrandr --output VGA-0 --brightness $1"
+alias ff="find . -name $1"
 
 
 alias pipi='pip3 install '
@@ -156,7 +165,7 @@ function copgit {
 alias apstart='sudo /etc/init.d/apache2 start'
 alias apstop='sudo /etc/init.d/apache2 stop'
 alias apres='sudo /etc/init.d/apache2 restart'
-alias aprel='sudo service apache2 reload; sudo /etc/init.d/apache2 restart'
+alias aprel='sudo service apache2 reload'
 
 alias apconf='sudo subl /etc/apache2/apache2.conf'
 alias aproot='cd /var/www/html'
@@ -213,7 +222,7 @@ function envdj {
 # React.js
 ###########################################
 
-alias creac="npx create-react-app $1"
+alias creact="npx create-react-app $1"
 alias rs="serve -s build"
 
 # create virtualenv with React, cd to env folder, and activate it
@@ -253,10 +262,6 @@ alias mmod="php artisan make:model "
 function newlar {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
 }
-
-
-
-
 
 
 
@@ -439,5 +444,12 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH="$HOME/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH";
-export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:/home/momo/.nvm/versions/node/v4.4.2/bin:/home/momo/bin:/home/momo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games;
+export PATH="$HOME/programs/android-studio/bin:/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH";
+export PATH=~/programs/android-studio/bin:/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:/home/momo/.nvm/versions/node/v4.4.2/bin:/home/momo/bin:/home/momo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games;
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/momo/.sdkman"
+[[ -s "/home/momo/.sdkman/bin/sdkman-init.sh" ]] && source "/home/momo/.sdkman/bin/sdkman-init.sh"

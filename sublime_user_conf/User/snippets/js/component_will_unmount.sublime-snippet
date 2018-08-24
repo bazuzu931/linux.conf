@@ -6,6 +6,6 @@ componentWillUnmount(){
 ]]></content>
 
 	<tabTrigger>willun</tabTrigger>
-	<scope>source.js</scope>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>

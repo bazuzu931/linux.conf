@@ -1,11 +1,11 @@
 <snippet>
     <content><![CDATA[
 dispatch({
-	type: ${1:FETCH_PHONES_START},
-	${2:payload:} ${3:}
+	type: '${1:FETCH_PHONES_START}',
+	${2:payload:} '${3:}'
 })
 ]]></content>
-    <tabTrigger>rdis</tabTrigger>
-    <scope>source.js, meta.group.braces.curly.js, meta.function-call.with-arguments.js, variable.function.js</scope>
+    <tabTrigger>dis</tabTrigger>
+    <scope>source.jsx, source.js, meta.group.braces.curly.js, meta.function-call.with-arguments.js, variable.function.js</scope>
     <description>dispatch from  React </description>
 </snippet>

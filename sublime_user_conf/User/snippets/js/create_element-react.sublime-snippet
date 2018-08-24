@@ -3,7 +3,7 @@
 React.createElement( ${1:}, ${2:null}, ${3:} )
 ]]></content>
 
-	<tabTrigger>rce</tabTrigger>
-	<scope>source.js</scope>
+	<tabTrigger>ce</tabTrigger>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>

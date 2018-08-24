@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+System.out.println(${1:});
+]]></content>
+    <tabTrigger>sout</tabTrigger>
+    <scope>source.java, meta.class.java, meta.class.body.java, meta.method.java, meta.method.body.java, support.class.java</scope>
+    <description>system.out.println</description>
+</snippet>

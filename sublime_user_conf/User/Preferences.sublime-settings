@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"font_size": 10,
+	"default_root": "current",
+	"font_size": 13,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -8,8 +9,5 @@
 	],
 	"save_on_focus_lost": true,
 	"theme": "Material-Theme-Darker.sublime-theme",
-	"update_check": false,
-	"default_root": "current"
-
-
+	"update_check": false
 }

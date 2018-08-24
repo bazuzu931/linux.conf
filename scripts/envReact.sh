@@ -277,4 +277,5 @@ export default Phones
 
 
 
-tree ../$1;
+printf "\n\nWelcome!\n\n"
+tree ;

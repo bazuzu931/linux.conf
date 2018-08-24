@@ -5,7 +5,7 @@ shouldComponentUpdate(){
 }$2
 ]]></content>
 
-	<tabTrigger>supd</tabTrigger>
-	<scope>source.js</scope>
+	<tabTrigger>scup</tabTrigger>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>

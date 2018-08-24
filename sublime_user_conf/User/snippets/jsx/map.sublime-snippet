@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+{this.props.${1:testStore}.map((${2:track}, ${3:index}) =>
+	<li key={${3:index}}> {${2:track}} </li>
+)}
+]]></content>
+    <tabTrigger>map</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, meta.group.js, meta.object-literal.js, punctuation.section.block.begin.js</scope>
+    <description>react map function</description>
+</snippet>

@@ -4,12 +4,12 @@ constructor(props){
 	super(props);
 	${1:this.state = {
 		$2
-	}}
+	}};
 }
 $3
 ]]></content>
 
-	<tabTrigger>rcons</tabTrigger>
-	<scope>source.js</scope>
+	<tabTrigger>con</tabTrigger>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>

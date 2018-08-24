@@ -6,6 +6,6 @@ componentWillUpdate(){
 ]]></content>
 
 	<tabTrigger>willup</tabTrigger>
-	<scope>source.js</scope>
+	<scope>source.jsx, source.js</scope>
 
 </snippet>
