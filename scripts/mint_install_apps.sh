@@ -12,3 +12,15 @@ sudo dpkg --force-all -i casper_1.340_amd64.deb
 
 # then install systemback again because its was removed
 sudo apt install systemback -y;
+
+# install git
+sudo apt install git;
+
+# NPM install
+wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-x64.tar.gz;
+sudo tar -xf node-v8.12.0-linux-x64.tar.gz --directory /usr/local --strip-components 1;
+node --version
+npm --version
+
+# Xclip install
+sudo apt install xclip;

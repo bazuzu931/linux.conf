@@ -2,7 +2,8 @@
 # sudo chown -R $USER:$USER $HOME/.composer
 
 # init
-composer create-project --prefer-dist laravel/laravel $1;
+composer create-project --prefer-dist laravel/laravel $1 "5.5.*";
+# composer create-project --prefer-dist laravel/laravel $1;
 cd $1;
 
 # 
@@ -28,8 +29,8 @@ npm install && npm run dev;
 # for DB columns modification
 composer require doctrine/dbal;
 
-#
-composer require laravelcollective/html;
+# for laravel >= 5.3
+# composer require laravelcollective/html;
 
 #
 composer require intervention/image;

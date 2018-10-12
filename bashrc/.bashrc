@@ -1,9 +1,3 @@
-
-
-
-########################################################################################
-########################################################################################
-########################################################################################
 ########################################################################################
 ########################################################################################
 ########################################################################################
@@ -65,6 +59,9 @@ alias xc='xclip -selection clipboard'
 alias xp='xclip -selection clipboard -o'
 alias yd='youtube-dl $1'
 alias dfind='dpkg -l | grep $1'
+alias s="subl"
+alias e="exit"
+
 alias sss='shutdown now'
 alias rrr='reboot'
 
@@ -74,7 +71,8 @@ alias p3='python3 '
 alias pipup='pip install --upgrade pip '
 alias sassw='sass --watch $1:$2'
 alias jes='jekyll serve'
-alias lg='ls | grep $1'
+alias lg='(ls -l -d [!.]?* && ls -l -d .[!.]?*) | grep $1 '
+# alias lg='ls -ap | grep -v / | egrep "^\." '
 alias cont='grep -rHino $1 '
 alias kk='kill %1 '
 alias k1='kill %1 '
@@ -155,7 +153,23 @@ function newhost {
 alias comdump='composer dump-autoload'
 alias comunit='composer require --dev phpunit/phpunit'
 
+###########################################
+# Laravel
+###########################################
+alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
 
+alias pas="php artisan serve &"
+alias pa="php artisan  "
+alias pat="php artisan tinker "
+alias pam="php artisan migrate "
+
+alias mm="php artisan make:migration "
+alias mc="php artisan make:controller "
+alias mmod="php artisan make:model "
+
+function newlar {
+	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
+}
 
 ###########################################
 # Virtial env
@@ -221,27 +235,6 @@ function envreact {
 function envnode {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/envNode.sh
 }
-
-
-###########################################
-# Laravel
-###########################################
-alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
-
-alias pas="php artisan serve &"
-alias pa="php artisan  "
-alias pat="php artisan tinker "
-alias pam="php artisan migrate "
-
-alias mm="php artisan make:migration "
-alias mc="php artisan make:controller "
-alias mmod="php artisan make:model "
-
-function newlar {
-	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
-}
-
-
 
 
 ########################################################################################
