@@ -28,6 +28,7 @@ sudo apt-get install mysql-server mysql-client -y;
 sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 -y;
 sudo apt-get install php-zip
 sudo apt-get install phpmyadmin -y;
+sudo apt-get install phpunit -y;
 
 printf "\nInclude /etc/phpmyadmin/apache.conf" | sudo tee -a  /etc/apache2/apache2.conf ;
 printf "\n\n<Directory /home/$USER/Desktop/Servers/>

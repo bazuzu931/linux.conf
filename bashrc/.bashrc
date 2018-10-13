@@ -19,6 +19,9 @@
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
+alias sss='shutdown now'
+alias rrr='reboot'
+
 alias ai='sudo apt install '
 alias ri='sudo apt remove -y '
 alias ui='sudo apt install --uninstall '
@@ -62,8 +65,7 @@ alias dfind='dpkg -l | grep $1'
 alias s="subl"
 alias e="exit"
 
-alias sss='shutdown now'
-alias rrr='reboot'
+
 
 
 alias pipi='pip3 install '
@@ -97,6 +99,20 @@ function newscript {
 # show my scripts
 alias scripts='cd ~/Desktop/github_projects/linux.conf/scripts/; ll ~/Desktop/github_projects/linux.conf/scripts/'
 alias gscripts='xdg-open ~/Desktop/github_projects/linux.conf/scripts/; exit'
+
+#
+function se {
+	subl $1;
+	exit;
+}
+
+#
+function mapp {
+	subl /home/momo/Desktop/github_projects/linux.conf/scripts/mint_install_apps.sh;
+	exit;
+}
+
+#
 
 ###########################################
 # Git
