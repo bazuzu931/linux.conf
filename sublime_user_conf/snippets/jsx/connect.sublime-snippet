@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+export default connect(
+	state => ({
+		${1:testStore}: state
+	}),
+	dispatch => ({})
+)(${2:App});
+]]></content>
+    <tabTrigger>connect</tabTrigger>
+    <scope>source.jsx, source.js, meta.export.js, keyword.control.import-export.js</scope>
+    <description>connect React.js</description>
+</snippet>

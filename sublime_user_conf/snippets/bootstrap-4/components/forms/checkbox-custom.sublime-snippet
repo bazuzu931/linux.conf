@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<label class="custom-control custom-checkbox">
+	<input type="checkbox" class="custom-control-input">
+	<span class="custom-control-indicator"></span>
+	<span class="custom-control-description">Check this custom checkbox</span>
+</label>
+]]></content>
+	<tabTrigger>b4:form:checkbox:custom</tabTrigger>
+</snippet>

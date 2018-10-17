@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+ this.${1:} 
+]]></content>
+    <tabTrigger>t</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, meta.group.js, meta.embedded.block.jsx, source.jsx.embedded, meta.tag.inline.form.html, meta.attribute-with-value.html, meta.embedded.block.jsx.js</scope>
+    <description>this.</description>
+</snippet>

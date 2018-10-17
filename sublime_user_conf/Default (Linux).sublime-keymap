@@ -1,0 +1,129 @@
+[	
+
+	// close other tabs
+	{ "keys": ["alt+c"],
+	"command": "close_others" },
+
+	// cloase other windows
+	{ "keys": ["alt+w"],
+	"command": "close_other_windows" },
+
+	// jump next/prev tabs
+	{ "keys": ["ctrl+pagedown"], "command": "prev_view" },
+	{ "keys": ["ctrl+pageup"], "command": "next_view" },
+
+	// undo redo
+	{ "keys": ["ctrl+z"], "command": "undo" },
+	{ "keys": ["ctrl+shift+z"], "command": "redo" },
+
+	// run Repl in current window
+	{ "keys": ["alt+v"], "command": "build" },
+
+	// run Repl in other window
+	{ "keys":["ctrl+shift+a"],
+		"command": "repl_open",
+		"caption": "Python 3.5.2 - Open File",
+		"id": "repl_python",
+		"mnemonic": "p",
+		"args": {
+			"type": "subprocess",
+			"encoding": "utf8",
+			"cmd": ["/usr/bin/python3", "-i", "$file"],
+			"cwd": "$file_path",
+			"syntax": "Packages/Python/Python.tmLanguage",
+			"external_id": "python",
+			"extend_env": {"PYTHONIOENCODING": "utf-8"}
+		}
+	},
+	{ "keys": ["alt+space"], 
+		"command": "run_existing_window_command", 
+		"args": { "id": "repl_python_run", 
+		"file": "config/Python/Main.sublime-menu" }
+	},
+
+	// run macro file
+	{ "keys": ["ctrl+y"], 
+		"command": "run_macro_file", 
+		"args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}
+	},
+
+	// duplicate line
+	{ "keys": ["ctrl+d"], 
+	"command": "duplicate_line" },
+
+	// Copy file url
+	// https://github.com/mjhea0/sublime-setup-for-python/blob/master/dotfiles/copy_path_to_clipboard.py
+	{ "keys": ["ctrl+shift+c"],
+	"command": "copy_path_to_clipboard" },
+
+	// create new snippet	
+	// { "keys": ["ctrl+i"], "command": "new_snippet"},
+	{ 
+		"keys": ["f8"], 
+		"command": "better_snippet_manager_create",
+	},
+
+	// Edit snippet
+	{ 
+		"keys": ["f7"], 
+		"command": "better_snippet_manager_edit"
+	},
+
+	// Multiple carets
+	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+
+
+
+	// Wrapping content with tag
+	// Emmet => CTRL + SHIFT + G
+
+	// Open Terminal
+	// Terminal Package => CTRL + SHIFT + T
+
+    { "keys": ["ctrl+shift+d"], "command": "delete_file" },
+	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["ctrl+alt+y"], "command": "advanced_new_file_new", "args": {"is_python": true}},
+	{
+		"keys": ["tab"],
+		"command": "insert",
+		"args": {"characters": "\t"},
+		"context": [{
+			"key": "setting.anf_panel"
+		}]
+	},
+
+
+	// JSX - to wrap tags
+	{
+	    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
+	        {
+	            "operand": "source.js", 
+	            "operator": "equal", 
+	            "match_all": true, 
+	            "key": "selector"
+	        },
+	        {   
+	            "key": "selection_empty", 
+	            "operator": "equal", 
+	            "operand": true,
+	            "match_all": true 
+	        }
+	    ]
+	},
+	{ "keys": ["tab"], "command": "next_field", "context":
+	    [
+	        { "key": "has_next_field", "operator": "equal", "operand": true }
+	    ]
+	},
+
+	// php
+    { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },
+
+
+
+
+]
+
+

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+		<ul class="list-group">
+			<li class="list-group-item">${1:Cras justo odio}</li>
+			<li class="list-group-item">${1:Dapibus ac facilisis in}</li>
+			<li class="list-group-item">${1:Morbi leo risus}</li>
+		</ul>
+]]></content>
+	<tabTrigger>b4:list</tabTrigger>
+</snippet>

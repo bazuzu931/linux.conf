@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+render() {
+
+	${1:}
+	
+	return (
+		${2:}
+	);
+}
+]]></content>
+    <tabTrigger>ren</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>render(){return ...}</description>
+</snippet>

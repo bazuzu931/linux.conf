@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$this->get('${1:fields/new}')->
+]]></content>
+    <tabTrigger>tg</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, variable.language.php, punctuation.definition.variable.php</scope>
+    <description>this-&lt;get()</description>
+</snippet>

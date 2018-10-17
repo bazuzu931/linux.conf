@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+componentDidUpdate(){
+	${1:console.log('DidUpdate')}
+}$2
+]]></content>
+
+	<tabTrigger>didup</tabTrigger>
+	<scope>source.jsx, source.js</scope>
+
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+componentWillReceiveProps(){
+	${1:console.log('WillReceiveProps')}
+}$2
+]]></content>
+
+	<tabTrigger>willr</tabTrigger>
+	<scope>source.jsx, source.js</scope>
+
+</snippet>

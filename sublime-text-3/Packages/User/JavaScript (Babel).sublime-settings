@@ -1,0 +1,19 @@
+// These settings override both User and Default settings for the JavaScript (Babel) syntax
+{
+	// Nova Theme
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Nova.tmTheme",
+	"theme": "Boxy Nova.sublime-theme",
+
+	// Brogrammer Theme
+	// "theme": "Brogrammer.sublime-theme",
+  	// "color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
+
+	"font_size": 12,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+}
+

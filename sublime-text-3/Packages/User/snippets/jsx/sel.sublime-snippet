@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+document.querySelector('.${1:}');
+]]></content>
+    <tabTrigger>sel</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, support.type.object.dom.js</scope>
+    <description>document.querySelector</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+print( $1 )
+]]></content>
+    <tabTrigger>p</tabTrigger>
+    <scope>source.python, source.haskell</scope>
+    <description>print()</description>
+</snippet>

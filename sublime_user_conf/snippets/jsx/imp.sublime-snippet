@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+import React, { Component } from 'react';
+import { createStore } from 'redux';
+import { connect } from 'react-redux';
+import { Provider} from 'react-redux';
+
+]]></content>
+    <tabTrigger>imp</tabTrigger>
+    <scope>source.jsx, source.js, meta.import.js, keyword.control.import-export.js</scope>
+    <description>import for React.js</description>
+</snippet>

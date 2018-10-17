@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+React.createElement( ${1:}, ${2:null}, ${3:} )
+]]></content>
+
+	<tabTrigger>ce</tabTrigger>
+	<scope>source.jsx, source.js</scope>
+
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+function ${1:playlist}(state = ${2:}, action) {
+	if (action.type === '${3:ADD_TRACK}') {
+		return [
+			...state,
+			action.payload	
+		];
+	}
+	return state;
+}
+]]></content>
+    <tabTrigger>red</tabTrigger>
+    <scope>source.js, meta.function.declaration.js, storage.type.function.js</scope>
+    <description>reducer React</description>
+</snippet>

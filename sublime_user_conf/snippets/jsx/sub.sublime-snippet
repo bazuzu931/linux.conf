@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+subscribe(() => {
+	${1:}
+});
+]]></content>
+    <tabTrigger>sub</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, meta.function-call.method.js, variable.function.js</scope>
+    <description>subscribe()</description>
+</snippet>
