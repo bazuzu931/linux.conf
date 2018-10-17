@@ -43,10 +43,17 @@ sudo apt-get update;
 sudo apt-get install sublime-text;
 
 #move sublime settings
-sudo cp -r /home/momo/Desktop/github_projects/linux.conf/sublime-text-3 /home/momo/.config/
+sudo cp -rf /home/momo/Desktop/github_projects/linux.conf/sublime-text-3 /home/momo/.config/
 
 # copy bash_it to home directory
 cp /home/$USER/Desktop/github_projects/linux.conf/.bash_it ~
+
+# install mint theme
+cp -rf /home/$USER/Desktop/github_projects/linux.conf/.themes ~
+cp -rf /home/$USER/Desktop/github_projects/linux.conf/.cinnamon ~
+cp -rf /home/$USER/Desktop/github_projects/linux.conf/.config ~
+gsettings set org.cinnamon.desktop.interface gtk-theme "Adapta-Nokto"
+gsettings set org.cinnamon.desktop.interface icon-theme  "Mint-X-Red"
 
 
 
