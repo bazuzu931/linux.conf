@@ -55,11 +55,6 @@ cp -rf /home/$USER/Desktop/github_projects/linux.conf/.config ~
 gsettings set org.cinnamon.desktop.interface gtk-theme "Adapta-Nokto"
 gsettings set org.cinnamon.desktop.interface icon-theme  "Mint-X-Red"
 
-
-
-
-
-
 # set shortcuts
 gsettings set org.cinnamon.desktop.keybindings.custom-keybinding:/org/cinnamon/desktop/keybindings/custom-keybindings/custom0/ binding "['<Alt>a']"
 gsettings set org.cinnamon.desktop.keybindings.custom-keybinding:/org/cinnamon/desktop/keybindings/custom-keybindings/custom0/ command 'gnome-terminal'

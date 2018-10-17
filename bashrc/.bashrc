@@ -156,7 +156,7 @@ alias aproot='cd /var/www/html'
 alias chdata='sudo chown -R www-data:www-data $1'
 
 function newhost {
-	printf "\n127.0.0.1	$1\n" | sudo tee -a /etc/hosts ;
+	printf "\n127.0.0.1	$1" | sudo tee -a /etc/hosts ;
 	sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/"$1".conf ;
 	sudo sed -i -e "s/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/home\/"$USER"\/Desktop\/Servers\/"$1"\n\tServerName "$1"/g"  /etc/apache2/sites-available/"$1".conf;
 	sudo a2ensite $1;
