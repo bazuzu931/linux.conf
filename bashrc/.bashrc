@@ -64,6 +64,7 @@ alias yd='youtube-dl $1'
 alias dfind='dpkg -l | grep $1'
 alias s="subl"
 alias e="exit"
+alias hosts="sudo subl /etc/hosts"
 
 
 
@@ -161,6 +162,10 @@ function newhost {
 	sudo sed -i -e "s/DocumentRoot\ \/var\/www\/html/DocumentRoot\ \/home\/"$USER"\/Desktop\/Servers\/"$1"\n\tServerName "$1"/g"  /etc/apache2/sites-available/"$1".conf;
 	sudo a2ensite $1;
 	sudo systemctl reload apache2;
+}
+
+function delhost {
+	:
 }
 
 ###########################################

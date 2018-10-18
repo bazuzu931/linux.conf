@@ -12,6 +12,9 @@ sudo apt install virtualbox virtualbox-qt -y;
 # then install systemback again because its was removed
 # sudo apt install systemback -y;
 
+# Xclip install
+sudo apt install xclip -y;
+
 # install git
 sudo apt install git -y;
 git config --global user.name "bazuzu931";
@@ -23,12 +26,8 @@ sudo tar -xf node-v8.12.0-linux-x64.tar.gz --directory /usr/local --strip-compon
 node --version
 npm --version
 
-# Xclip install
-sudo apt install xclip -y;
-
 #
 sudo apt install composer -y;
-
 
 # install python 3.5
 sudo add-apt-repository ppa:deadsnakes/ppa;
@@ -49,6 +48,7 @@ sudo cp -rf /home/momo/Desktop/github_projects/linux.conf/sublime-text-3 /home/m
 cp /home/$USER/Desktop/github_projects/linux.conf/.bash_it ~
 
 # install mint theme
+gsettings set org.gnome.desktop.background picture-uri file:///home/$USER/Desktop/github_projects/linux.conf/black.jpg
 cp -rf /home/$USER/Desktop/github_projects/linux.conf/.themes ~
 cp -rf /home/$USER/Desktop/github_projects/linux.conf/.cinnamon ~
 cp -rf /home/$USER/Desktop/github_projects/linux.conf/.config ~
