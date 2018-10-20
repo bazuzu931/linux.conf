@@ -26,13 +26,21 @@ sudo tar -xf node-v8.12.0-linux-x64.tar.gz --directory /usr/local --strip-compon
 node --version
 npm --version
 
-#
+# install composer
 sudo apt install composer -y;
+
+# install youtube-dl
+sudo apt install youtube-dl -y;
 
 # install python 3.5
 sudo add-apt-repository ppa:deadsnakes/ppa;
 sudo apt-get update -y;
 sudo apt-get install python3.5 -y;
+
+# install opera
+# ....
+# set opera default 
+# xdg-settings set default-web-browser opera.desktop
 
 # install sublime
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -42,7 +50,7 @@ sudo apt-get update;
 sudo apt-get install sublime-text;
 
 #move sublime settings
-sudo cp -rf /home/momo/Desktop/github_projects/linux.conf/sublime-text-3 /home/momo/.config/
+sudo cp -rf /home/$USER/Desktop/github_projects/linux.conf/sublime-text-3 /home/$USER/.config/
 
 # copy bash_it to home directory
 cp /home/$USER/Desktop/github_projects/linux.conf/.bash_it ~

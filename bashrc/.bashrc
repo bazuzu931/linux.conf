@@ -64,7 +64,9 @@ alias yd='youtube-dl $1'
 alias dfind='dpkg -l | grep $1'
 alias s="subl"
 alias e="exit"
-alias hosts="sudo subl /etc/hosts"
+alias 777="sudo chmod -R 777 $1"
+alias 775="sudo chmod -R 775 $1"
+
 
 
 
@@ -101,6 +103,16 @@ function newscript {
 alias scripts='cd ~/Desktop/github_projects/linux.conf/scripts/; ll ~/Desktop/github_projects/linux.conf/scripts/'
 alias gscripts='xdg-open ~/Desktop/github_projects/linux.conf/scripts/; exit'
 
+# delete all exclude some files and folders
+function de {
+	# ls | grep -v "$1\|$2" | xargs rm -rfv;
+	ignore=""
+	for fignore in "$@"; do
+	  ignore=${ignore}"-not -name ${fignore} "
+	done
+	find . -type f,d $ignore -delete
+}
+
 #
 function se {
 	subl $1;
@@ -114,6 +126,10 @@ function mapp {
 }
 
 #
+function hosts {
+	sudo subl /etc/hosts;
+	exit;
+}
 
 ###########################################
 # Git

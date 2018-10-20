@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+require_once("");
+]]></content>
+    <tabTrigger>ro</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.line.php, source.php, meta.include.php, keyword.control.import.include.php</scope>
+    <description>reuire_once()</description>
+</snippet>

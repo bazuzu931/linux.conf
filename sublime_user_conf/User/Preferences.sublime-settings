@@ -1,7 +1,5 @@
-
 {
-    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
-    "theme": "Material-Theme.sublime-theme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"default_root": "current",
 	"font_size": 12,
 	"highlight_modified_tabs": true,
@@ -10,5 +8,6 @@
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
+	"theme": "Material-Theme.sublime-theme",
 	"update_check": false
 }
