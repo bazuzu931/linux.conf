@@ -66,6 +66,7 @@ alias s="subl"
 alias e="exit"
 alias 777="sudo chmod -R 777 $1"
 alias 775="sudo chmod -R 775 $1"
+alias 755="sudo chmod -R 755 $1"
 
 
 

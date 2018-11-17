@@ -26,12 +26,15 @@ sudo apt-get install apache2 -y;
 sudo chmod -R /var/www/html ;
 sudo apt-get install mysql-server mysql-client -y;
 # sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 -y;
+# sudo apt install php7.1
+# sudo apt install php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip
+# sudo a2enmod php7.1
 
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
-sudo apt install php7.1
-sudo apt install php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip
-sudo a2enmod php7.1
+sudo apt install php5.6.39
+sudo apt install php5.6.39-cli php5.6.39-common php5.6.39-json php5.6.39-opcache php5.6.39-mysql php5.6.39-mbstring php5.6.39-mcrypt php5.6.39-zip
+sudo a2enmod php5.6.39
 sudo systemctl restart apache2.service
 
 sudo apt-get install php-zip
