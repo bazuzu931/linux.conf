@@ -15,6 +15,11 @@
 
 ########################################################################################
 ########################################################################################
+# PATH
+export PATH="$PATH:/opt/yarn-[version]/bin"
+
+########################################################################################
+########################################################################################
 
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
@@ -43,6 +48,7 @@ alias dow='cd /home/$USER/Downloads'
 alias home='cd /home/$USER/'
 alias exhdd='cd /media/$USER/hooli'
 alias applic='cd /usr/share/applications'
+alias node='nodejs'
 
 
 alias sv='sudo vi' 

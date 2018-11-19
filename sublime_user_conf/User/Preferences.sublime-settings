@@ -7,11 +7,9 @@
 	[
 		"Vintage"
 	],
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
 	"save_on_focus_lost": true,
 	"theme": "Material-Theme.sublime-theme",
-	"update_check": false,
-    "line_padding_bottom": 6,
-    "line_padding_top": 6,
-
-
+	"update_check": false
 }
