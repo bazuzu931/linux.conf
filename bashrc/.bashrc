@@ -1,3 +1,4 @@
+#######################################################################################
 ########################################################################################
 ########################################################################################
 ########################################################################################
@@ -196,16 +197,20 @@ function delhost {
 ###########################################
 alias comdump='composer dump-autoload'
 alias comunit='composer require --dev phpunit/phpunit'
+alias cr='composer require '
 
 ###########################################
 # Laravel
 ###########################################
-alias newlaravel='composer create-project --prefer-dist laravel/laravel $1'
+alias newlaravel='composer create-project laravel/laravel="5.5" $1'
 
 alias pas="php artisan serve &"
 alias pa="php artisan  "
 alias pat="php artisan tinker "
 alias pam="php artisan migrate "
+
+alias nrw="npm run watch-poll "
+alias les="laravel-echo-server "
 
 alias mm="php artisan make:migration "
 alias mc="php artisan make:controller "

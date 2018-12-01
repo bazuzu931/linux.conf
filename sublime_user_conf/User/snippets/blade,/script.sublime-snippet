@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<script src="${1:{!! asset('js/app.js') !!}}"></script>
+]]></content>
+    <tabTrigger>sss</tabTrigger>
+    <scope>text.blade, text.html.blade, meta.tag.script.begin.html, punctuation.definition.tag.begin.html</scope>
+    <description>script laravel</description>
+</snippet>
