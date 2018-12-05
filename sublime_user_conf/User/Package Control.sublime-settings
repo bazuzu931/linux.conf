@@ -19,7 +19,6 @@
 		"BracketHighlighter",
 		"Color Highlighter",
 		"ColorPicker",
-		"Djaneiro",
 		"Emmet",
 		"Extract Text to Laravel Blade View",
 		"FileSystem Autocompletion",
@@ -41,7 +40,6 @@
 		"Modific",
 		"Package Control",
 		"PHP Constructors",
-		"Phpcs",
 		"PHPSnippets",
 		"React Development Snippets",
 		"React ES6 Snippets",
@@ -62,8 +60,7 @@
 		"Theme - Spacegray",
 		"Vue Syntax Highlight",
 		"Vuejs Complete Package",
-		"Vuejs Snippets",
-		"Xdebug Client"
+		"Vuejs Snippets"
 	],
 	"repositories":
 	[

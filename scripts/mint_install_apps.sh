@@ -38,6 +38,9 @@ composer global require "squizlabs/php_codesniffer=*";
 # install youtube-dl
 sudo apt install youtube-dl -y;
 
+# install google fonts
+sudo apt install typecatcher -y;
+
 # install python 3.5
 sudo add-apt-repository ppa:deadsnakes/ppa;
 sudo apt-get update -y;

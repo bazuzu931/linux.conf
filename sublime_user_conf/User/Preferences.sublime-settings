@@ -1,7 +1,8 @@
 {
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"default_root": "current",
-	"font_size": 12,
+	"font_face": "Inconsolata",
+	"font_size": 14,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
