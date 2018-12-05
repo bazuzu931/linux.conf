@@ -67,7 +67,7 @@ alias xx='chmod +x'
 alias xcop='xclip -sel clip < $1'
 alias xc='xclip -selection clipboard'
 alias xp='xclip -selection clipboard -o'
-alias yd='youtube-dl $1'
+alias yd='youtube-dl -cit $1'
 alias dfind='dpkg -l | grep $1'
 alias s="subl"
 alias e="exit"
@@ -205,16 +205,21 @@ alias cr='composer require '
 alias newlaravel='composer create-project laravel/laravel="5.5" $1'
 
 alias pas="php artisan serve &"
-alias pa="php artisan  "
-alias pat="php artisan tinker "
-alias pam="php artisan migrate "
+alias pa="php artisan"
+alias pat="php artisan tinker"
+alias pam="php artisan migrate"
 
 alias nrw="npm run watch-poll "
 alias les="laravel-echo-server "
 
-alias mm="php artisan make:migration "
-alias mc="php artisan make:controller "
-alias mmod="php artisan make:model "
+alias mm="php artisan make:migration"
+alias mc="php artisan make:controller"
+alias mmod="php artisan make:model"
+
+function pac {
+	php artisan config:cache;
+	php artisan cache:clear;
+}
 
 function newlar {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh

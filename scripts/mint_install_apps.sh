@@ -7,7 +7,7 @@ sudo apt install systemback -y;
 sudo apt install virtualbox virtualbox-qt -y;
 
 # update casper
-# sudo dpkg --force-all -i casper_1.340_amd64.deb 
+# sudo dpkg --force-all -i casper_1.340_amd64.deb
 # then we need to fix casper package from synaptic
 # then install systemback again because its was removed
 # sudo apt install systemback -y;
@@ -28,6 +28,12 @@ npm --version
 
 # install composer
 sudo apt install composer -y;
+#
+composer clear-cache
+# solved problem with cache
+sudo chown -R $USER /home/$USER/.composer
+# for use sublimelinter-php
+composer global require "squizlabs/php_codesniffer=*";
 
 # install youtube-dl
 sudo apt install youtube-dl -y;
@@ -40,7 +46,7 @@ sudo apt-get install python3.5 -y;
 
 # install opera
 # ....
-# set opera default 
+# set opera default
 # xdg-settings set default-web-browser opera.desktop
 
 # install sublime
@@ -69,6 +75,9 @@ gsettings set org.cinnamon.desktop.keybindings.custom-keybinding:/org/cinnamon/d
 gsettings set org.cinnamon.desktop.keybindings.custom-keybinding:/org/cinnamon/desktop/keybindings/custom-keybindings/custom0/ command 'gnome-terminal'
 gsettings set org.cinnamon.desktop.keybindings.custom-keybinding:/org/cinnamon/desktop/keybindings/custom-keybindings/custom0/ name 'run terminal'
 
-gsettings set org.cinnamon.desktop.keybindings custom-list "['custom0']" 
-# gsettings set org.cinnamon.desktop.keybindings custom-list "['custom0','custom1']" 
+gsettings set org.cinnamon.desktop.keybindings custom-list "['custom0']"
+# gsettings set org.cinnamon.desktop.keybindings custom-list "['custom0','custom1']"
+
+
+
 
