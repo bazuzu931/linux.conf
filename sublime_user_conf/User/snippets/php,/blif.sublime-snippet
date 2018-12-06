@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+\Blade::if('${1:member}', function(\$${2:param}) {
+    ${3:return auth()->check() && auth()->user()->isSubscribed()};
+});
+]]></content>
+    <tabTrigger>blif</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.path.php, punctuation.separator.namespace.php</scope>
+    <description>Blade If Facade</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+auth()->loginUsingId(${1:1});
+]]></content>
+    <tabTrigger>logid</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.function-call.php, meta.group.php, meta.function.php, meta.block.php, meta.function-call.php, variable.function.php</scope>
+    <description>auth()-&lt;loginUsingID</description>
+</snippet>

@@ -28,6 +28,8 @@ npm --version
 
 # install composer
 sudo apt install composer -y;
+# browser devtools for laravel
+composer global  require  barryvdh/laravel-debugbar --dev ;
 #
 composer clear-cache ;
 # solved problem with cache

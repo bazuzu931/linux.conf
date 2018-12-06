@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+auth()->
+]]></content>
+    <tabTrigger>au</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.function-call.php, variable.function.php</scope>
+    <description>auth()-&lt;</description>
+</snippet>

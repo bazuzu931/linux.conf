@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+@member
+    ${1:<p>You are a subscribed user</p>}
+@else
+    ${2:<p>You are just a guest</p>}
+@endmember
+]]></content>
+    <tabTrigger>mem</tabTrigger>
+    <scope>text.blade, text.html.blade, custom.compiler.blade.php, support.function, constant.other.inline-data.html</scope>
+    <description>Blade Member</description>
+</snippet>

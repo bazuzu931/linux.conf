@@ -33,7 +33,7 @@ alias ri='sudo apt remove -y '
 alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '
 function ddi {
-	mv $1 ~/programs; 
+	mv $1 ~/programs;
 	sudo dpkg -i ~/programs/$1;
 }
 alias rmd='sudo rm -rf '
@@ -42,7 +42,7 @@ alias rmd='sudo rm -rf '
 # alias rmbes='ls | grep -v $1 | xargs rm -rfv'
 alias upd='sudo apt update'
 alias upg='sudo apt upgrade'
- 
+
 
 alias des='cd ~/Desktop '
 alias dow='cd /home/$USER/Downloads'
@@ -52,12 +52,12 @@ alias applic='cd /usr/share/applications'
 alias node='nodejs'
 
 
-alias sv='sudo vi' 
-alias sn='sudo nano' 
-alias gz='sudo tar -xvzf ' 
-alias bz='sudo tar -jxvf ' 
-alias n='nautilus' 
-alias ju='jupyter notebook' 
+alias sv='sudo vi'
+alias sn='sudo nano'
+alias gz='sudo tar -xvzf '
+alias bz='sudo tar -jxvf '
+alias n='nautilus'
+alias ju='jupyter notebook'
 alias cl='clear'
 alias oi='xdg-open '
 alias ledon='xset led'
@@ -149,23 +149,23 @@ alias gitpush='git push -u origin master '
 alias gitgp='git push -u origin gh-pages '
 
 function gitgo {
-	git add . ; 
-	git commit -m $1; 
+	git add . ;
+	git commit -m $1;
 	git push -u origin master;
 }
 
 function gitgogp {
-	git add . ; 
-	git commit -m $1; 
+	git add . ;
+	git commit -m $1;
 	git push -u origin gh-pages;
 }
 
 function copgit {
 	cd /home/$USER/Desktop/github_projects/linux.conf/ ;
 	./copy-all.sh;
-	git add . ; 
-	git commit -m "push new conf"; 
-	git push -u origin master; 
+	git add . ;
+	git commit -m "push new conf";
+	git push -u origin master;
 }
 
 ###########################################
@@ -219,6 +219,7 @@ alias mmod="php artisan make:model"
 function pac {
 	php artisan config:cache;
 	php artisan cache:clear;
+	php artisan view:clear;
 }
 
 function newlar {
@@ -299,8 +300,8 @@ function envnode {
 ########################################################################################
 
 # create and open {newFile}
-function cao { 
-  touch $@; nano $@; 
+function cao {
+  touch $@; nano $@;
 }
 
 ############################################################
