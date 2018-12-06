@@ -1,4 +1,4 @@
-[	
+[
 
 	// close other tabs
 	{ "keys": ["alt+c"],
@@ -35,20 +35,20 @@
 			"extend_env": {"PYTHONIOENCODING": "utf-8"}
 		}
 	},
-	{ "keys": ["alt+space"], 
-		"command": "run_existing_window_command", 
-		"args": { "id": "repl_python_run", 
+	{ "keys": ["alt+space"],
+		"command": "run_existing_window_command",
+		"args": { "id": "repl_python_run",
 		"file": "config/Python/Main.sublime-menu" }
 	},
 
 	// run macro file
-	{ "keys": ["ctrl+y"], 
-		"command": "run_macro_file", 
+	{ "keys": ["ctrl+y"],
+		"command": "run_macro_file",
 		"args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}
 	},
 
 	// duplicate line
-	{ "keys": ["ctrl+d"], 
+	{ "keys": ["ctrl+d"],
 	"command": "duplicate_line" },
 
 	// Copy file url
@@ -56,16 +56,16 @@
 	{ "keys": ["ctrl+shift+c"],
 	"command": "copy_path_to_clipboard" },
 
-	// create new snippet	
+	// create new snippet
 	// { "keys": ["ctrl+i"], "command": "new_snippet"},
-	{ 
-		"keys": ["f8"], 
+	{
+		"keys": ["f8"],
 		"command": "better_snippet_manager_create",
 	},
 
 	// Edit snippet
-	{ 
-		"keys": ["f7"], 
+	{
+		"keys": ["f7"],
 		"command": "better_snippet_manager_edit"
 	},
 
@@ -99,16 +99,16 @@
 	{
 	    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
 	        {
-	            "operand": "source.js", 
-	            "operator": "equal", 
-	            "match_all": true, 
+	            "operand": "source.js",
+	            "operator": "equal",
+	            "match_all": true,
 	            "key": "selector"
 	        },
-	        {   
-	            "key": "selection_empty", 
-	            "operator": "equal", 
+	        {
+	            "key": "selection_empty",
+	            "operator": "equal",
 	            "operand": true,
-	            "match_all": true 
+	            "match_all": true
 	        }
 	    ]
 	},
@@ -121,6 +121,14 @@
 	// php
     { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },
 
+    // Php Companion
+      // { "keys": ["f6"], "command": "expand_fqcn" },
+	  // { "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
+	  // { "keys": ["f3"], "command": "implement" },
+	  // { "keys": ["shift+f12"], "command": "goto_definition_scope" },
+	  // { "keys": ["f1"], "command": "import_namespace" },
+	  { "keys": ["f1"], "command": "find_use" },
+	  { "keys": ["f2"], "command": "insert_php_constructor_property" }
 
 
 
