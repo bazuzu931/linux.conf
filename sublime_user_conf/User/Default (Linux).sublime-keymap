@@ -73,9 +73,6 @@
 	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
 
-
-
-
 	// Wrapping content with tag
 	// Emmet => CTRL + SHIFT + G
 
@@ -93,7 +90,6 @@
 			"key": "setting.anf_panel"
 		}]
 	},
-
 
 	// JSX - to wrap tags
 	{
@@ -122,13 +118,13 @@
     { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },
 
     // Php Companion
-      // { "keys": ["f6"], "command": "expand_fqcn" },
 	  // { "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
-	  // { "keys": ["f3"], "command": "implement" },
 	  // { "keys": ["shift+f12"], "command": "goto_definition_scope" },
 	  // { "keys": ["f1"], "command": "import_namespace" },
-	  { "keys": ["f1"], "command": "find_use" },
-	  { "keys": ["f2"], "command": "insert_php_constructor_property" }
+      { "keys": ["f1"], "command": "expand_fqcn" },
+	  { "keys": ["f2"], "command": "find_use" },
+	  { "keys": ["f3"], "command": "insert_php_constructor_property" },
+	  { "keys": ["f4"], "command": "implement" },
 
 
 
