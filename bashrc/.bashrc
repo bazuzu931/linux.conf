@@ -75,6 +75,7 @@ alias xcop='xclip -sel clip < $1'
 alias xc='xclip -selection clipboard'
 alias xp='xclip -selection clipboard -o'
 alias yd='youtube-dl -cit $1'
+alias ddd='sudo service dns-clean restart'
 alias dfind='dpkg -l | grep $1'
 alias s="subl"
 alias e="exit"
@@ -217,6 +218,7 @@ alias pat="php artisan tinker"
 alias pam="php artisan migrate"
 
 alias nrw="npm run watch-poll "
+alias nrd="npm run dev "
 alias les="laravel-echo-server "
 
 alias mm="php artisan make:migration"
