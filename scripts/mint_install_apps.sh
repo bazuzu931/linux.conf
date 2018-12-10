@@ -26,6 +26,12 @@ sudo tar -xf node-v8.12.0-linux-x64.tar.gz --directory /usr/local --strip-compon
 node --version
 npm --version
 
+# Npm settings
+# npm config set unsafe-perm=true
+
+#Install vue-cli
+npm install -g @vue/cli ;
+
 # install composer
 sudo apt install composer -y;
 # browser devtools for laravel

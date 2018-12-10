@@ -17,7 +17,15 @@
 ########################################################################################
 ########################################################################################
 # PATH
-export PATH="$PATH:/opt/yarn-[version]/bin"
+# export PATH="$PATH:/opt/yarn-[version]/bin"
+
+export PATH=/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11
+# add optional items to the path
+for bindir in $HOME/local/bin $HOME/bin; do
+    if [ -d $bindir ]; then
+        PATH=$PATH:${bindir}
+    fi
+done
 
 ########################################################################################
 ########################################################################################
@@ -49,7 +57,6 @@ alias dow='cd /home/$USER/Downloads'
 alias home='cd /home/$USER/'
 alias exhdd='cd /media/$USER/hooli'
 alias applic='cd /usr/share/applications'
-alias node='nodejs'
 
 
 alias sv='sudo vi'
