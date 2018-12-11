@@ -1,0 +1,17 @@
+{
+	"schema_version": "3.0.0",
+	"packages": [
+		{
+			"name": "X3-Alpha Color Scheme",
+			"details": "https://github.com/x3ns/x3-alpha-theme",
+			"author": "x3ns <ns@nsyed.com>",
+			"labels": ["color scheme"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"tags": true
+				}
+			]
+		}
+	]
+}
