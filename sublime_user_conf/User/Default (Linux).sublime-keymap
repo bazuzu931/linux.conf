@@ -126,10 +126,6 @@
 	  { "keys": ["f3"], "command": "insert_php_constructor_property" },
 	  { "keys": ["f4"], "command": "implement" },
 
-	  // Enable Emmet in <style>
-	  { "keys": ["ctrl+e"], "command": "tab" },
-
-
 ]
 
 
