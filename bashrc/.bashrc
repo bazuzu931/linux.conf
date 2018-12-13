@@ -17,15 +17,15 @@
 ########################################################################################
 ########################################################################################
 # PATH
-# export PATH="$PATH:/opt/yarn-[version]/bin"
+export PATH="$PATH:/opt/yarn-[version]/bin"
 
-export PATH=/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11
-# add optional items to the path
-for bindir in $HOME/local/bin $HOME/bin; do
-    if [ -d $bindir ]; then
-        PATH=$PATH:${bindir}
-    fi
-done
+# export PATH=/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11
+# # add optional items to the path
+# for bindir in $HOME/local/bin $HOME/bin; do
+#     if [ -d $bindir ]; then
+#         PATH=$PATH:${bindir}
+#     fi
+# done
 
 ########################################################################################
 ########################################################################################
@@ -119,21 +119,7 @@ function newscript {
 alias scripts='cd ~/Desktop/github_projects/linux.conf/scripts/; ll ~/Desktop/github_projects/linux.conf/scripts/'
 alias gscripts='xdg-open ~/Desktop/github_projects/linux.conf/scripts/; exit'
 
-# delete all exclude some files and folders
-function de {
-	# ls | grep -v "$1\|$2" | xargs rm -rfv;
-	ignore=""
-	for fignore in "$@"; do
-	  ignore=${ignore}"-not -name ${fignore} "
-	done
-	find . -type f,d $ignore -delete
-}
 
-#
-function se {
-	subl $1;
-	exit;
-}
 
 #
 function mapp {
@@ -210,8 +196,10 @@ alias cr='composer require '
 ###########################################
 # Laravel
 ###########################################
-alias newlaravel='composer create-project laravel/laravel="5.5" $1'
+alias lar5.7='composer create-project laravel/laravel="5.7" $1'
+alias lar5.5='composer create-project laravel/laravel="5.5" $1'
 
+alias les="laravel-echo-server "
 alias pas="php artisan serve &"
 alias pa="php artisan"
 alias pat="php artisan tinker"
@@ -219,7 +207,9 @@ alias pam="php artisan migrate"
 
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
-alias les="laravel-echo-server "
+alias ni="npm i "
+alias nig="npm install -g "
+alias nf="npm audit fix"
 
 alias mm="php artisan make:migration"
 alias mc="php artisan make:controller"
@@ -234,6 +224,35 @@ function pac {
 function newlar {
 	source /home/$USER/Desktop/github_projects/linux.conf/scripts/newLaravel.sh
 }
+
+function lar1 {
+	composer create-project laravel/laravel="5.7" $1;
+	cd $1;
+	sepp "Laravel installed ! "
+	sudo apt install redis-server ;
+	sepp "Redis Server installed ! "
+	composer global  require  barryvdh/laravel-debugbar --dev ;
+	sepp "Laravel-debugger for browser is  installed ! "
+	composer require predis/predis ;
+	sepp "Predis installed ! "
+
+	sudo npm install -g laravel-echo-server;
+	sepp "Laravel-echo-server for NPM  is installed ! "
+	npm install --save  laravel-echo socket.io-client;
+	sepp "Laravel-echo  for NPM  is installed ! "
+	sepp "Socket.io-client for NPM is  installed ! "
+	npm i admin-lte@v3.0.0-alpha.2 --save;
+	sepp " Admin Lte is installed ! "
+	npm install --save-dev @fortawesome/fontawesome-free ;
+	sepp "Fontawesome is installed ! "
+	npm i vue-router;
+	sepp "Vue router is installed ! "
+
+	npm i;
+	npm audit fix;
+	sepp "Npm packages installed ! "
+}
+
 
 ###########################################
 # Virtial env
@@ -307,6 +326,31 @@ function envnode {
 ########################################################################################
 ########################################################################################
 ########################################################################################
+
+# delete all exclude some files and folders
+function de {
+	# ls | grep -v "$1\|$2" | xargs rm -rfv;
+	ignore=""
+	for fignore in "$@"; do
+	  ignore=${ignore}"-not -name ${fignore} "
+	done
+	find . -type f,d $ignore -delete
+}
+
+#
+function se {
+	subl $1;
+	exit;
+}
+
+#
+function sepp {
+	echo '';
+	echo '#################################################################';
+	echo $1;
+	echo '#################################################################';
+	echo '';
+}
 
 # create and open {newFile}
 function cao {

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<script src="${1:js/app.js}"></script>
+]]></content>
+    <tabTrigger>ss</tabTrigger>
+    <scope>text.html.vue, meta.tag.any.html, punctuation.definition.tag.begin.html</scope>
+    <description>script tag in Blade</description>
+</snippet>
