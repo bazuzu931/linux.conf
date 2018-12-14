@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+->nullable()
+]]></content>
+    <tabTrigger>nn</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.function-call.php, meta.group.php, meta.function.php, meta.block.php, punctuation.accessor.arrow.php</scope>
+    <description>nillable()</description>
+</snippet>

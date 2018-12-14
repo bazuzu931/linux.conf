@@ -203,6 +203,7 @@ alias les="laravel-echo-server "
 alias pas="php artisan serve &"
 alias pa="php artisan"
 alias par="php artisan route:list"
+alias paf="php artisan migrate:fresh"
 alias pat="php artisan tinker"
 alias pam="php artisan migrate"
 
