@@ -202,6 +202,7 @@ alias lar5.5='composer create-project laravel/laravel="5.5" $1'
 alias les="laravel-echo-server "
 alias pas="php artisan serve &"
 alias pa="php artisan"
+alias par="php artisan route:list"
 alias pat="php artisan tinker"
 alias pam="php artisan migrate"
 

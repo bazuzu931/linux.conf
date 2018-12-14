@@ -50,6 +50,8 @@
 	// duplicate line
 	{ "keys": ["ctrl+d"],
 	"command": "duplicate_line" },
+	//
+	{ "keys": ["ctrl+g"], "command": "find_under_expand" },
 
 	// Copy file url
 	// https://github.com/mjhea0/sublime-setup-for-python/blob/master/dotfiles/copy_path_to_clipboard.py
