@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-public function index()
+public function ${1:index}()
 {
-	${1:}
+	${2:}
 }
 ]]></content>
     <tabTrigger>pf</tabTrigger>

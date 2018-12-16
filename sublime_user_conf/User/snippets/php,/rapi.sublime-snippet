@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+Route::apiResources([
+    '${1:photos}' => '${2:PhotoController}',
+    '${3:posts}'  => '${4:PostController}'
+]);
+]]></content>
+    <tabTrigger>rapi</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.path.php, support.class.php</scope>
+    <description>Route::apiResources</description>
+</snippet>

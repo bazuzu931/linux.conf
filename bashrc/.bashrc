@@ -249,6 +249,9 @@ function lar1 {
 	sepp "Fontawesome is installed ! "
 	npm i vue-router;
 	sepp "Vue router is installed ! "
+	npm i axios vform;
+	sepp "axios is installed ! "
+	sepp "vform is installed ! "
 
 	npm i;
 	npm audit fix;

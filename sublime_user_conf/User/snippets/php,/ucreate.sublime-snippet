@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+User::create([
+    '${1:name}' => $request['${1:name}'],
+    '${2:password}' => Hash::make($request['${2:password}']),
+]);
+]]></content>
+    <tabTrigger>ucreate</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.path.php, support.class.php</scope>
+    <description>User::create</description>
+</snippet>
