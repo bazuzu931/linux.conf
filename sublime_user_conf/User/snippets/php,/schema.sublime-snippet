@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+Schema::create('${1:users}', function (Blueprint $table) {
+    \$table->increments('id');
+    \$table->string('name');
+    \$table->string('email')->unique();
+    \$table->timestamp('email_verified_at')->nullable();
+    \$table->string('password');
+    \$table->rememberToken();
+    \$table->timestamps();
+});
+]]></content>
+    <tabTrigger>schema</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.path.php, support.class.php</scope>
+    <description>Schema::create</description>
+</snippet>

@@ -196,8 +196,21 @@ alias cr='composer require '
 ###########################################
 # Laravel
 ###########################################
-alias lar5.7='composer create-project laravel/laravel="5.7" $1'
-alias lar5.5='composer create-project laravel/laravel="5.5" $1'
+function lar57 {
+	composer create-project laravel/laravel="5.7" $1;
+	cd $1;
+}
+
+function lar56 {
+	composer create-project laravel/laravel="5.6" $1;
+	cd $1;
+}
+
+function lar55 {
+	composer create-project laravel/laravel="5.5" $1;
+	cd $1;
+}
+
 
 alias les="laravel-echo-server "
 alias pas="php artisan serve &"
@@ -213,8 +226,8 @@ alias ni="npm i "
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
-alias mm="php artisan make:migration"
 alias mc="php artisan make:controller"
+alias mmig="php artisan make:migration"
 alias mmod="php artisan make:model"
 
 function pac {

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$this->hasOne('${1:App\UserAdditional}')
+]]></content>
+    <tabTrigger>ho</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, variable.language.php, punctuation.definition.variable.php</scope>
+    <description>hasOne()</description>
+</snippet>

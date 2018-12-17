@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+return view('${1:home}');
+]]></content>
+    <tabTrigger>rv</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, keyword.control.php</scope>
+    <description>return view in Controller</description>
+</snippet>
