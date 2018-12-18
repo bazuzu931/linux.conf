@@ -144,7 +144,7 @@ alias gitgp='git push -u origin gh-pages '
 
 function gitgo {
 	git add . ;
-	git commit -m $1;
+	git commit -m "$1";
 	git push -u origin master;
 }
 
@@ -152,6 +152,11 @@ function gitgogp {
 	git add . ;
 	git commit -m $1;
 	git push -u origin gh-pages;
+}
+
+function gitback {
+	git reset --hard $1;
+	git push -f;
 }
 
 function copgit {
@@ -222,7 +227,7 @@ alias pam="php artisan migrate"
 
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
-alias ni="npm i "
+alias ni="npm i ; npm audit fix"
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
@@ -241,7 +246,7 @@ function newlar {
 }
 
 function lar1 {
-	composer create-project laravel/laravel="5.7" $1;
+	composer create-project laravel/laravel="5.6" $1;
 	cd $1;
 	sepp "Laravel installed ! "
 	sudo apt install redis-server ;
@@ -262,7 +267,8 @@ function lar1 {
 	sepp "Fontawesome is installed ! "
 	npm i vue-router;
 	sepp "Vue router is installed ! "
-	npm i axios vform;
+	npm i axios;
+	npm i vform;
 	sepp "axios is installed ! "
 	sepp "vform is installed ! "
 
