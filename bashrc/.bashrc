@@ -251,10 +251,10 @@ function lar1 {
 	sepp "Laravel installed ! "
 	sudo apt install redis-server ;
 	sepp "Redis Server installed ! "
-	composer global  require  barryvdh/laravel-debugbar --dev ;
-	sepp "Laravel-debugger for browser is  installed ! "
 	composer require predis/predis ;
 	sepp "Predis installed ! "
+	composer require barryvdh/laravel-debugbar --dev;
+	sepp "Debugger installed ! "
 
 	sudo npm install -g laravel-echo-server;
 	sepp "Laravel-echo-server for NPM  is installed ! "
