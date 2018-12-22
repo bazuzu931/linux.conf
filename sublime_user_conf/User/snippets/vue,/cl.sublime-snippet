@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+@click="${1:}"
+]]></content>
+    <tabTrigger>cl</tabTrigger>
+    <scope>text.html.vue, meta.tag.inline.any.html</scope>
+    <description>@click=""</description>
+</snippet>

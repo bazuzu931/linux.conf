@@ -271,6 +271,13 @@ function lar1 {
 	npm i vform;
 	sepp "axios is installed ! "
 	sepp "vform is installed ! "
+	npm install moment --save;
+	sepp "Moment.js is installed ! "
+	npm install vue-progressbar;
+	sepp "Vue-progressbar is installed ! "
+	npm install sweetalert2;
+	sepp "Sweetalert2 is installed ! "
+
 
 	npm i;
 	npm audit fix;

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$user${1:->}
+]]></content>
+    <tabTrigger>u</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, variable.other.php, punctuation.definition.variable.php</scope>
+    <description>$user-&lt;</description>
+</snippet>
