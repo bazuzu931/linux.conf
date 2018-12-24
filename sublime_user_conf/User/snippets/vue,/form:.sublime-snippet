@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+form: new Form({
+    ${1:id}: '',
+    ${2:name}: '',
+    ${3:email}: '',
+    ${4:password}: '',
+    ${5:type}: '',
+    ${6:bio}: '',
+    ${7:photo}: ''
+  }),
+]]></content>
+    <tabTrigger>Form</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.block.js, meta.object-literal.js, meta.object-literal.key.js</scope>
+    <description>form: new Form</description>
+</snippet>

@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-auth()->
+auth('${1:api}')->${2:user()}
 ]]></content>
     <tabTrigger>au</tabTrigger>
     <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.function-call.php, variable.function.php</scope>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+.then( () => {
+    ${1:}
+})
+.catch( () => {
+	${2:}
+})
+]]></content>
+    <tabTrigger>thenc</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, punctuation.accessor.js</scope>
+    <description>then catch</description>
+</snippet>

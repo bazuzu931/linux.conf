@@ -1,13 +1,8 @@
 <snippet>
     <content><![CDATA[
-.then( () => {
-    ${1:}
-})
-.catch( () => {
-	${2:}
-})
+.then(({ data }) => ( ${1:this.form.fill(data)} ));
 ]]></content>
     <tabTrigger>then</tabTrigger>
-    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, punctuation.accessor.js</scope>
-    <description>then catch</description>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.block.js, punctuation.accessor.js</scope>
+    <description>then({data} => ())</description>
 </snippet>
