@@ -252,11 +252,14 @@ function lar1 {
 	sudo apt install redis-server ;
 	sepp "Redis Server installed ! "
 	composer require predis/predis ;
-	sepp "Predis installed ! "
+	sepp "Predis installed ! ";
 	composer require barryvdh/laravel-debugbar --dev;
 	sepp "Debugger installed ! "
-	composer require laravel/passport
+	composer require laravel/passport;
 	sepp "Passport Laravel installed ! "
+	composer require intervention/image ;
+	php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
+	sepp "intervention/image installed and publish configs in Laravel5 . OK "
 
 	sudo npm install -g laravel-echo-server;
 	sepp "Laravel-echo-server for NPM  is installed ! "

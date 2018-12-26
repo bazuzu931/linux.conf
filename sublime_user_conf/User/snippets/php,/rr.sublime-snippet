@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-\$user->
+\$request->${1:all()}
 ]]></content>
-    <tabTrigger>u</tabTrigger>
+    <tabTrigger>rr</tabTrigger>
     <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, variable.other.php, punctuation.definition.variable.php</scope>
-    <description>$user-&lt;</description>
+    <description>$request-&lt;</description>
 </snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+update( ${1:} );
+]]></content>
+    <tabTrigger>upd</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.function-call.method.php, variable.function.php</scope>
+    <description>-&lt;update();</description>
+</snippet>

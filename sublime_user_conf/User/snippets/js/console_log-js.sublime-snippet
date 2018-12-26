@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-console.log($1)$2
+console.log($1)$2;
 ]]></content>
 	<tabTrigger>col</tabTrigger>
 	<scope>source.jsx, source.js</scope>

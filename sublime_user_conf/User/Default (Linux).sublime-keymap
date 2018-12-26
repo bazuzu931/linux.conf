@@ -4,6 +4,9 @@
 	{ "keys": ["alt+c"],
 	"command": "close_others" },
 
+	//close tab
+	{ "keys": ["alt+z"], "command": "close" },
+
 	// cloase other windows
 	{ "keys": ["alt+w"],
 	"command": "close_other_windows" },

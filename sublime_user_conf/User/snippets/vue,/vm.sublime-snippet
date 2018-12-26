@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+v-model="${1:name}"
+]]></content>
+    <tabTrigger>vm</tabTrigger>
+    <scope>text.html.vue, meta.tag.inline.any.html, entity.other.attribute-name.html</scope>
+    <description>v-model</description>
+</snippet>
