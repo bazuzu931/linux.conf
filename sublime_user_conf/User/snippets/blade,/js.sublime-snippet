@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+@json(${1:${2:auth}()->${3:user}()})
+]]></content>
+    <tabTrigger>js</tabTrigger>
+    <scope>text.blade, text.html.blade, custom.compiler.blade.php, support.function, constant.other.inline-data.html</scope>
+    <description>@json(auth()-&lt;user())</description>
+</snippet>
+

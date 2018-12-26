@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Swal("Failed!", "There was something wrong.", "warning");
+]]></content>
+    <tabTrigger>swalfail</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.function-call.method.js, meta.group.js, meta.block.js, meta.conditional.js, meta.block.js, meta.function-call.method.js, meta.group.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>Swal failed</description>
+</snippet>

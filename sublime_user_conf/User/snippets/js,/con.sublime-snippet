@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+constructor(${1:user}) {
+	this.${1:user} = ${1:user};
+}
+]]></content>
+    <tabTrigger>con</tabTrigger>
+    <scope>source.js, meta.export.js, meta.class.js, meta.block.js, meta.function.declaration.js, entity.name.function.constructor.js</scope>
+    <description>constructor Vue</description>
+</snippet>

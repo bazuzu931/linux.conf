@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+@can('is${1:Admin}')
+	${2:}
+@endcan
+]]></content>
+    <tabTrigger>cc</tabTrigger>
+    <scope>text.blade, text.html.blade, custom.compiler.blade.php, punctuation.section.embedded.php, constant.other.inline-data.html</scope>
+    <description>@can('isAdmin')</description>
+</snippet>

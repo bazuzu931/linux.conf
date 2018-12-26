@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+export default class ${1:Gate}
+{
+	${2:}
+}
+]]></content>
+    <tabTrigger>edc</tabTrigger>
+    <scope>source.js, meta.export.js, keyword.control.import-export.js</scope>
+    <description>Export default class</description>
+</snippet>

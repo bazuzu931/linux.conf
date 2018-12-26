@@ -131,6 +131,9 @@
 	  { "keys": ["f4"], "command": "implement" },
 	  { "keys": ["f5"], "command": "import_namespace" },
 
+	  //Sidebar
+	  { "keys": ["ctrl+r"], "command": "toggle_side_bar" }
+
 ]
 
 
