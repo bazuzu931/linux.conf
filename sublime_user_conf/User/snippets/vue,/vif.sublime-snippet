@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+v-if=" ${1:} "
+]]></content>
+    <tabTrigger>vif</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, entity.other.attribute-name.html</scope>
+    <description>v-if=""</description>
+</snippet>
