@@ -155,7 +155,8 @@ function gitgogp {
 }
 
 function gitback {
-	git reset --hard $1;
+#####                     $1 = its a new commit
+	git commit --amend -m $1;
 	git push -f;
 }
 
@@ -224,6 +225,7 @@ alias par="php artisan route:list"
 alias paf="php artisan migrate:fresh"
 alias pat="php artisan tinker"
 alias pam="php artisan migrate"
+alias pap="php artisan passport:install"
 
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
@@ -246,7 +248,7 @@ function newlar {
 }
 
 function lar1 {
-	composer create-project laravel/laravel="5.6" $1;
+	composer create-project laravel/laravel="5.7" $1;
 	cd $1;
 	sepp "Laravel installed ! "
 	sudo apt install redis-server ;
@@ -282,6 +284,8 @@ function lar1 {
 	sepp "Vue-progressbar is installed ! "
 	npm install sweetalert2;
 	sepp "Sweetalert2 is installed ! "
+	npm install laravel-vue-pagination;
+	sepp "laravel-vue-pagination is installed ! "
 
 
 	npm i;

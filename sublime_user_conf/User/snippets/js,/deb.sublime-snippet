@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+_.debounce( () => {
+	Fire.\$emit('${1:searching}');
+}, ${2:2000})
+]]></content>
+    <tabTrigger>deb</tabTrigger>
+    <scope>source.js, meta.instance.constructor.js, meta.function-call.constructor.js, meta.group.js, meta.object-literal.js, meta.object-literal.js, variable.other.object.js</scope>
+    <description>debounce()</description>
+</snippet>

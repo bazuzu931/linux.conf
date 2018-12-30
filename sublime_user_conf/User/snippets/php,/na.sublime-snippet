@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+->name('${1:404}')
+]]></content>
+    <tabTrigger>na</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.function-call.method.php, punctuation.accessor.arrow.php</scope>
+    <description>-&lt;name()</description>
+</snippet>

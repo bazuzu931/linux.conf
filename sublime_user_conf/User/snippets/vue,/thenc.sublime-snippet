@@ -7,7 +7,7 @@
 	${2:}
 })
 ]]></content>
-    <tabTrigger>thenc</tabTrigger>
+    <tabTrigger>thenc, tc</tabTrigger>
     <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, punctuation.accessor.js</scope>
     <description>then catch</description>
 </snippet>

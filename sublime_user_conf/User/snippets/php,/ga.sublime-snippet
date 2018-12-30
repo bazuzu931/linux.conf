@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Gate::allows('${1:update-post}', \$${2:post})
+]]></content>
+    <tabTrigger>ga</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.group.php, meta.path.php, support.class.php</scope>
+    <description>Gate::allows()</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${1:Fire}.\$emit('${2:updatePage}');
+]]></content>
+    <tabTrigger>emit</tabTrigger>
+    <scope>source.js, meta.instance.constructor.js, meta.function-call.constructor.js, meta.group.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, variable.other.object.js</scope>
+    <description>$emit.()</description>
+</snippet>
