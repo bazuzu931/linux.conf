@@ -250,6 +250,9 @@ function newlar {
 function lar1 {
 	composer create-project laravel/laravel="5.7" $1;
 	cd $1;
+
+	php artisan storage:link;
+
 	sepp "Laravel installed ! "
 	sudo apt install redis-server ;
 	sepp "Redis Server installed ! "
