@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+</form>
+]]></content>
+    <tabTrigger>f2</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, punctuation.definition.tag.begin.html</scope>
+    <description>form bootsrtap</description>
+</snippet>

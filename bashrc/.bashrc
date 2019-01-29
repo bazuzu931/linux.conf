@@ -233,7 +233,7 @@ alias ni="npm i ; npm audit fix"
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
-alias mc="php artisan make:controller"
+alias mcon="php artisan make:controller"
 alias mmig="php artisan make:migration"
 alias mmod="php artisan make:model"
 

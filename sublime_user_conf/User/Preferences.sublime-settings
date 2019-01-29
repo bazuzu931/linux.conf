@@ -6,6 +6,10 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"BracketHighlighter",
+		"ColorPicker",
+		"Laravel Blade Highlighter",
+		"Sass",
 		"Vintage"
 	],
 	"line_padding_bottom": 10,

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<form  action="" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form>
+]]></content>
+    <tabTrigger>fileinput</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, punctuation.definition.tag.begin.html</scope>
+    <description>file input bs4</description>
+</snippet>
