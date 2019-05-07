@@ -4,9 +4,11 @@
 	[
 		"BracketHighlighter",
 		"ColorPicker",
+		"GitGutter",
 		"Laravel Blade Highlighter",
 		"Modific",
-		"Sass"
+		"Sass",
+		"Terminal"
 	],
 	"installed_packages":
 	[

@@ -8,9 +8,11 @@
 	[
 		"BracketHighlighter",
 		"ColorPicker",
+		"GitGutter",
 		"Laravel Blade Highlighter",
 		"Modific",
 		"Sass",
+		"Terminal",
 		"Vintage"
 	],
 	"line_padding_bottom": 10,
