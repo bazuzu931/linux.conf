@@ -2,6 +2,15 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"BracketHighlighter",
+		"ColorPicker",
+		"GitGutter",
+		"Laravel Blade Highlighter",
+		"Modific",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter-phpcs",
+		"Terminal"
 	],
 	"installed_packages":
 	[

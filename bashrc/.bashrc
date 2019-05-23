@@ -267,13 +267,13 @@ function lar1 {
 	php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
 	sepp "intervention/image installed and publish configs in Laravel5 . OK "
 
-	sudo npm install -g laravel-echo-server;
-	sepp "Laravel-echo-server for NPM  is installed ! "
+	# sudo npm install -g laravel-echo-server;
+	# sepp "Laravel-echo-server for NPM  is installed ! "
 	npm install --save  laravel-echo socket.io-client;
 	sepp "Laravel-echo  for NPM  is installed ! "
 	sepp "Socket.io-client for NPM is  installed ! "
-	npm i admin-lte@v3.0.0-alpha.2 --save;
-	sepp " Admin Lte is installed ! "
+	# npm i admin-lte@v3.0.0-alpha.2 --save;
+	# sepp " Admin Lte is installed ! "
 	npm install --save-dev @fortawesome/fontawesome-free ;
 	sepp "Fontawesome is installed ! "
 	npm i vue-router;
