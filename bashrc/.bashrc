@@ -546,10 +546,18 @@ fi
 ########################################################################################
 ########################################################################################
 
-# Path to the bash it configuration
-export BASH_IT="/home/momo/.bash_it"
+# ???
+# If not running interactively, don't do anything
+case $- in
+  *i*) ;;
+    *) return;;
+esac
 
-# Lock and Load a custom theme file
+# Path to the bash it configuration
+export BASH_IT="/home/momo/bash-it-master"
+
+# Lock and Load a custom theme file.
+# Leave empty to disable theming.
 # location /.bash_it/themes/
 export BASH_IT_THEME='rjorgenson'
 
