@@ -234,7 +234,10 @@ alias ni="npm i ; npm audit fix"
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
+alias gd="gridsome develop"
+
 alias mcon="php artisan make:controller"
+alias mres="php artisan make:resource"
 alias mmig="php artisan make:migration"
 alias mmod="php artisan make:model"
 
@@ -323,8 +326,8 @@ function envact {
 # Django
 ###########################################
 alias djrun='python3 manage.py runserver'
-alias mig='python3 manage.py migrate'
-alias mmig='python3 manage.py makemigrations'
+# alias mig='python3 manage.py migrate'
+# alias mmig='python3 manage.py makemigrations'
 alias djnewuser='python3 manage.py createsuperuser'
 alias djnewapp='python3 manage.py startapp'
 alias djnewproj='django-admin startproject'
