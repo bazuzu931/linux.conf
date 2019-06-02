@@ -143,20 +143,20 @@ alias gitac='git add . ; git commit -m $1 '
 alias gitpush='git push -u origin master '
 alias gitgp='git push -u origin gh-pages '
 
-function gitgo {
+function gg {
 	git add . ;
 	git commit -m "$1";
 	git push -u origin master;
 }
 
-function gitgogp {
+function ggg {
 	git add . ;
 	git commit -m $1;
 	git push -u origin gh-pages;
 }
 
 function gitback {
-#####                     $1 = its a new commit
+#####    $1 = its a new commit
 	git commit --amend -m $1;
 	git push -f;
 }
