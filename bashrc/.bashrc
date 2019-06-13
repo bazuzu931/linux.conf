@@ -18,6 +18,7 @@
 ########################################################################################
 # PATH
 export PATH="$PATH:/opt/yarn-[version]/bin"
+alias tw="/home/momo/.config/composer/vendor/awssat/tailwindo/tailwindo"
 
 # export PATH=/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11
 # # add optional items to the path
@@ -96,7 +97,7 @@ alias jes='jekyll serve'
 alias lg='(ls -l -d [!.]?* && ls -l -d .[!.]?*) | grep $1 '
 # alias lg='ls -ap | grep -v / | egrep "^\." '
 alias cont='grep -rHino $1 '
-alias kk='kill %1 '
+alias kk='kill %1 ; kill $1'
 alias k1='kill %1 '
 alias k2='kill %2 '
 alias k3='kill %3 '
@@ -200,9 +201,15 @@ alias comdump='composer dump-autoload'
 alias comunit='composer require --dev phpunit/phpunit'
 alias cr='composer require '
 
+
 ###########################################
 # Laravel
 ###########################################
+function lar58 {
+	composer create-project laravel/laravel="5.8" $1;
+	cd $1;
+}
+
 function lar57 {
 	composer create-project laravel/laravel="5.7" $1;
 	cd $1;

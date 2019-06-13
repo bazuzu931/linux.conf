@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Terminal"
 	],
 	"installed_packages":
 	[
@@ -53,6 +52,7 @@
 		"Stylus",
 		"SublimeLinter-phpcs",
 		"SublimeREPL",
+		"Tailwind CSS Autocomplete",
 		"Terminal",
 		"Theme - Brogrammer",
 		"Theme - Spacegray",
