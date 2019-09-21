@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<script>
+export default {
+	${1:}
+}
+</script>
+]]></content>
+    <tabTrigger>se</tabTrigger>
+    <scope>text.html.vue, meta.tag.script.begin.html, punctuation.definition.tag.begin.html</scope>
+    <description>Script export default</description>
+</snippet>

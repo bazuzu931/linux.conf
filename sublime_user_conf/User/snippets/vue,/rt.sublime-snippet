@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<router-link to="${1:}" class="${2:}">${3:}</router-link>
+]]></content>
+    <tabTrigger>rtt</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>router-link</description>
+</snippet>

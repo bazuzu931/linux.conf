@@ -75,7 +75,6 @@ alias xx='chmod +x'
 alias xcop='xclip -sel clip < $1'
 alias xc='xclip -selection clipboard'
 alias xp='xclip -selection clipboard -o'
-alias yd='youtube-dl -cit $1'
 alias ddd='sudo service dns-clean restart'
 alias dfind='dpkg -l | grep $1'
 alias s="subl"
@@ -84,6 +83,15 @@ alias 777="sudo chmod -R 777 $1"
 alias 775="sudo chmod -R 775 $1"
 alias 755="sudo chmod -R 755 $1"
 alias 600="sudo chmod -R 600 $1" #делает файл неисполняемым -rw-------
+
+############################################################
+# Youtube-dl
+alias yd='youtube-dl -cit $1'
+# download 1 mp3
+alias yd2='youtube-dl --extract-audio --audio-format mp3 $1'
+# download playlist mp3
+alias yd3='youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $1'
+############################################################
 
 
 
@@ -97,7 +105,7 @@ alias jes='jekyll serve'
 alias lg='(ls -l -d [!.]?* && ls -l -d .[!.]?*) | grep $1 '
 # alias lg='ls -ap | grep -v / | egrep "^\." '
 alias cont='grep -rHino $1 '
-alias kk='kill %1 ; kill $1'
+alias kk='kill %1'
 alias k1='kill %1 '
 alias k2='kill %2 '
 alias k3='kill %3 '
@@ -201,6 +209,11 @@ alias comdump='composer dump-autoload'
 alias comunit='composer require --dev phpunit/phpunit'
 alias cr='composer require '
 
+###########################################
+# Tailwind
+###########################################
+alias tinit="npx tailwind init  tailwind.js -c"
+
 
 ###########################################
 # Laravel
@@ -237,6 +250,7 @@ alias pap="php artisan passport:install"
 
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
+alias nrs="npm run serve "
 alias ni="npm i ; npm audit fix"
 alias nig="npm install -g "
 alias nf="npm audit fix"

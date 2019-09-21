@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Terminal"
 	],
 	"installed_packages":
 	[
