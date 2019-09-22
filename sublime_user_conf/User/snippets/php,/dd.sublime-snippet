@@ -1,8 +1,8 @@
 <snippet>
     <content><![CDATA[
-->default('${1:user}')
+\\Debugbar::info( ${1:} );
 ]]></content>
-    <tabTrigger>dd</tabTrigger>
+    <tabTrigger>de</tabTrigger>
     <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.function-call.php, meta.group.php, meta.function.php, meta.block.php, meta.function-call.method.php, punctuation.accessor.arrow.php</scope>
-    <description>Default()</description>
+    <description>DebugBar Laravel\</description>
 </snippet>
