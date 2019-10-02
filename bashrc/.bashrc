@@ -639,7 +639,7 @@ source "$BASH_IT"/bash_it.sh
 # alias ppp =  'cd ~/Desktop/arenatap.com',
 function ppp() {
 	cd ~/Desktop/arenatap.com;
-	gnome-terminal --tab --title=Artisan  -- bash -c "ls; bash";
-	gnome-terminal --tab --title=NPM  -- bash -c "ls ; bash";
+	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
+	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
 }
 
