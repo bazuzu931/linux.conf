@@ -636,10 +636,12 @@ source "$BASH_IT"/bash_it.sh
 
 # #################
 # TEMPLE alias
-# alias ppp =  'cd ~/Desktop/arenatap.com',
+# Run project develop environment
 function ppp() {
 	cd ~/Desktop/arenatap.com;
+	subl;
 	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
 	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
+	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
 }
 
