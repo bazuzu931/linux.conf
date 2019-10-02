@@ -14,6 +14,7 @@
 #    sudo apt autoremove -y
 # fi
 
+
 ########################################################################################
 ########################################################################################
 # PATH
@@ -631,3 +632,14 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+
+
+# #################
+# TEMPLE alias
+# alias ppp =  'cd ~/Desktop/arenatap.com',
+function ppp() {
+	cd ~/Desktop/arenatap.com;
+	gnome-terminal --tab --title=Artisan  -- bash -c "ls; bash";
+	gnome-terminal --tab --title=NPM  -- bash -c "ls ; bash";
+}
+
