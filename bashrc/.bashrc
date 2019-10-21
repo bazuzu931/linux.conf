@@ -21,6 +21,9 @@
 export PATH="$PATH:/opt/yarn-[version]/bin"
 alias tw="/home/momo/.config/composer/vendor/awssat/tailwindo/tailwindo"
 
+# open crontab with sublime
+# export VISUAL=/usr/bin/subl
+
 # export PATH=/opt/bin:/usr/local/bin:/usr/contrib/bin:/bin:/usr/bin:/usr/sbin:/usr/bin/X11
 # # add optional items to the path
 # for bindir in $HOME/local/bin $HOME/bin; do
@@ -91,7 +94,7 @@ alias yd='youtube-dl -cit $1'
 # download 1 mp3
 alias yd2='youtube-dl --extract-audio --audio-format mp3 $1'
 # download playlist mp3
-alias yd3='youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" $1'
+alias yd3='youtube-dl --extract-audio --audio-format mp3 -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
 ############################################################
 
 
@@ -243,6 +246,7 @@ function lar55 {
 alias les="laravel-echo-server "
 alias pas="php artisan serve &"
 alias pa="php artisan"
+alias paq="php artisan queue:work "
 alias par="php artisan route:list"
 alias paf="php artisan migrate:fresh"
 alias pat="php artisan tinker"
@@ -639,9 +643,9 @@ source "$BASH_IT"/bash_it.sh
 # Run project develop environment
 function ppp() {
 	cd ~/Desktop/arenatap.com;
-	subl;
 	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
 	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
+	subl;
 }
 
