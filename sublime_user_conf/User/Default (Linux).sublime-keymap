@@ -22,6 +22,9 @@
 	// run Repl in current window
 	{ "keys": ["alt+v"], "command": "build" },
 
+	// Select WORD
+	{ "keys": ["ctrl+m"], "command": "expand_selection", "args": {"to": "word"} },
+
 	// run Repl in other window
 	{ "keys":["ctrl+shift+a"],
 		"command": "repl_open",

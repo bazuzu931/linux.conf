@@ -641,10 +641,18 @@ source "$BASH_IT"/bash_it.sh
 # #################
 # TEMPLE alias
 # Run project develop environment
+
+# function ppp() {
+# 	cd ~/Desktop/arenatap.com;
+# 	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
+# 	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
+# 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
+# 	subl;
+# }
+
 function ppp() {
-	cd ~/Desktop/arenatap.com;
-	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
-	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
+	cd ~/Desktop/todo;
+	gnome-terminal --tab --title=Quasar  -- bash -c "quasar dev ; bash";
 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
 	subl;
 }

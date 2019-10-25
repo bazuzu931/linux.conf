@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+<template>
+	<q-page padding>
+
+	</q-page>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+
+			}
+		}
+	}
+</script>
+]]></content>
+    <tabTrigger>ttt</tabTrigger>
+    <scope>text.html.vue, meta.tag.other.html, punctuation.definition.tag.begin.html</scope>
+    <description>Template Pug</description>
+</snippet>
