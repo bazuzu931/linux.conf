@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<q-icon name="menu" size="18px" />
+]]></content>
+    <tabTrigger>qicon</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-icon</description>
+</snippet>

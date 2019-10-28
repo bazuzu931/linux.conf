@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+'${1:task}': require('components/${2:Task}.vue').default,
+]]></content>
+    <tabTrigger>req</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.object-literal.key.js, string.quoted.single.js, punctuation.definition.string.begin.js</scope>
+    <description>require compponent.default</description>
+</snippet>

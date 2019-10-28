@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<q-layout view="lHh Lpr lFf">
+	<q-page>
+		${1:}
+	</q-page>
+</q-layout>
+]]></content>
+    <tabTrigger>qlay</tabTrigger>
+    <scope>text.html.vue</scope>
+    <description>q-layout</description>
+</snippet>

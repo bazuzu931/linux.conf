@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<q-item tag="label" v-ripple>
+	${1:}
+</q-item>
+]]></content>
+    <tabTrigger>qitem</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-item</description>
+</snippet>

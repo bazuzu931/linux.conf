@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+<q-list bordered padding separator>
+	<q-item tag="label" v-ripple>
+		<q-item-section>
+	          <q-item-label>Notifications</q-item-label>
+	          <q-item-label caption>
+	            Notify me about updates to apps or games that I downloaded
+	          </q-item-label>
+        </q-item-section>
+	</q-item>
+</q-list>
+]]></content>
+    <tabTrigger>qlist</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-list Quasar</description>
+</snippet>
