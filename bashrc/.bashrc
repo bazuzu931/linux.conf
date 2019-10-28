@@ -227,20 +227,11 @@ function lar58 {
 	cd $1;
 }
 
-function lar57 {
-	composer create-project laravel/laravel="5.7" $1;
+function lar6 {
+	composer create-project laravel/laravel="6" $1;
 	cd $1;
 }
 
-function lar56 {
-	composer create-project laravel/laravel="5.6" $1;
-	cd $1;
-}
-
-function lar55 {
-	composer create-project laravel/laravel="5.5" $1;
-	cd $1;
-}
 
 
 alias les="laravel-echo-server "
@@ -256,7 +247,7 @@ alias pap="php artisan passport:install"
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
 alias nrs="npm run serve "
-alias ni="npm i ; npm audit fix"
+alias ni="npm i $1; npm audit fix"
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
