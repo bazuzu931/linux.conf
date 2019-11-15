@@ -49,7 +49,7 @@ function ddi {
 	mv $1 ~/programs;
 	sudo dpkg -i ~/programs/$1;
 }
-alias rmd='sudo rm -rf '
+alias rmd='sudo rm -rf $1; sudo apt-get --purge remove $1'
 
 # delete beside (not work)
 # alias rmbes='ls | grep -v $1 | xargs rm -rfv'
@@ -247,9 +247,18 @@ alias pap="php artisan passport:install"
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
 alias nrs="npm run serve "
-alias ni="npm i $1; npm audit fix"
+alias ni="npm install $1 "
 alias nig="npm install -g "
 alias nf="npm audit fix"
+
+function qq(){
+	cd quasarapp/ ;
+	quasar build;
+	cd ../;
+	npm run dev;
+}
+alias qb='quasar build'
+alias qd='quasar dev'
 
 alias gd="gridsome develop"
 
@@ -633,18 +642,19 @@ source "$BASH_IT"/bash_it.sh
 # TEMPLE alias
 # Run project develop environment
 
-# function ppp() {
-# 	cd ~/Desktop/arenatap.com;
-# 	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
-# 	gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
-# 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
-# 	subl;
-# }
-
 function ppp() {
-	cd ~/Desktop/todo;
-	gnome-terminal --tab --title=Quasar  -- bash -c "quasar dev ; bash";
+	cd ~/Desktop/arena;
+	gnome-terminal --tab --title=Artisan  -- bash -c "php artisan serve ; bash";
+	# gnome-terminal --tab --title=NPM  -- bash -c "npm run watch-poll ; bash";
+	gnome-terminal --tab --title=Quasar  -- bash -c "cd quasarapp; quasar dev ; bash";
 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
 	subl;
 }
+
+# function ppp() {
+# 	cd ~/Desktop/todo;
+# 	gnome-terminal --tab --title=Quasar  -- bash -c "quasar dev ; bash";
+# 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
+# 	subl;
+# }
 
