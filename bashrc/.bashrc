@@ -50,6 +50,7 @@ function ddi {
 	sudo dpkg -i ~/programs/$1;
 }
 alias rmd='sudo rm -rf $1; sudo apt-get --purge remove $1'
+alias dl='sudo rm -rf $1'
 
 # delete beside (not work)
 # alias rmbes='ls | grep -v $1 | xargs rm -rfv'
@@ -243,6 +244,7 @@ alias paf="php artisan migrate:fresh"
 alias pat="php artisan tinker"
 alias pam="php artisan migrate"
 alias pap="php artisan passport:install"
+alias pu="clear && vendor/bin/phpunit"
 
 alias nrw="npm run watch-poll "
 alias nrd="npm run dev "
