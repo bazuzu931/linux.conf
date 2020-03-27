@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-button type="success">Success</el-button>
+]]></content>
+    <tabTrigger>elb</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-button</description>
+</snippet>

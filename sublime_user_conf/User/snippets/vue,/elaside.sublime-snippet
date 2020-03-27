@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-aside width="200px">Aside</el-aside>
+]]></content>
+    <tabTrigger>elaside</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-aside</description>
+</snippet>

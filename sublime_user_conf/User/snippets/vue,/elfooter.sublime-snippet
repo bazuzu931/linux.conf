@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-footer>Footer</el-footer>
+]]></content>
+    <tabTrigger>elfooter</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-footer</description>
+</snippet>

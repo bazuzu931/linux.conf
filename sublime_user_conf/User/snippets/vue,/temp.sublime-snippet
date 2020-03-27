@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+<template>
+	<div class="">
+
+	</div>
+</template>
+
+<script>
+
+
+	export default
+	{
+		props: {
+
+		},
+
+		components: {
+
+		},
+
+		computed: {
+
+		}
+
+	}
+</script>
+]]></content>
+    <tabTrigger>temp</tabTrigger>
+    <scope>text.html.vue, meta.tag.inline.form.html, punctuation.definition.tag.begin.html</scope>
+    <description>Vuejs Template</description>
+</snippet>

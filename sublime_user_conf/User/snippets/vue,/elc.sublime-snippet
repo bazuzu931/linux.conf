@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-container>
+
+</el-container>
+]]></content>
+    <tabTrigger>elcon</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-container EMPTY</description>
+</snippet>

@@ -13,5 +13,6 @@
 	"save_on_focus_lost": true,
 	"theme": "Material-Theme.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"update_check": false
+	"update_check": false,
+	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?",
 }

@@ -14,6 +14,13 @@
 #    sudo apt autoremove -y
 # fi
 
+########################################################################################
+########################################################################################
+function bro() {
+	cd /home/momo/Desktop/Bot-linux;
+	bash Bot.sh;
+}
+
 
 ########################################################################################
 ########################################################################################
@@ -91,9 +98,9 @@ alias 600="sudo chmod -R 600 $1" #делает файл неисполняемы
 
 ############################################################
 # Youtube-dl
-alias yd='youtube-dl -cit $1'
+alias yd='sudo youtube-dl -U; youtube-dl -cit $1'
 # download 1 mp3
-alias yd2='youtube-dl --extract-audio --audio-format mp3 $1'
+alias yd2='sudo youtube-dl -U; youtube-dl --extract-audio --audio-format mp3 $1'
 # download playlist mp3
 alias yd3='youtube-dl --extract-audio --audio-format mp3 -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
 ############################################################
@@ -106,7 +113,7 @@ alias pipi='pip3 install '
 alias p3='python3 '
 alias pipup='pip install --upgrade pip '
 alias sassw='sass --watch $1:$2'
-alias jes='jekyll serve'
+# alias jes='jekyll serve'
 alias lg='(ls -l -d [!.]?* && ls -l -d .[!.]?*) | grep $1 '
 # alias lg='ls -ap | grep -v / | egrep "^\." '
 alias cont='grep -rHino $1 '
@@ -115,9 +122,12 @@ alias k1='kill %1 '
 alias k2='kill %2 '
 alias k3='kill %3 '
 
-
-alias ser='ssh -p 50111 bazuzu@46.229.213.251 '
-alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
+###########################################
+# SSH dedic
+###########################################
+# alias ser='ssh -p 50111 bazuzu@46.229.213.251 '
+# alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
+alias ser="ssh 'root@185.200.241.78' "
 
 
 ###########################################
@@ -252,6 +262,11 @@ alias nrs="npm run serve "
 alias ni="npm install $1 "
 alias nig="npm install -g "
 alias nf="npm audit fix"
+function npmupd() {
+	npm i -g npm-check-updates;
+	npm-check-updates -u;
+	npm install;
+}
 
 function qq(){
 	cd quasarapp/ ;
@@ -332,8 +347,9 @@ function lar1 {
 ###########################################
 # Virtial env
 ###########################################
+alias activ='source bin/activate '
 alias deac='deactivate '
-alias isenv="python isvenv.py"
+alias isenv="python is_venv.py"
 
 # create virtualenv, cd to env folder, and activate it
 function envpy {
