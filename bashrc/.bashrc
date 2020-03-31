@@ -170,7 +170,7 @@ alias gib='git branch '
 alias gic='git checkout '
 
 # push master branch
-# function gg {
+# function gmas {
 # 	git add . ;
 # 	git commit -m "$1";
 # 	git push -u origin master;

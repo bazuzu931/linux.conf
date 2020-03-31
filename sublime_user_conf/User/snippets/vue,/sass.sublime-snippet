@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-<style lang="sass">
+<style lang="sass" scoped>
 	${1:}
 </style>
 ]]></content>
