@@ -166,18 +166,30 @@ alias gitc='git commit -m $1 '
 alias gitac='git add . ; git commit -m $1 '
 alias gitpush='git push -u origin master '
 alias gitgp='git push -u origin gh-pages '
+alias gib='git branch '
+alias gic='git checkout '
+
+# push master branch
+# function gg {
+# 	git add . ;
+# 	git commit -m "$1";
+# 	git push -u origin master;
+# }
 
 function gg {
+	git_branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
+	printf "\n\n Push to $git_branch_name \n\n";
 	git add . ;
 	git commit -m "$1";
-	git push -u origin master;
+	git push -u origin $git_branch_name;
 }
 
-function ggg {
-	git add . ;
-	git commit -m $1;
-	git push -u origin gh-pages;
-}
+
+# function gb {
+# 	git add . ;
+# 	git commit -m "$1";
+# 	git push -u origin master;
+# }
 
 function gitback {
 #####    $1 = its a new commit
@@ -675,4 +687,3 @@ function ppp() {
 # 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
 # 	subl;
 # }
-

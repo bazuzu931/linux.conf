@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+async mounted() {
+	this.users = await this.\$axios.\$get('https://jsonplaceholder.typicode.com/users')
+},
+]]></content>
+    <tabTrigger>amounted</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.function.declaration.js, storage.type.js</scope>
+    <description>async mounted</description>
+</snippet>

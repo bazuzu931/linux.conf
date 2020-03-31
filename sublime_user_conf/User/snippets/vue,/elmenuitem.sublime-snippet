@@ -1,10 +1,8 @@
 <snippet>
     <content><![CDATA[
-<el-container>
-	${1:}
-</el-container>
+<el-menu-item index="1-1">item one</el-menu-item>
 ]]></content>
-    <tabTrigger>elc</tabTrigger>
+    <tabTrigger>elmenuitem</tabTrigger>
     <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
-    <description>el-container EMPTY</description>
+    <description>el-menu-item</description>
 </snippet>

@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[
-<el-container>
-	${1:}
-</el-container>
+<el-row type="flex" justify="center" align="middle" :gutter="20">
+
+</el-row>
 ]]></content>
-    <tabTrigger>elc</tabTrigger>
+    <tabTrigger>elrow</tabTrigger>
     <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
-    <description>el-container EMPTY</description>
+    <description>el-row</description>
 </snippet>

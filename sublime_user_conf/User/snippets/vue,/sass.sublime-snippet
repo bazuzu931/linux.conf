@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<style lang="sass">
+	${1:}
+</style>
+]]></content>
+    <tabTrigger>sass</tabTrigger>
+    <scope>text.html.vue, meta.tag.style.begin.html, punctuation.definition.tag.begin.html</scope>
+    <description>style lang="SaSS"</description>
+</snippet>

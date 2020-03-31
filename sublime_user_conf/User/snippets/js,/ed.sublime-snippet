@@ -2,11 +2,9 @@
     <content><![CDATA[
 export default
 {
-	data() {
-		return {
-			${1:}
-		}
-	}
+	data: () => ({
+		${1:}
+	}),
 }
 ]]></content>
     <tabTrigger>ed</tabTrigger>

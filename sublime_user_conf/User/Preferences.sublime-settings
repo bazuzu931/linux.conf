@@ -14,5 +14,5 @@
 	"theme": "Material-Theme.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
-	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?",
+	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?"
 }

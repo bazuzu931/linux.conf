@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-form-item label="Login">
+	<el-input v-model="formLabelAlign.login"></el-input>
+</el-form-item>
+]]></content>
+    <tabTrigger>elformitem</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-form-item</description>
+</snippet>
