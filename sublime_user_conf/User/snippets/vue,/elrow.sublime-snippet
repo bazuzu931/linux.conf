@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-<el-row type="flex" justify="center" align="middle" :gutter="20">
-
+<el-row type="flex" justify="${1:center}" align="${2:middle}" :gutter="20">
+	${3:}
 </el-row>
 ]]></content>
     <tabTrigger>elrow</tabTrigger>
