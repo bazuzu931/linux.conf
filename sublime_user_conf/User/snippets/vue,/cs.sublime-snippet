@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+class=" ${1:} " ]]></content>
+    <tabTrigger>cs</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, meta.attribute-with-value.class.html, entity.other.attribute-name.class.html</scope>
+    <description>class=""</description>
+</snippet>

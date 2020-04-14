@@ -90,6 +90,7 @@
     { "keys": ["ctrl+shift+d"], "command": "delete_file" },
 	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
 	{ "keys": ["ctrl+alt+y"], "command": "advanced_new_file_new", "args": {"is_python": true}},
+	{ "keys": ["ctrl+j"], "command": "find_all_under" },
 	{
 		"keys": ["tab"],
 		"command": "insert",
