@@ -158,6 +158,8 @@ function hosts {
 	exit;
 }
 
+alias hhh="~/ngrok http $1 "
+
 ###########################################
 # Git
 ###########################################
@@ -169,13 +171,15 @@ alias gitgp='git push -u origin gh-pages '
 alias gib='git branch '
 alias gic='git checkout '
 
-# push master branch
+
+# push to master branch
 # function gmas {
 # 	git add . ;
 # 	git commit -m "$1";
 # 	git push -u origin master;
 # }
 
+# Commit all changes to github current branch
 function gg {
 	git_branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
 	printf "\n\n Push to $git_branch_name \n\n";
@@ -184,19 +188,21 @@ function gg {
 	git push -u origin $git_branch_name;
 }
 
-
-# function gb {
-# 	git add . ;
-# 	git commit -m "$1";
-# 	git push -u origin master;
-# }
-
+# Back app to specific commit state
 function gitback {
 #####    $1 = its a new commit
 	git commit --amend -m $1;
 	git push -f;
 }
 
+# Restore all changes that wasn't been commit
+function gitreset {
+	rm -dR -v !".git";
+	printf "\n\n Deleted All files \n\n";
+	git reset --hard HEAD
+}
+
+# Send all new changes in linux setting's file to github
 function copgit {
 	cd /home/$USER/Desktop/github_projects/linux.conf/ ;
 	./copy-all.sh;

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+border-2 border-red-600
+]]></content>
+    <tabTrigger>bb</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, source.js.embedded.vue, source.js, string.quoted.single.js</scope>
+    <description>Test border</description>
+</snippet>

@@ -1,18 +1,16 @@
 <snippet>
     <content><![CDATA[
 <template>
-	<q-page padding>
-
-	</q-page>
+	<div class="  ">
+		${1:}
+	</div>
 </template>
 
 <script>
 	export default {
-		data() {
-			return {
+		data: () => ({
 
-			}
-		}
+		}),
 	}
 </script>
 ]]></content>
