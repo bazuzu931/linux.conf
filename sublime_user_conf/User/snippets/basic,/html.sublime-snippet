@@ -1,21 +1,21 @@
 <snippet>
-    <content><![CDATA[
+	<content><![CDATA[
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <link rel="stylesheet" href="style.css" />
-        <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
-    <body>
+<head>
+	<meta charset="utf-8">
+	<title>App title</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+<body>
 
-    </body>
+	<script src="js/scripts.js"></script>
+</body>
 </html>
 ]]></content>
-    <tabTrigger>html</tabTrigger>
-    <scope>text.html.basic, meta.tag.structure.any.html, punctuation.definition.tag.end.html</scope>
-    <description>html bazuzuu</description>
+	<tabTrigger>hhh</tabTrigger>
+	<scope>text.html.basic, meta.tag.sgml.html, punctuation.definition.tag.html</scope>
+	<description>html Boilerplate</description>
 </snippet>

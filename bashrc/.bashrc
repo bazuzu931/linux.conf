@@ -2,7 +2,7 @@
 ########################################################################################
 ########################################################################################
 ########################################################################################
-
+shopt -s extglob
 # #  Always good practice to update packages. However ask user if they would like to do so
 # #  For explanation on how this works and why check out https://garywoodfine.com/use-pbcopy-on-ubuntu/
 # read -p "Do you want to update your package repositories before proceeding ? " -n 1 -r
@@ -197,7 +197,7 @@ function gitback {
 
 # Restore all changes that wasn't been commit
 function gitreset {
-	rm -dR -v !".git";
+	rm -dvR !(".git");
 	printf "\n\n Deleted All files \n\n";
 	git reset --hard HEAD
 }
@@ -513,7 +513,7 @@ shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
