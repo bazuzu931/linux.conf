@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+let ${1:} = ${2:}
+]]></content>
+    <tabTrigger>l</tabTrigger>
+    <scope>source.js, storage.type.js</scope>
+    <description>let </description>
+</snippet>

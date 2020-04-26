@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+constructor(${1:name}, ${2:age}){
+	this.${1:name} = ${1:name}
+	this.${2:age} = ${2:age}
+}
+]]></content>
+    <tabTrigger>cs</tabTrigger>
+    <scope>source.js, meta.class.js, meta.block.js, meta.function.declaration.js, entity.name.function.constructor.js</scope>
+    <description>constructor</description>
+</snippet>

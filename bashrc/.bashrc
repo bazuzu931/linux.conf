@@ -280,6 +280,10 @@ alias nrs="npm run serve "
 alias ni="npm install $1 "
 alias nig="npm install -g "
 alias nf="npm audit fix"
+
+# Update npm packages in current packege
+alias nu=" npm-check -u"
+
 function npmupd() {
 	npm i -g npm-check-updates;
 	npm-check-updates -u;

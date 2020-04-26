@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+console.error( ${1:} )
+]]></content>
+    <tabTrigger>coe</tabTrigger>
+    <scope>source.js, meta.function-call.method.js, meta.group.js, meta.block.js, meta.function-call.method.js, support.type.object.console.js</scope>
+    <description>console.error()</description>
+</snippet>
