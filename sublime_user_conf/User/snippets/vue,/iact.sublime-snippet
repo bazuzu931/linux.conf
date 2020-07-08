@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { mapActions } from 'vuex'
+]]></content>
+    <tabTrigger>iact</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.import.js, keyword.control.import-export.js</scope>
+    <description>import mapActions</description>
+</snippet>

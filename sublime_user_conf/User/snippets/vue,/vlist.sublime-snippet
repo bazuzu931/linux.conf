@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<v-list>
+	<v-list-item v-for="n in 5" :key="n" >
+		<v-list-item-title> {{ n }} </v-list-item-title>
+	</v-list-item>
+</v-list>
+]]></content>
+    <tabTrigger>vlist</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-list</description>
+</snippet>

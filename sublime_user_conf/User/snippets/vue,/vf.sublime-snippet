@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+v-for="${1:u in users}"
+]]></content>
+    <tabTrigger>vf</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, entity.other.attribute-name.html</scope>
+    <description>v-for</description>
+</snippet>

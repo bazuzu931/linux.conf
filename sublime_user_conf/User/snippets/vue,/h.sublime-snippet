@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+height="${1:100}px"
+]]></content>
+    <tabTrigger>h</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, meta.attribute-with-value.html, entity.other.attribute-name.html</scope>
+    <description>height</description>
+</snippet>

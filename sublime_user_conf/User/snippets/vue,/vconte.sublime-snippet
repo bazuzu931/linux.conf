@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<v-content>
+	${1:}
+</v-content>
+]]></content>
+    <tabTrigger>vconte</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-content</description>
+</snippet>

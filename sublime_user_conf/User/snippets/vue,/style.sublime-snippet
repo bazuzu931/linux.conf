@@ -1,8 +1,6 @@
 <snippet>
     <content><![CDATA[
-<style ${1:lang="stylus"} scoped>
-	${2:}
-</style>
+style=" ${1:} "
 ]]></content>
     <tabTrigger>sty</tabTrigger>
     <scope>text.html.vue, meta.tag.style.begin.html, punctuation.definition.tag.begin.html</scope>

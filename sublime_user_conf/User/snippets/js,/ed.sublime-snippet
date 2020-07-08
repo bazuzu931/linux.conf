@@ -6,9 +6,21 @@ export default
 		${1:}
 	}),
 
-	components: {
+	middleware: [
+		${2:}
+	],
 
-	}
+	components: {
+		${3:}
+	},
+
+	computed: {
+		${4:}
+	},
+
+	methods: {
+		${5:}
+	},
 }
 ]]></content>
     <tabTrigger>ed</tabTrigger>

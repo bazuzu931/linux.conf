@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+app.get('/', (req, res, next) => {
+	${1:}
+})
+]]></content>
+    <tabTrigger>aget</tabTrigger>
+    <scope>source.js, variable.other.object.js</scope>
+    <description>app.get expressJS</description>
+</snippet>

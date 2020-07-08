@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<div v-if="">${1:}</div>
+<div v-else>${2:}</div>
+]]></content>
+    <tabTrigger>divif</tabTrigger>
+    <scope>text.html.vue, meta.tag.block.any.html, punctuation.definition.tag.begin.html</scope>
+    <description>div v-If</description>
+</snippet>

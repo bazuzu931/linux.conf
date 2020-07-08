@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+export const state = () => ({
+	${1:}
+})
+]]></content>
+    <tabTrigger>est</tabTrigger>
+    <scope>source.js, meta.export.js, keyword.control.import-export.js</scope>
+    <description>export state</description>
+</snippet>

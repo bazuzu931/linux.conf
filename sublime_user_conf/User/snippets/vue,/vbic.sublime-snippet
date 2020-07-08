@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<v-btn icon @click="${1:}">
+	<v-icon>mdi-${2:magnify}</v-icon>
+</v-btn>
+]]></content>
+    <tabTrigger>vbic</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-btn + v-icon</description>
+</snippet>

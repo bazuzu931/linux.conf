@@ -117,11 +117,6 @@
 	        }
 	    ]
 	},
-	{ "keys": ["tab"], "command": "next_field", "context":
-	    [
-	        { "key": "has_next_field", "operator": "equal", "operand": true }
-	    ]
-	},
 
 	// php
     { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { mapState } from 'vuex'
+]]></content>
+    <tabTrigger>istate</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.import.js, keyword.control.import-export.js</scope>
+    <description>import mapState</description>
+</snippet>

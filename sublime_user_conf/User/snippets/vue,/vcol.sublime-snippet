@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<v-col cols="12" sm="4" ${1:v-for="n in 3" :key="n"}>
+	${2:<v-card class="pa-2" outlined tile>
+		One of three columns
+	</v-card>}
+</v-col>
+]]></content>
+    <tabTrigger>vcol</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-col</description>
+</snippet>

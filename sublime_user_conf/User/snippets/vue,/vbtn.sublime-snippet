@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<v-btn @click="${1:}" class="my-2" ${2:text} small color="${3:primary}">${4:Primary}</v-btn>
+]]></content>
+    <tabTrigger>vbtn</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-btn</description>
+</snippet>

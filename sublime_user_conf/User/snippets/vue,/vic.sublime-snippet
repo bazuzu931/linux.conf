@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<v-icon>mdi-${1:magnify}</v-icon>
+]]></content>
+    <tabTrigger>vic</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-icon</description>
+</snippet>

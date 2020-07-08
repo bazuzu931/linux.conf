@@ -1,7 +1,5 @@
 <snippet>
-    <content><![CDATA[
-this.
-]]></content>
+<content><![CDATA[this.${1:} ]]></content>
     <tabTrigger>t</tabTrigger>
     <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.block.js</scope>
     <description>this.</description>

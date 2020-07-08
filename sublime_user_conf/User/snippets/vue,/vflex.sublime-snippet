@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<v-flex xs12 sm8 md6 >
+	${1:}
+</v-flex>
+]]></content>
+    <tabTrigger>vflex</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-flex</description>
+</snippet>

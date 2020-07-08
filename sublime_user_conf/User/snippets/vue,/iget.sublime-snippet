@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { mapGetters } from 'vuex'
+]]></content>
+    <tabTrigger>iget</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.import.js, keyword.control.import-export.js</scope>
+    <description>import mapGetters</description>
+</snippet>
