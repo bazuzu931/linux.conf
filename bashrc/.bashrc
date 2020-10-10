@@ -45,8 +45,8 @@ alias tw="/home/momo/.config/composer/vendor/awssat/tailwindo/tailwindo"
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
-alias sss='shutdown now'
-alias rrr='reboot'
+alias sss='shutdown now || systemctl shutdown -i'
+alias rrr='reboot || systemctl reboot -i'
 
 alias ai='sudo apt install '
 alias ri='sudo apt remove -y '
@@ -126,8 +126,8 @@ alias k3='kill %3 '
 # SSH dedic
 ###########################################
 # alias ser='ssh -p 50111 bazuzu@46.229.213.251 '
-# alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
-alias ser="ssh 'root@185.200.241.78' "
+alias scop='scp -rp ./Tapad/ root@78.40.217.74:~/projects/ '
+alias ser="ssh 'root@78.40.217.74' "
 
 
 ###########################################
@@ -281,13 +281,11 @@ alias ni="npm install $1 "
 alias nig="npm install -g "
 alias nf="npm audit fix"
 
-# Update npm packages in current packege
-alias nu=" npm-check -u"
 
-function npmupd() {
-	npm i -g npm-check-updates;
-	npm-check-updates -u;
-	npm install;
+function npu() {
+	sudo npm i -g npm-check-updates;
+	sudo npm-check-updates -u;
+	npm update;
 }
 
 function qq(){

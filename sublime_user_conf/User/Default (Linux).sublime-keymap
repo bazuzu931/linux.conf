@@ -1,11 +1,8 @@
-[
+[	
 
 	// close other tabs
 	{ "keys": ["alt+c"],
 	"command": "close_others" },
-
-	//close tab
-	{ "keys": ["alt+z"], "command": "close" },
 
 	// cloase other windows
 	{ "keys": ["alt+w"],
@@ -21,9 +18,6 @@
 
 	// run Repl in current window
 	{ "keys": ["alt+v"], "command": "build" },
-
-	// Select WORD
-	{ "keys": ["ctrl+m"], "command": "expand_selection", "args": {"to": "word"} },
 
 	// run Repl in other window
 	{ "keys":["ctrl+shift+a"],
@@ -41,45 +35,46 @@
 			"extend_env": {"PYTHONIOENCODING": "utf-8"}
 		}
 	},
-	{ "keys": ["alt+space"],
-		"command": "run_existing_window_command",
-		"args": { "id": "repl_python_run",
+	{ "keys": ["alt+space"], 
+		"command": "run_existing_window_command", 
+		"args": { "id": "repl_python_run", 
 		"file": "config/Python/Main.sublime-menu" }
 	},
 
 	// run macro file
-	{ "keys": ["ctrl+y"],
-		"command": "run_macro_file",
+	{ "keys": ["ctrl+y"], 
+		"command": "run_macro_file", 
 		"args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}
 	},
 
 	// duplicate line
-	{ "keys": ["ctrl+d"],
+	{ "keys": ["ctrl+d"], 
 	"command": "duplicate_line" },
-	//
-	{ "keys": ["ctrl+g"], "command": "find_under_expand" },
 
 	// Copy file url
 	// https://github.com/mjhea0/sublime-setup-for-python/blob/master/dotfiles/copy_path_to_clipboard.py
 	{ "keys": ["ctrl+shift+c"],
 	"command": "copy_path_to_clipboard" },
 
-	// create new snippet
+	// create new snippet	
 	// { "keys": ["ctrl+i"], "command": "new_snippet"},
-	{
-		"keys": ["f8"],
+	{ 
+		"keys": ["f8"], 
 		"command": "better_snippet_manager_create",
 	},
 
 	// Edit snippet
-	{
-		"keys": ["f7"],
+	{ 
+		"keys": ["f7"], 
 		"command": "better_snippet_manager_edit"
 	},
 
 	// Multiple carets
 	{ "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
 	{ "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+
+
 
 	// Wrapping content with tag
 	// Emmet => CTRL + SHIFT + G
@@ -90,7 +85,6 @@
     { "keys": ["ctrl+shift+d"], "command": "delete_file" },
 	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
 	{ "keys": ["ctrl+alt+y"], "command": "advanced_new_file_new", "args": {"is_python": true}},
-	{ "keys": ["ctrl+j"], "command": "find_all_under" },
 	{
 		"keys": ["tab"],
 		"command": "insert",
@@ -100,38 +94,35 @@
 		}]
 	},
 
+
 	// JSX - to wrap tags
 	{
 	    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
 	        {
-	            "operand": "source.js",
-	            "operator": "equal",
-	            "match_all": true,
+	            "operand": "source.js", 
+	            "operator": "equal", 
+	            "match_all": true, 
 	            "key": "selector"
 	        },
-	        {
-	            "key": "selection_empty",
-	            "operator": "equal",
+	        {   
+	            "key": "selection_empty", 
+	            "operator": "equal", 
 	            "operand": true,
-	            "match_all": true
+	            "match_all": true 
 	        }
+	    ]
+	},
+	{ "keys": ["tab"], "command": "next_field", "context":
+	    [
+	        { "key": "has_next_field", "operator": "equal", "operand": true }
 	    ]
 	},
 
 	// php
     { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },
 
-    // Php Companion
-	  // { "keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} },
-	  // { "keys": ["shift+f12"], "command": "goto_definition_scope" },
-      { "keys": ["f1"], "command": "expand_fqcn" },
-	  { "keys": ["f2"], "command": "find_use" },
-	  { "keys": ["f3"], "command": "insert_php_constructor_property" },
-	  { "keys": ["f4"], "command": "implement" },
-	  { "keys": ["f5"], "command": "import_namespace" },
 
-	  //Sidebar
-	  { "keys": ["ctrl+r"], "command": "toggle_side_bar" }
+
 
 ]
 

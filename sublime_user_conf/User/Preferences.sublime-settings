@@ -1,25 +1,14 @@
+
 {
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+    "color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+    "theme": "Material-Theme.sublime-theme",
 	"default_root": "current",
-	"font_face": "Inconsolata",
 	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"BracketHighlighter",
-		"ColorPicker",
-		"GitGutter",
-		"Laravel Blade Highlighter",
-		"Sass",
-		"Tailwind CSS Autocomplete",
-		"Terminus",
 		"Vintage"
 	],
-	"line_padding_bottom": 10,
-	"line_padding_top": 10,
 	"save_on_focus_lost": true,
-	"theme": "Material-Theme.sublime-theme",
-	"trim_trailing_white_space_on_save": true,
-	"update_check": false,
-	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?"
+	"update_check": false
 }
