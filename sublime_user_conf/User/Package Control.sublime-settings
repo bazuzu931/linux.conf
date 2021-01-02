@@ -2,13 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"BracketHighlighter",
-		"ColorPicker",
-		"GitGutter",
-		"Laravel Blade Highlighter",
-		"Sass",
-		"Tailwind CSS Autocomplete",
-		"Terminus"
 	],
 	"installed_packages":
 	[
@@ -25,6 +18,7 @@
 		"BracketHighlighter",
 		"Color Highlighter",
 		"ColorPicker",
+		"Dart",
 		"Emmet",
 		"Extract Text to Laravel Blade View",
 		"FileSystem Autocompletion",

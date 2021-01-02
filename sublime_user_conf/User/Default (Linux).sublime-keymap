@@ -101,22 +101,22 @@
 	},
 
 	// JSX - to wrap tags
-	{
-	    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
-	        {
-	            "operand": "source.js",
-	            "operator": "equal",
-	            "match_all": true,
-	            "key": "selector"
-	        },
-	        {
-	            "key": "selection_empty",
-	            "operator": "equal",
-	            "operand": true,
-	            "match_all": true
-	        }
-	    ]
-	},
+	// {
+	//     "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
+	//         {
+	//             "operand": "source.js",
+	//             "operator": "equal",
+	//             "match_all": true,
+	//             "key": "selector"
+	//         },
+	//         {
+	//             "key": "selection_empty",
+	//             "operator": "equal",
+	//             "operand": true,
+	//             "match_all": true
+	//         }
+	//     ]
+	// },
 
 	// php
     { "keys": ["ctrl+shift+u"], "command": "run_phpunit" },

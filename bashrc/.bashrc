@@ -13,6 +13,14 @@ shopt -s extglob
 #    sudo apt upgrade -y
 #    sudo apt autoremove -y
 # fi
+########################################################################################
+########################################################################################
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+PATH="$PATH:/usr/local/Android/android-studio/bin"
 
 ########################################################################################
 ########################################################################################
@@ -45,8 +53,8 @@ alias tw="/home/momo/.config/composer/vendor/awssat/tailwindo/tailwindo"
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
-alias sss='shutdown now'
-alias rrr='reboot'
+alias sss='shutdown now || systemctl poweroff -i'
+alias rrr='reboot || systemctl reboot -i'
 
 alias ai='sudo apt install '
 alias ri='sudo apt remove -y '
@@ -102,7 +110,7 @@ alias yd='sudo youtube-dl -U; youtube-dl -cit $1'
 # download 1 mp3
 alias yd2='sudo youtube-dl -U; youtube-dl --extract-audio --audio-format mp3 $1'
 # download playlist mp3
-alias yd3='youtube-dl --extract-audio --audio-format mp3 -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
+alias yd3='sudo youtube-dl -U; youtube-dl --extract-audio --audio-format mp3 -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
 ############################################################
 
 
@@ -168,7 +176,11 @@ alias gitc='git commit -m $1 '
 alias gitac='git add . ; git commit -m $1 '
 alias gitpush='git push -u origin master '
 alias gitgp='git push -u origin gh-pages '
+
+# Go to branch
 alias gib='git branch '
+
+# create new branch and switch to tis branch
 alias gic='git checkout '
 
 
