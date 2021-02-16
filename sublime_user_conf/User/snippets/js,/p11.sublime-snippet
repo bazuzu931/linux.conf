@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:430} '
+const body          =   '☑️ ${2:i3 2120}\r☑️ ${3:4}gb Ram\r☑️ Plata lga${4:1155}\r☑️ ${5:500}gb hard disc\r☑️ Keys ${6:Casper}\r☑️ Power supply ${7:250}w' + chunk.desc_11()
+]]></content>
+	<tabTrigger>p11</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js</scope>
+	<description>p11</description>
+</snippet>

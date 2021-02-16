@@ -20,7 +20,10 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-PATH="$PATH:/usr/local/Android/android-studio/bin"
+export PATH=/home/momo/android-sdk/tools:/home/momo/android-sdk/tools/bin:$PATH
+# export PATH=/home/momo/android-sdk/cmdline-tools/latest:/home/momo/android-sdk/cmdline-tools/latest/bin:$PATH
+# export PATH=/home/momo/android-sdk/cmdline-tools/latest:/home/momo/android-sdk/cmdline-tools/latest/bin:$PATH
+
 
 ########################################################################################
 ########################################################################################
@@ -34,7 +37,6 @@ function bro() {
 ########################################################################################
 # PATH
 export PATH="$PATH:/opt/yarn-[version]/bin"
-alias tw="/home/momo/.config/composer/vendor/awssat/tailwindo/tailwindo"
 
 # open crontab with sublime
 # export VISUAL=/usr/bin/subl
@@ -712,3 +714,16 @@ function ppp() {
 # 	gnome-terminal --tab --title=Opera  -- bash -c "opera ; bash";
 # 	subl;
 # }
+
+
+# export PATH=$PATH:$HOME/jdk-10/bin
+# Or
+# export PATH=~/jdk-10/bin/:$PATH
+
+# Export the Android SDK path
+# export ANDROID_HOME=$HOME/android-sdk
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Fixes sdkmanager error with java versions higher than java 8
+# export JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions --add-modules java.se.ee'

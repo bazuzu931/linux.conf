@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:430} '
+const body          =   '${2:Komputer yenidi}Ev saraitinde ve Sirketler ucun masaustu komputerler.\rCatdirilma mumkundu.\r\n## Ram ${3:4}gb\r## Hard disk ${4:250}gb\r## plata ${5:775}\r## display ${6:19}\r${7:## videokart onboard ${8:hd2000}}' + chunk.desc_6()
+]]></content>
+	<tabTrigger>p6</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js</scope>
+	<description>p6</description>
+</snippet>

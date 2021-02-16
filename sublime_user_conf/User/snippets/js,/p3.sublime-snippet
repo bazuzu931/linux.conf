@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:430} '
+const body          =   'Monitor, maus, klaviatura  qiymete daxildir, ${2: Hamisi teze!}\rAyarlar ${3:i3 2120 3.0ghz} # Ram ${4:4}gb ddr${5:3} # HDD ${6:500}gb # monitor ${7:20}\r\nKredit yoxdur, ancaq nagd satis, yoxlamaya vaxt verilir!\rIstediyiviz sistem yazila biler! saynan var!' + chunk.desc_3()
+]]></content>
+	<tabTrigger>p3</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js</scope>
+	<description>p3</description>
+</snippet>

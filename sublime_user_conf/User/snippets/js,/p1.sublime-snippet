@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:475} '
+const body          =   'Parametrler:\r\ncpu: ${2:i5 2320}\rram: ${3:4} gb\rhard: ${4:500} gb\rmonitor: ${5:20}\r\n${6:Yenidir! } Zemanet verilir, sborkalar islenmisi ve yenivariantlari var\rcatdirilma var, qiymetde razilasmaq olar' + chunk.desc_1()
+]]></content>
+	<tabTrigger>p1</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js, string.quoted.single.js</scope>
+	<description>p1</description>
+</snippet>

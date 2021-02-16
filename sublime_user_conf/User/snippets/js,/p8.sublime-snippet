@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+	const price         =   ' ${1:430} '
+	const body          =   '+ processor ${2:i3 2120}\r+ ram ${3:4}\r+ hard ${4:250}\r+ sistem Windows ${5:10}\r+ monitor ${6:19}\r\n${7:Yenidir, qutunun icinde. }Her detalin azaltmaq yada artirmaq olar. Komputerler yaxsi veziyetdediler. üstünde teze dest klaviatura ve maus verilir.' + chunk.desc_8()
+]]></content>
+	<tabTrigger>p8</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js</scope>
+	<description>p8</description>
+</snippet>
