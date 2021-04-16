@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+for f in pre_${1:4}:
+	new_f = re.sub('^${1:4}','${2:5}', f)
+	old_file = os.path.join("./before", f)
+	new_file = os.path.join("./after", new_f)
+	os.rename(old_file, new_file)
+]]></content>
+	<tabTrigger>ff</tabTrigger>
+	<scope>source.python, meta.statement.for.python, punctuation.section.block.for.python</scope>
+	<description></description>
+</snippet>

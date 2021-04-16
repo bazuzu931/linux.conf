@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 const price         =   ' ${1:430} '
-const body          =   '✅ procesor ${2:i3}\r✅ Ram ${3:4}\r✅ Hdd ${4:500}\r✅ power ${5:300} wat\r✅ windows ${6:10 pro} ${7:\r✅ Yenidir} \r✅ Zemanet verilir!\r✅ Catdirilma var!' + chunk.desc_12()
+const body          =   '✅ procesor ${2:i3}\r✅ Ram ${3:4}\r✅ Hdd ${4:500}\r✅ power ${5:300} wat\r✅ windows ${6:10 pro} ${7:\r✅ Yenidir} \r✅ Zemanet verilir!\r✅ Catdirilma var!' + chunk.DC_DESC_NUM()
 ]]></content>
 	<tabTrigger>p12</tabTrigger>
 	<scope>source.js, meta.group.js, meta.block.js</scope>

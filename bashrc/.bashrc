@@ -21,8 +21,13 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH=/home/momo/android-sdk/tools:/home/momo/android-sdk/tools/bin:$PATH
-# export PATH=/home/momo/android-sdk/cmdline-tools/latest:/home/momo/android-sdk/cmdline-tools/latest/bin:$PATH
-# export PATH=/home/momo/android-sdk/cmdline-tools/latest:/home/momo/android-sdk/cmdline-tools/latest/bin:$PATH
+export ANDROID_HOME=/home/momo/android-sdk/tools/
+export ANDROID_SDK_ROOT=/home/momo/android-sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+
+alias jv="sudo update-alternatives --config java"
+
+
 
 
 ########################################################################################
@@ -50,8 +55,33 @@ export PATH="$PATH:/opt/yarn-[version]/bin"
 # done
 
 ########################################################################################
+################################### Tapad #############################################
+
+# Add
+function tadd {
+	cd /home/momo/Desktop/Tapad/scripts/version/Universal;
+	python3 main.py
+}
+# Start
+function tapad {
+	cd /home/momo/Desktop/Tapad/General;
+	node index.js
+}
+# Mix
+function tapmix {
+	cd /home/momo/Desktop/Tapad/scripts;
+	python3 mix.py $1
+}
+# Delete
+function tapdel {
+	cd /home/momo/Desktop/Tapad/scripts;
+	python3 delete.py $1
+}
+########################################################################################
 ########################################################################################
 
+alias fd='flutter doctor'
+alias fpg='flutter pub get'
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
@@ -113,10 +143,9 @@ alias yd='sudo youtube-dl -U; youtube-dl -cit $1'
 alias yd2='sudo youtube-dl -U; youtube-dl --extract-audio --audio-format mp3 $1'
 # download playlist mp3
 alias yd3='sudo youtube-dl -U; youtube-dl --extract-audio --audio-format mp3 -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
+# download playlist video
+alias yd4='sudo youtube-dl -U; youtube-dl -o "%(playlist)s/%(playlist_index)s-%(display_id)s-%(title)s.%(ext)s" $1'
 ############################################################
-
-
-
 
 
 alias pipi='pip3 install '
@@ -203,11 +232,13 @@ function gg {
 }
 
 # Back app to specific commit state
-function gitback {
+# gitback
+function gb {
 #####    $1 = its a new commit
 	git commit --amend -m $1;
 	git push -f;
 }
+# alias gback = 'git checkout HEAD~'$1
 
 # Restore all changes that wasn't been commit
 function gitreset {

@@ -6,6 +6,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"BracketHighlighter",
+		"ColorPicker",
+		"GitGutter",
+		"Laravel Blade Highlighter",
+		"Sass",
+		"Tailwind CSS Autocomplete",
+		"Terminus",
 		"Vintage"
 	],
 	"line_padding_bottom": 10,

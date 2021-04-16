@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 const price         =   ' ${1:430} '
-const body          =   'Her qiymete masaustu kompyuterler...\rSirketler ve ev ucun her cur zakazlari her sayda qebul edirik...\rKecib basqa elanlarimiza baxa bilersiz...\r\n- CPU ${2:i3 2120}\r- Ram ${3:ddr3} ${4:4}gb\r- Yaddas ${5:320}gb\r- Keys Innpower\r- BP ${6:300}watt\r- Monitor ${7:19} diaqonal\r${8:Tezedir}' + chunk.desc_5()
+const body          =   'Her qiymete masaustu kompyuterler...\rSirketler ve ev ucun her cur zakazlari her sayda qebul edirik...\rKecib basqa elanlarimiza baxa bilersiz...\r\n- CPU ${2:i3 2120}\r- Ram ${3:ddr3} ${4:4}gb\r- Yaddas ${5:320}gb\r- Keys Innpower\r- BP ${6:300}watt\r- Monitor ${7:19} diaqonal\r${8:Tezedir}' + chunk.DC_DESC_NUM()
 ]]></content>
 	<tabTrigger>p5</tabTrigger>
 	<scope>source.js, meta.group.js, meta.block.js</scope>
