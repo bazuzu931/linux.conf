@@ -54,29 +54,68 @@ export PATH="$PATH:/opt/yarn-[version]/bin"
 #     fi
 # done
 
+
 ########################################################################################
-################################### Tapad #############################################
+################################    Tapad  1     #######################################
 
 # Add
-function tadd {
-	cd /home/momo/Desktop/Tapad/scripts/version/Universal;
+function tadd1 {
+	cd /home/momo/Desktop/tapad/tapad_1/scripts/version/Universal;
 	python3 main.py
 }
 # Start
-function tapad {
-	cd /home/momo/Desktop/Tapad/General;
+function tapad1 {
+	cd /home/momo/Desktop/tapad/tapad_1/General;
 	node index.js
 }
 # Mix
-function tapmix {
-	cd /home/momo/Desktop/Tapad/scripts;
+function tapmix1 {
+	cd /home/momo/Desktop/tapad/tapad_1/scripts;
 	python3 mix.py $1
 }
 # Delete
-function tapdel {
-	cd /home/momo/Desktop/Tapad/scripts;
+function tapdel1 {
+	cd /home/momo/Desktop/tapad/tapad_1/scripts;
 	python3 delete.py $1
 }
+
+########################################################################################
+################################    Tapad  2     #######################################
+
+# Add
+function tadd2 {
+	cd /home/momo/Desktop/tapad/tapad_2/scripts/version/Universal;
+	python3 main.py
+}
+# Start
+function tapad2 {
+	cd /home/momo/Desktop/tapad/tapad_2/General;
+	node index.js
+}
+# Mix
+function tapmix2 {
+	cd /home/momo/Desktop/tapad/tapad_2/scripts;
+	python3 mix.py $1
+}
+# Delete
+function tapdel2 {
+	cd /home/momo/Desktop/tapad/tapad_2/scripts;
+	python3 delete.py $1
+}
+
+#azercell
+function azer {
+	cd /home/momo/Desktop/Halk/Azercell/;
+	python3 get_info.py
+}
+
+########################################################################################
+################################    Tapad       ########################################
+function tapad {
+	tapad1; tapad2
+}
+
+
 ########################################################################################
 ########################################################################################
 
@@ -419,7 +458,7 @@ function lar1 {
 ###########################################
 alias activ='source bin/activate '
 alias deac='deactivate '
-alias isenv="python is_venv.py"
+alias isenv="python3 /home/momo/Desktop/github_projects/linux.conf/scripts/is_venv_script/is_venv.py"
 
 # create virtualenv, cd to env folder, and activate it
 function envpy {
@@ -435,6 +474,9 @@ function envact {
 	source $1/bin/activate
   fi
 }
+
+# 2 Method activate virtualenv
+alias vac='source env/bin/activate'
 
 ###########################################
 # Django
