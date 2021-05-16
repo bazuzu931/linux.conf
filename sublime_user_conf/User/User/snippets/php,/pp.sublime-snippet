@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+public_path('${1:img}/${2:profile}/')
+]]></content>
+    <tabTrigger>pp</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.function-call.php, variable.function.php</scope>
+    <description>public_path('')</description>
+</snippet>

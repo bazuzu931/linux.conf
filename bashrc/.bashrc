@@ -119,6 +119,9 @@ function tapad {
 ########################################################################################
 ########################################################################################
 
+#close all windows
+alias ccc='bash ~/Desktop/scripts/close_windows.sh'
+
 alias fd='flutter doctor'
 alias fpg='flutter pub get'
 

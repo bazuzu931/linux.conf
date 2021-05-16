@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+\$this->validate(\$request, [
+    '${1:username}' => 'required|string|max:191',
+    '${2:email}'    => 'required|string|email|max:191|unique:users',
+    '${3:password}' => 'required|string|min:6'
+]);
+]]></content>
+    <tabTrigger>valid</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, variable.language.php, punctuation.definition.variable.php</scope>
+    <description>this-&lt;validate()</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$this->authorize('is${1:Admin}');
+]]></content>
+    <tabTrigger>ta</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, variable.language.php, punctuation.definition.variable.php</scope>
+    <description>$this-&lt;authorize('isAdmin');</description>
+</snippet>

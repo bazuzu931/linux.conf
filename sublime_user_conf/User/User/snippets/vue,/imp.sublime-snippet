@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import ${1:Navbar} from '@/components/${1:Navbar}'
+]]></content>
+    <tabTrigger>imp</tabTrigger>
+    <scope>text.html.vue, source.stylus.embedded.html, source.stylus, keyword.control.at-rule.other.stylus</scope>
+    <description>Import Vue component</description>
+</snippet>

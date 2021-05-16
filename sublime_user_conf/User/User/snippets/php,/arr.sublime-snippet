@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+['${1:message}' => '${2:User Deleted}']
+]]></content>
+    <tabTrigger>arr</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.array.php, punctuation.section.array.begin.php</scope>
+    <description>Laravel Array</description>
+</snippet>

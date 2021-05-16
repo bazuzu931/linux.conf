@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+Swal({
+  type: 'error',
+  title: 'Oops...',
+  text: 'You are uploading a large file!',
+  // footer: '<a href>Why do I have this issue?</a>'
+})
+]]></content>
+    <tabTrigger>swalerror</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.conditional.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>Swal error</description>
+</snippet>

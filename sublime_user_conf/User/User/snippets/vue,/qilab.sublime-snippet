@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<q-item-label>
+	${1:}
+</q-item-label>
+]]></content>
+    <tabTrigger>qilab</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-item-label</description>
+</snippet>

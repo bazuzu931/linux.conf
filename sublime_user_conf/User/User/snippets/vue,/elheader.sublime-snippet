@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-header>Header</el-header>
+]]></content>
+    <tabTrigger>elheader</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el header</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+const ${1:} = (${2:}) => {
+	${3:}
+}
+]]></content>
+    <tabTrigger>ff</tabTrigger>
+    <scope>source.js, meta.function.declaration.js, storage.type.function.js</scope>
+    <description>js Simple function</description>
+</snippet>

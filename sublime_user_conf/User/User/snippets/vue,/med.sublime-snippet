@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+@media screen and (min-width: ${1:768}px) {
+	${2:}
+}
+]]></content>
+    <tabTrigger>media</tabTrigger>
+    <scope>text.html.vue, text.css.vue, source.css.embedded.html, source.css, meta.at-rule.media.css, keyword.control.at-rule.media.css, punctuation.definition.keyword.css</scope>
+    <description>media </description>
+</snippet>

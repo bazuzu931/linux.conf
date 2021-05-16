@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public static void ${1:}(${2:}) {
+	${3:}		
+}
+]]></content>
+    <tabTrigger>psv</tabTrigger>
+    <scope>source.java, meta.class.java, meta.class.body.java, storage.modifier.java</scope>
+    <description>public static void</description>
+</snippet>

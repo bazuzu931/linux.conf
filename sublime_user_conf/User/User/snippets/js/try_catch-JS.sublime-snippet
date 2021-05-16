@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+try {
+	${1:}
+} catch (${2:err}) {
+	${3:}
+}
+]]></content>
+    <tabTrigger>try</tabTrigger>
+    <scope>source.js, meta.group.braces.curly.js, keyword.control.trycatch.js</scope>
+    <description>try catch JS</description>
+</snippet>

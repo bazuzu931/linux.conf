@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+document.querySelectorAll('.${1:}');
+]]></content>
+    <tabTrigger>sall</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, support.type.object.dom.js</scope>
+    <description>document.querySelectorAll</description>
+</snippet>

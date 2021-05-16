@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+ this.state.${1:} 
+]]></content>
+    <tabTrigger>ts</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, meta.conditional.js, meta.group.js, variable.language.this.js</scope>
+    <description>this.state</description>
+</snippet>

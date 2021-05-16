@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+throw new Exception("Error!");
+]]></content>
+    <tabTrigger>ee</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, keyword.control.exception.php</scope>
+    <description>php Exception</description>
+</snippet>

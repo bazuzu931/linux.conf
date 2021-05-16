@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+data: () => ({
+	${1:}
+}),
+]]></content>
+    <tabTrigger>data</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.function.declaration.js, entity.name.function.js</scope>
+    <description>data() -&lt; return </description>
+</snippet>

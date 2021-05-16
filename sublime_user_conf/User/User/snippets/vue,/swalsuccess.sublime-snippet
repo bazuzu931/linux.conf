@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+Swal(
+  'Updated!',
+  'User was updated!',
+  'success'
+)
+]]></content>
+    <tabTrigger>swalsuccess</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.function-call.method.js, meta.group.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>Swal success</description>
+</snippet>

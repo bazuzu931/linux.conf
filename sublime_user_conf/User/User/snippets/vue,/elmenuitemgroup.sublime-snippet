@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<el-menu-item-group title="Group One">
+	<el-menu-item index="1-1">item one</el-menu-item>
+	<el-menu-item index="1-2">item one</el-menu-item>
+</el-menu-item-group>
+]]></content>
+    <tabTrigger>elmenuitemgroup</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-menu-item-group</description>
+</snippet>

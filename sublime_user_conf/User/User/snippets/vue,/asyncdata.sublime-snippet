@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+async asyncData({\$axios}) {
+	const users = await \$axios.\$get('https://jsonplaceholder.typicode.com/users')
+	return {users}
+},
+]]></content>
+    <tabTrigger>asyncdata</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.function.declaration.js, storage.type.js</scope>
+    <description>async asyncData</description>
+</snippet>

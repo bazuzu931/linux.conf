@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+Gate::define('is${1:Admin}', function (\$user) {
+    return \$user->type === '${2:admin}';
+});
+]]></content>
+    <tabTrigger>gd</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.path.php, support.class.php</scope>
+    <description>Gate::define</description>
+</snippet>

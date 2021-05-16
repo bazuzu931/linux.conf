@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+<template>
+	<div class="  ">
+		${1:}
+	</div>
+</template>
+
+<script>
+	export default {
+		data: () => ({
+
+		}),
+	}
+</script>
+]]></content>
+    <tabTrigger>ttt</tabTrigger>
+    <scope>text.html.vue, meta.tag.other.html, punctuation.definition.tag.begin.html</scope>
+    <description>Template Pug</description>
+</snippet>

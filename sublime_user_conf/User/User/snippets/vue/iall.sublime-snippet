@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+import { mapState, mapMutations } from 'vuex'
+]]></content>
+    <tabTrigger>iall</tabTrigger>
+    <scope>text.html.vue</scope>
+    <description>import all Vuex</description>
+</snippet>

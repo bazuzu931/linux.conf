@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+Swal({
+	  title: 'Are you sure?',
+	  text: "You won't be able to revert this!",
+	  type: 'warning',
+	  showCancelButton: true,
+	  confirmButtonColor: '#3085d6',
+	  cancelButtonColor: '#d33',
+	  confirmButtonText: 'Yes, delete it!'
+}).then((result) => {
+    if (result.value) {
+	    //Send request to server
+        this.form.delete('api/user/'+id).then( () => {
+              Swal(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+            Fire.\$emit('AfterCreate');
+        })
+        .catch( () => {
+            swal("Failed!", "There was something wrong.", "warning");
+        });
+        // end of then-catch
+    }
+});
+// end of then.
+]]></content>
+    <tabTrigger>swalask</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>Swal ask confirmation</description>
+</snippet>

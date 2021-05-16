@@ -1,0 +1,57 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Autocomplete Javascript with Method Signature",
+		"Babel",
+		"Babel Snippets",
+		"babel-sublime",
+		"BetterSnippetManager",
+		"Blade Snippets",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
+		"Dart",
+		"Emmet",
+		"Extract Text to Laravel Blade View",
+		"FileSystem Autocompletion",
+		"GitGutter",
+		"Hayaku - tools for writing CSS faster",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"HTMLBeautify",
+		"Insert Filepath",
+		"JavaScript Completions",
+		"Laravel 5 Snippets",
+		"Laravel Blade AutoComplete",
+		"Laravel Blade Highlighter",
+		"Laravel Blade Spacer",
+		"Material Theme",
+		"Modific",
+		"Package Control",
+		"PHP Companion",
+		"PHP Constructors",
+		"requirementstxt",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter-phpcs",
+		"SublimeREPL",
+		"Tailwind CSS Autocomplete",
+		"Terminal",
+		"Terminus",
+		"Theme - Brogrammer",
+		"Theme - Spacegray",
+		"Vue Syntax Highlight"
+	],
+	"repositories":
+	[
+		"https://github.com/babel/babel-sublime"
+	]
+}

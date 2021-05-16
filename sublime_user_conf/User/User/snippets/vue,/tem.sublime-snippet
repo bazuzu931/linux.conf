@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<template ${1:lang="pug"}>
+	${2:}
+</template>
+]]></content>
+    <tabTrigger>t</tabTrigger>
+    <scope>text.html.vue, meta.tag.other.html, punctuation.definition.tag.begin.html</scope>
+    <description>Template Pug</description>
+</snippet>

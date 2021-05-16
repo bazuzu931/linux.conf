@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<script>
+	export default {
+		data () {
+			return {
+				${1:}
+			}
+		}
+	}
+</script>
+]]></content>
+    <tabTrigger>scr</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, punctuation.definition.tag.begin.html</scope>
+    <description>Vue Scripts template</description>
+</snippet>

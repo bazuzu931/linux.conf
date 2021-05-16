@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+export default function (${1:}) {
+	${2:}
+}
+]]></content>
+    <tabTrigger>edf</tabTrigger>
+    <scope>source.js, meta.export.js, keyword.control.import-export.js</scope>
+    <description>export default function</description>
+</snippet>

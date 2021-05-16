@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+style=" ${1:} "
+]]></content>
+    <tabTrigger>sty</tabTrigger>
+    <scope>text.html.vue, meta.tag.style.begin.html, punctuation.definition.tag.begin.html</scope>
+    <description>Style for Stylus</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<v-card>
+	<v-card-title> ${1:} </v-card-title>
+  	<v-card-text>
+  		${2:}
+  	</v-card-text>
+</v-card>
+]]></content>
+    <tabTrigger>vcard</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-card</description>
+</snippet>

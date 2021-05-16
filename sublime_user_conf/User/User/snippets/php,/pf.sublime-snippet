@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+public function ${1:index}()
+{
+	${2:}
+}
+]]></content>
+    <tabTrigger>pf</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, storage.modifier.php</scope>
+    <description>public function</description>
+</snippet>

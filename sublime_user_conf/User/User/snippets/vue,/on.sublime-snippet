@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:Fire}.\$on('${2:updatePage}', () => {
+  ${3:this.${4:loadPage}()};
+});
+]]></content>
+    <tabTrigger>on</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.block.js, variable.other.object.js</scope>
+    <description>Fire.$on()</description>
+</snippet>

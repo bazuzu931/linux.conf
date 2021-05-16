@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+console.group( ${1:} )
+console.log( ${2:} )
+console.groupEnd()
+${3:}
+]]></content>
+    <tabTrigger>cog</tabTrigger>
+    <scope>source.js, meta.object-literal.js, meta.block.js, meta.function-call.method.js, support.type.object.console.js</scope>
+    <description>Console Group</description>
+</snippet>

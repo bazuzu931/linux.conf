@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<q-item-section>
+	${1:}
+</q-item-section>
+]]></content>
+    <tabTrigger>qisec</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-item-section</description>
+</snippet>

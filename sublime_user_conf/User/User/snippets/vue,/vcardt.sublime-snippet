@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<v-card-title> ${1:} </v-card-title>
+]]></content>
+    <tabTrigger>vcardtitle</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-card-title</description>
+</snippet>

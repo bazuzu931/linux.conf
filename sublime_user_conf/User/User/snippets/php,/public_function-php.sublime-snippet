@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+public function ${1:name}(${2:})
+{
+	${3:}
+}
+
+]]></content>
+    <tabTrigger>pf</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php</scope>
+    <description>create php public function</description>
+</snippet>

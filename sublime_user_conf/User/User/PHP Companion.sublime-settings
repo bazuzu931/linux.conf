@@ -1,0 +1,4 @@
+{
+	// Sort the list of use statements by their line length
+    "use_sort_length": true,
+}

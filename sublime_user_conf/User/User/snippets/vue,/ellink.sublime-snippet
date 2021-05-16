@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-link type="success">${1:}</el-link>
+]]></content>
+    <tabTrigger>ellink</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-link</description>
+</snippet>

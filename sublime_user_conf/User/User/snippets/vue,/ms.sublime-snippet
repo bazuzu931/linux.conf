@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+mapState
+]]></content>
+    <tabTrigger>ms</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.object-literal.js, variable.other.readwrite.js</scope>
+    <description>mapState</description>
+</snippet>

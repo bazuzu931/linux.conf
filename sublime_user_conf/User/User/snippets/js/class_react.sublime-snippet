@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+class ${1:MyClass} extends ${2:React.Component} {
+
+	${3:}
+
+	render(){
+		return (
+			${4:}
+		)
+	}
+}
+
+${5:export default ${1:};}
+]]></content>
+	<tabTrigger>class</tabTrigger>
+	<scope>source.js, source.jsx</scope>
+</snippet>

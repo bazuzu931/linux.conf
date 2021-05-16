@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+import { mapMutations } from 'vuex'
+]]></content>
+    <tabTrigger>imut</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.import.js, keyword.control.import-export.js</scope>
+    <description>import mapMutations</description>
+</snippet>

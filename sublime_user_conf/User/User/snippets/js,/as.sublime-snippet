@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+async function ${1:}() {
+	${2:}
+}
+]]></content>
+    <tabTrigger>as</tabTrigger>
+    <scope>source.js, meta.function.declaration.js, storage.type.js</scope>
+    <description>async function</description>
+</snippet>

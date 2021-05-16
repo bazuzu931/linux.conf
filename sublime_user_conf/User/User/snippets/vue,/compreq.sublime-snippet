@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+components: {
+	'${1:task}': require('components/${2:Task}.vue').default,
+}
+]]></content>
+    <tabTrigger>compreq</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.object-literal.key.js</scope>
+    <description>components require</description>
+</snippet>

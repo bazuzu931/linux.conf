@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+if ( ${1:} ) {
+	${2:}
+}
+]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, keyword.control.php</scope>
+    <description>if php</description>
+</snippet>

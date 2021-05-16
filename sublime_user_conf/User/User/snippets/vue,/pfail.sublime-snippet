@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+this.\$Progress.fail();
+]]></content>
+    <tabTrigger>pfail</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.function-call.method.js, meta.group.js, meta.block.js, variable.language.this.js</scope>
+    <description>this.$Progress.fail();</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<nuxt-link to="/">${1:}</nuxt-link>
+]]></content>
+    <tabTrigger>nlink</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>nuxt-link</description>
+</snippet>

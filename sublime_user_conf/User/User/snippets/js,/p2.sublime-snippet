@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:430} '
+const body          =   '${2:Tezedirler}\rofis aptek market komputerler\rBir nece cesid var\r\nprocessor intel ${3:i3 2} nesil\rram ${4:4}gb\rhdd ${5:500}gb\rmonitor ${6:19} inch\rkeys trendsonic\r\nofis proqramlar + basqa proqramlarin yazilmasi\rkassa kompyuter, bitrix, 1c, ev kompyuter personalni' + chunk.DC_DESC_NUM()
+]]></content>
+	<tabTrigger>p2</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js, string.quoted.single.js</scope>
+	<description>p2</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+os.path.join(${1:})
+]]></content>
+	<tabTrigger>opj</tabTrigger>
+	<scope>source.python, meta.function-call.python, meta.qualified-name.python, meta.generic-name.python</scope>
+	<description>os.path.join</description>
+</snippet>

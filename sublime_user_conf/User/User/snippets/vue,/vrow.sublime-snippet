@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<v-row ${1:fluid} ${2:no-gutters}>
+	${3:}
+</v-row>
+]]></content>
+    <tabTrigger>vrow</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-row</description>
+</snippet>

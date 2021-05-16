@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<el-submenu index="1-4">
+	<template slot="title">item four</template>
+	<el-menu-item index="1-4-1">item one</el-menu-item>
+</el-submenu>
+]]></content>
+    <tabTrigger>elsubmenu</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>el-submenu</description>
+</snippet>

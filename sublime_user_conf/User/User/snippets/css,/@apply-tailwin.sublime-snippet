@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+.${1:con}
+	@apply ${2:} ]]></content>
+    <tabTrigger>.a</tabTrigger>
+    <scope>source.css, meta.selector.css</scope>
+    <description>@apply Tailwind Css</description>
+</snippet>

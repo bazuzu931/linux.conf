@@ -1,0 +1,39 @@
+<snippet>
+    <content><![CDATA[
+<template>
+
+	  <div class="main">
+	    {{ msg }}
+	  </div>
+
+</template>
+
+<script>
+export default {
+	  name: 'Main',
+	  data () {
+	    return {
+	      msg: 'Hola Dominica'
+	    }
+	  },
+
+	  methods () {
+
+	  },
+
+	  created () {
+
+	  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+</style>
+
+]]></content>
+    <tabTrigger>v1</tabTrigger>
+    <scope>text.html.vue, meta.tag.template.begin.html, punctuation.definition.tag.begin.html</scope>
+    <description>Vue Template 1</description>
+</snippet>

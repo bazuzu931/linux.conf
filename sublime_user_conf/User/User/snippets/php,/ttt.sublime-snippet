@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+\$table->increments('id');
+\$table->string('name');
+\$table->string('email')->unique();
+\$table->string('password');
+\$table->string('type')->default('user');
+\$table->mediumText('bio')->nullable();
+\$table->string('photo')->default('profile.png')->nullable();
+\$table->rememberToken();
+\$table->timestamps();
+]]></content>
+    <tabTrigger>ttt</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, meta.function-call.php, meta.group.php, meta.function.php, meta.block.php, variable.other.php, punctuation.definition.variable.php</scope>
+    <description>$table-&lt;Template</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+axios.${1:get}("${2:api/profile}")
+]]></content>
+    <tabTrigger>ax</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.block.js, variable.other.object.js</scope>
+    <description>Axios.get/post</description>
+</snippet>

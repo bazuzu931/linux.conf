@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public ${1:int} ${2:main}(${3:}) {
+	${4:}		
+}
+]]></content>
+    <tabTrigger>pf</tabTrigger>
+    <scope>source.java, meta.class.java, meta.class.body.java</scope>
+    <description>public function</description>
+</snippet>

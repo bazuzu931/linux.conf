@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<v-footer app>${1:}</v-footer>
+]]></content>
+    <tabTrigger>vfoo</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-footer</description>
+</snippet>

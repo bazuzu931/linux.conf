@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+mapMutations
+]]></content>
+    <tabTrigger>mm</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, source.js, meta.export.js, meta.object-literal.js, meta.object-literal.js, variable.other.readwrite.js</scope>
+    <description>mapMutations</description>
+</snippet>

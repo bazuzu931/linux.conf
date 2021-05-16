@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+split('${1:}')[${2:}]
+]]></content>
+	<tabTrigger>sp</tabTrigger>
+	<scope>source.python, meta.statement.if.python, meta.function-call.python, meta.qualified-name.python, variable.function.python, meta.generic-name.python</scope>
+	<description></description>
+</snippet>

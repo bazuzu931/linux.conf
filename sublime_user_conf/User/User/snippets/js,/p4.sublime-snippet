@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+const price         =   ' ${1:430} '
+const body          =   '🖥️ Intel Core ${2:i3} prosessor\r🖥️ Hard disk ${3:500} gb ${4:toshiba}\r🖥️ Operativ yaddas(RAM) - ${5:4} gb\r🖥️ Monitor ${6:19}\r🖥️ Qida Bloku ${7:250} w' + chunk.DC_DESC_NUM()
+]]></content>
+	<tabTrigger>p4</tabTrigger>
+	<scope>source.js, meta.group.js, meta.block.js</scope>
+	<description>p4</description>
+</snippet>

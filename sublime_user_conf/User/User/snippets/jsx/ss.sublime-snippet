@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+this.setState({${1:}});
+]]></content>
+    <tabTrigger>ss</tabTrigger>
+    <scope>source.jsx, source.js, meta.class.js, meta.block.js, meta.block.js, variable.language.this.js</scope>
+    <description>this.setState</description>
+</snippet>

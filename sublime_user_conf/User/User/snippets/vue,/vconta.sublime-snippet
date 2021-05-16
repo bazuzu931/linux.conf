@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<v-container fluid>
+	${1:}
+</v-container>
+]]></content>
+    <tabTrigger>vconta</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>v-container</description>
+</snippet>

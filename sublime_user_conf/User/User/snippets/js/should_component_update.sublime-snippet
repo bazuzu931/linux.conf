@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+shouldComponentUpdate(){
+	${1:console.log('shouldComponentUpdate')}
+}$2
+]]></content>
+
+	<tabTrigger>scup</tabTrigger>
+	<scope>source.jsx, source.js</scope>
+
+</snippet>

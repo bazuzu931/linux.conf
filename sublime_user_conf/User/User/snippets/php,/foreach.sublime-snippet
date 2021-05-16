@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+foreach (\$${1:users} as \$${2:users}) {
+    ${3:echo $user->name};
+}
+]]></content>
+    <tabTrigger>foreach</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.class.php, meta.block.php, meta.function.php, meta.block.php, keyword.control.php</scope>
+    <description>foreach</description>
+</snippet>

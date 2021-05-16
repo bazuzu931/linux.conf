@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>App title</title>
+	<meta name="description" content="The HTML5 Herald">
+	<meta name="author" content="SitePoint">
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+<body>
+
+	<script src="js/index.js"></script>
+</body>
+</html>
+]]></content>
+	<tabTrigger>hhh</tabTrigger>
+	<scope>text.html.basic, meta.tag.sgml.html, punctuation.definition.tag.html</scope>
+	<description>html Boilerplate</description>
+</snippet>

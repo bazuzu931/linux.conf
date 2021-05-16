@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+toast({
+  type: 'success',
+  title: 'User created successfully'
+})
+]]></content>
+    <tabTrigger>toastsuccess</tabTrigger>
+    <scope>text.html.vue, source.js.embedded.html, meta.export.js, meta.object-literal.js, meta.object-literal.js, meta.block.js, meta.function-call.method.js, meta.group.js, meta.block.js, meta.function-call.js, variable.function.js</scope>
+    <description>toast success</description>
+</snippet>

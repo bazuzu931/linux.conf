@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+Illuminate\Http\Request $request
+]]></content>
+    <tabTrigger>request</tabTrigger>
+    <scope>embedding.php, text.html.basic, meta.embedded.block.php, source.php, meta.function-call.php, meta.group.php, meta.function.parameters.php, meta.group.php, meta.path.php, support.class.php</scope>
+    <description>Laravel Request</description>
+</snippet>

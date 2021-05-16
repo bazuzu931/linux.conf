@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+.${1:btn}:hover
+	@apply ${2:font-size}
+]]></content>
+    <tabTrigger>.h</tabTrigger>
+    <scope>source.css, meta.selector.css, entity.other.attribute-name.class.css, punctuation.definition.entity.css</scope>
+    <description>@apply hover Tailwind</description>
+</snippet>

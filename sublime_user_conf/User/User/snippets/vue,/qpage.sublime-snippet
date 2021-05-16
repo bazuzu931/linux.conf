@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<q-page>
+	${1:}
+</q-page>
+]]></content>
+    <tabTrigger>qpage</tabTrigger>
+    <scope>text.html.vue, meta.tag.custom.html, punctuation.definition.tag.begin.html</scope>
+    <description>q-page</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+() => {${1:}}
+]]></content>
+    <tabTrigger>cf</tabTrigger>
+    <scope>source.js, meta.function-call.method.js, meta.group.js, meta.function.declaration.js, punctuation.section.group.begin.js</scope>
+    <description>callback function</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+/* ${1:} */
+]]></content>
+    <tabTrigger>.c</tabTrigger>
+    <scope>source.css, comment.block.css, punctuation.definition.comment.css</scope>
+    <description>css 1 line comment</description>
+</snippet>
