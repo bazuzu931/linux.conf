@@ -304,6 +304,12 @@ function copgit {
 	git push -u origin master;
 }
 
+function pb {
+	cd /home/$USER/Desktop/github_projects/linux.conf/ ;
+	git pull;
+	cp /home/momo/Desktop/github_projects/linux.conf/bashrc/.bashrc ~/.bashrc
+}
+
 ###########################################
 # LAMP
 ###########################################
