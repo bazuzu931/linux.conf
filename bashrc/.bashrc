@@ -310,6 +310,8 @@ function pb {
 	cp /home/momo/Desktop/github_projects/linux.conf/bashrc/.bashrc ~/.bashrc
 }
 
+alias gp='git pull'
+
 ###########################################
 # LAMP
 ###########################################
