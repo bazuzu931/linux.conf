@@ -311,7 +311,6 @@ function pb {
 }
 
 alias gp='git pull'
-alias aaaa='ls'
 
 ###########################################
 # LAMP
