@@ -311,6 +311,7 @@ function pb {
 }
 
 alias gp='git pull'
+alias unch='git update-index --assume-unchanged $1'
 
 ###########################################
 # LAMP
