@@ -274,6 +274,7 @@ alias gic='git checkout '
 function gg {
 	git_branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
 	printf "\n\n Push to $git_branch_name \n\n";
+	# git rm -rf --cached .
 	git add . ;
 	git commit -m "$1";
 	git push -u origin $git_branch_name;
@@ -310,7 +311,12 @@ function pb {
 	cp /home/momo/Desktop/github_projects/linux.conf/bashrc/.bashrc ~/.bashrc
 }
 
-alias gp='git pull'
+function gp {
+	git fetch;
+	git checkout HEAD /home/momo/Desktop/tapad/tapad_1/General;
+	git checkout HEAD /home/momo/Desktop/tapad/tapad_2/General;
+	git checkout HEAD /home/momo/Desktop/tapad/tapad_3/General;
+}
 alias unch='git update-index --assume-unchanged $1'
 
 ###########################################
