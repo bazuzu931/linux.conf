@@ -311,13 +311,7 @@ function pb {
 	cp /home/momo/Desktop/github_projects/linux.conf/bashrc/.bashrc ~/.bashrc
 }
 
-function gp {
-	cd /home/momo/Desktop/tapad ;
-	git fetch;
-	git checkout HEAD tapad_1/General/;
-	git checkout HEAD tapad_2/General/;
-	git checkout HEAD tapad_3/General/;
-}
+alias gp='git pull'
 alias unch='git update-index --assume-unchanged $1'
 
 ###########################################
