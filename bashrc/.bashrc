@@ -312,6 +312,7 @@ function pb {
 }
 
 function gp {
+	cd /home/momo/Desktop/tapad ;
 	git fetch;
 	git checkout HEAD /home/momo/Desktop/tapad/tapad_1/General;
 	git checkout HEAD /home/momo/Desktop/tapad/tapad_2/General;
