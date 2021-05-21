@@ -311,7 +311,22 @@ function pb {
 	cp /home/momo/Desktop/github_projects/linux.conf/bashrc/.bashrc ~/.bashrc
 }
 
-alias gp='git pull'
+function tgp {
+	cd /home/momo/Desktop/tapad ;
+	git pull;
+	sleep 5;
+	exit;
+}
+function tgg {
+	git_branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
+	printf "\n\n Push to $git_branch_name \n\n";
+	# git rm -rf --cached .
+	git add . ;
+	git commit -m "$1";
+	git push -u origin $git_branch_name;
+	sleep 5;
+	exit;
+}
 alias unch='git update-index --assume-unchanged $1'
 
 ###########################################
