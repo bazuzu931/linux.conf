@@ -314,9 +314,9 @@ function pb {
 function gp {
 	cd /home/momo/Desktop/tapad ;
 	git fetch;
-	git checkout HEAD /home/momo/Desktop/tapad/tapad_1/General;
-	git checkout HEAD /home/momo/Desktop/tapad/tapad_2/General;
-	git checkout HEAD /home/momo/Desktop/tapad/tapad_3/General;
+	git checkout HEAD tapad_1/General/;
+	git checkout HEAD tapad_2/General/;
+	git checkout HEAD tapad_3/General/;
 }
 alias unch='git update-index --assume-unchanged $1'
 
