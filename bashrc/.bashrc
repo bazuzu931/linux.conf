@@ -314,8 +314,8 @@ function pb {
 function tgp {
 	cd /home/momo/Desktop/tapad ;
 	git pull;
-	sleep 5;
-	exit;
+	# sleep 5;
+	# exit;
 }
 function tgg {
 	cd /home/momo/Desktop/tapad ;
@@ -325,8 +325,8 @@ function tgg {
 	git add . ;
 	git commit -m "$1";
 	git push -u origin $git_branch_name;
-	sleep 5;
-	exit;
+	# sleep 5;
+	# exit;
 }
 alias unch='git update-index --assume-unchanged $1'
 
