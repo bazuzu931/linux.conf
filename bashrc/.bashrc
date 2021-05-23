@@ -318,6 +318,7 @@ function tgp {
 	exit;
 }
 function tgg {
+	cd /home/momo/Desktop/tapad ;
 	git_branch_name=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
 	printf "\n\n Push to $git_branch_name \n\n";
 	# git rm -rf --cached .
