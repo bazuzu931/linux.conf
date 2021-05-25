@@ -131,6 +131,8 @@ alias ccc='bash ~/Desktop/scripts/close_windows.sh'
 alias fd='flutter doctor'
 alias fpg='flutter pub get'
 
+alias uu='uvicorn main:app --reload'
+
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
 alias sss='shutdown now || systemctl poweroff -i'
@@ -511,7 +513,7 @@ function envact {
 }
 
 # 2 Method activate virtualenv
-alias vac='source env/bin/activate'
+alias vac='source venv/bin/activate'
 
 ###########################################
 # Django
