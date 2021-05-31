@@ -138,7 +138,12 @@ alias aled='sudo subl /home/$USER/.bashrc; exit'
 alias sss='shutdown now || systemctl poweroff -i'
 alias rrr='reboot || systemctl reboot -i'
 
-alias ai='sudo apt install '
+# alias ai='sudo apt install '
+function ai {
+	sudo dpkg --configure -a;
+	sudo apt-get install -f;
+	sudo apt install $1
+}
 alias ri='sudo apt remove -y '
 alias ui='sudo apt install --uninstall '
 alias di='sudo dpkg -i '

@@ -2,7 +2,7 @@
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"default_root": "current",
 	"font_face": "Inconsolata",
-	"font_size": 12,
+	"font_size": 9,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -13,7 +13,7 @@
 		"Sass",
 		"Tailwind CSS Autocomplete",
 		"Terminus",
-		"Vintage"
+		"Vintage",
 	],
 	"line_padding_bottom": 10,
 	"line_padding_top": 10,
@@ -21,5 +21,5 @@
 	"theme": "Material-Theme.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false,
-	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?"
+	"word_separators": "“./ ()”’:,.;<>~!@#$%^&*|+=]{}`~?",
 }

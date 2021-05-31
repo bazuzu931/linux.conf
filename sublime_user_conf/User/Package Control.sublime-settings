@@ -57,10 +57,10 @@
 		"Terminal",
 		"Theme - Brogrammer",
 		"Theme - Spacegray",
-		"Xdebug Client"
+		"Xdebug Client",
 	],
 	"repositories":
 	[
 		"https://github.com/babel/babel-sublime"
-	]
+	],
 }
