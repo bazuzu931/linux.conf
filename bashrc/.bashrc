@@ -227,8 +227,12 @@ alias k3='kill %3 '
 # alias ser='ssh -p 50111 bazuzu@46.229.213.251 '
 # alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
 # alias ser="ssh 'root@185.200.241.78' "
-alias scop='scp -r $1 -r momo@192.168.0.106:~/Desktop/Transfer_files/'
-
+function scf {
+	scp "$1" "momo@192.168.0.106:~/Desktop/Transfer_files/"
+}
+function scd {
+	scp -r "$1"  "momo@192.168.0.106:~/Desktop/Transfer_files/"
+}
 
 ###########################################
 # Scripts
