@@ -138,6 +138,11 @@ alias aled='sudo subl /home/$USER/.bashrc; exit'
 alias sss='shutdown now || systemctl poweroff -i'
 alias rrr='reboot || systemctl reboot -i'
 
+
+alias ccc='ssh momo@192.168.0.106'
+alias sus='systemctl suspend'
+alias www='wakeonlan 90:2b:34:b9:0f:c9'
+
 # alias ai='sudo apt install '
 function ai {
 	sudo dpkg --configure -a;
