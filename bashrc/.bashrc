@@ -140,8 +140,11 @@ alias rrr='reboot || systemctl reboot -i'
 
 
 alias ccc='ssh momo@192.168.0.106'
-alias sus='systemctl suspend'
 alias www='wakeonlan 90:2b:34:b9:0f:c9'
+function sus {
+	systemctl suspend;
+	systemctl suspend -i
+}
 
 # alias ai='sudo apt install '
 function ai {
