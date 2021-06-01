@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+if not os.path.exists(${1:file}):
+	os.makedirs(${1:file})
+]]></content>
+	<tabTrigger>ifnot</tabTrigger>
+	<scope>source.python.django, meta.statement.conditional.if.python, keyword.control.conditional.if.python</scope>
+	<description>if not exists</description>
+</snippet>
