@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+@app.get('/${1:}')
+]]></content>
+	<tabTrigger>ag</tabTrigger>
+	<scope>source.python.django, meta.annotation.python, punctuation.definition.annotation.python</scope>
+	<description>@app.get()</description>
+</snippet>
+

@@ -32,7 +32,9 @@ export ANDROID_SDK_ROOT=/home/momo/android-sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 alias jv="sudo update-alternatives --config java"
-
+alias python3='python3.9'
+alias tx='tmux new-session -t $1'
+alias ta='tmux attach -t $1'
 
 
 
@@ -211,8 +213,8 @@ alias yd4='sudo youtube-dl -U; youtube-dl -o "%(playlist)s/%(playlist_index)s-%(
 ############################################################
 
 
-alias pipi='pip3 install '
-alias p3='python3 '
+alias pipi='pip3.9 install '
+alias p3='python3.9 '
 alias pipup='pip install --upgrade pip '
 alias sassw='sass --watch $1:$2'
 # alias jes='jekyll serve'
