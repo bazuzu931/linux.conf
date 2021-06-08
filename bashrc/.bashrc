@@ -33,8 +33,15 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 
 alias jv="sudo update-alternatives --config java"
 alias python3='python3.9'
+
+
+# tmux
 alias tx='tmux new-session -t $1'
 alias ta='tmux attach -t $1'
+function tmk {
+	tmux list-sessions | awk 'BEGIN{FS=":"}{print $1}' | xargs -n 1 tmux kill-session -t
+}
+
 
 
 
