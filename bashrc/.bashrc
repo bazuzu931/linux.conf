@@ -135,7 +135,6 @@ function tapad {
 ########################################################################################
 
 #close all windows
-alias ccc='bash ~/Desktop/scripts/close_windows.sh'
 
 alias fd='flutter doctor'
 alias fpg='flutter pub get'
@@ -144,11 +143,12 @@ alias uu='uvicorn main:app --reload'
 
 alias aled='sudo subl /home/$USER/.bashrc; exit'
 
+
 alias sss='shutdown now || systemctl poweroff -i'
 alias rrr='reboot || systemctl reboot -i'
 
 
-alias ccc='ssh momo@192.168.0.106'
+alias ccc='ssh momo@192.168.0.102'
 alias www='wakeonlan 90:2b:34:b9:0f:c9'
 function sus {
 	systemctl suspend;
@@ -240,10 +240,10 @@ alias k3='kill %3 '
 # alias scop='scp -P 50111  -r  $1  bazuzu@46.229.213.251:~ '
 # alias ser="ssh 'root@185.200.241.78' "
 function scf {
-	scp "$1" "momo@192.168.0.106:~/Desktop/Transfer_files/"
+	scp "$1" "momo@192.168.0.102:~/Desktop/Transfer_files/"
 }
 function scd {
-	scp -r "$1"  "momo@192.168.0.106:~/Desktop/Transfer_files/"
+	scp -r "$1"  "momo@192.168.0.102:~/Desktop/Transfer_files/"
 }
 
 ###########################################
