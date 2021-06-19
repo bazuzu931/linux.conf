@@ -118,6 +118,30 @@ function tapdel2 {
 	python3 delete.py $1
 }
 
+########################################################################################
+################################    Tapad  3     #######################################
+
+# Add
+function tadd3 {
+	cd /home/momo/Desktop/tapad/tapad_3/scripts/version/Universal;
+	python3 main.py
+}
+# Start
+function tapad3 {
+	cd /home/momo/Desktop/tapad/tapad_3/General;
+	node index.js
+}
+# Mix
+function tapmix3 {
+	cd /home/momo/Desktop/tapad/tapad_3/scripts;
+	python3 mix.py $1
+}
+# Delete
+function tapdel3 {
+	cd /home/momo/Desktop/tapad/tapad_3/scripts;
+	python3 delete.py $1
+}
+
 #azercell
 function azer {
 	cd /home/momo/Desktop/Halk/Azercell/;
@@ -127,7 +151,7 @@ function azer {
 ########################################################################################
 ################################    Tapad       ########################################
 function tapad {
-	tapad1; tapad2
+	tapad1; tapad2; tapad3;
 }
 
 
