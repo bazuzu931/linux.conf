@@ -151,7 +151,13 @@ function azer {
 ########################################################################################
 ################################    Tapad       ########################################
 function tapad {
-	tapad1; tapad2; tapad3;
+	tapad1; tapad3;
+	# tapad1; tapad2; tapad3;
+}
+
+function cprice {
+	cd /home/momo/Desktop/tapad/Z/change_price;
+	python3 change_price.py
 }
 
 
