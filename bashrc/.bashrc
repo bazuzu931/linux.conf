@@ -69,6 +69,10 @@ export PATH="$PATH:/opt/yarn-[version]/bin"
 #     fi
 # done
 
+function pich {
+	cd /home/momo/Desktop/Halk/script/pic_handle;
+	python3.6 pic_handle.py
+}
 
 ########################################################################################
 ################################    Tapad  1     #######################################
@@ -142,10 +146,28 @@ function tapdel3 {
 	python3 delete.py $1
 }
 
-#azercell
-function azer {
-	cd /home/momo/Desktop/Halk/Azercell/;
-	python3 get_info.py
+########################################################################################
+################################    Tapad  4     #######################################
+
+# Add
+function tadd4 {
+	cd /home/momo/Desktop/tapad/tapad_4/scripts/version/Universal;
+	python3 main.py
+}
+# Start
+function tapad4 {
+	cd /home/momo/Desktop/tapad/tapad_4/General;
+	node index.js
+}
+# Mix
+function tapmix4 {
+	cd /home/momo/Desktop/tapad/tapad_4/scripts;
+	python3 mix.py $1
+}
+# Delete
+function tapdel4 {
+	cd /home/momo/Desktop/tapad/tapad_4/scripts;
+	python3 delete.py $1
 }
 
 ########################################################################################
@@ -157,7 +179,13 @@ function tapad {
 
 function cprice {
 	cd /home/momo/Desktop/tapad/Z/change_price;
-	python3 change_price.py
+	python3 main.py
+}
+
+#azercell
+function azer {
+	cd /home/momo/Desktop/Halk/Azercell/;
+	python3 get_info.py
 }
 
 

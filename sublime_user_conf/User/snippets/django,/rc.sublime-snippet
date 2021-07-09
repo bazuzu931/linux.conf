@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+random.choice(${1:})
+]]></content>
+	<tabTrigger>rc</tabTrigger>
+	<scope>source.python.django, meta.function-call.python, meta.qualified-name.python, meta.generic-name.python</scope>
+	<description>random.choice()</description>
+</snippet>
